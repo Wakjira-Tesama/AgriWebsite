@@ -75,4 +75,10 @@ const marketplaceItems: MarketItem[] = [
   { crop: 'White Maize', price: '3,200', seller: 'Bahir Dar Coop', region: 'Amhara', stock: '100 Tonnes', rating: 4.4, category: 'Grains', emoji: '🌽', description: 'Bulk white maize suitable for animal feed and flour production. Moisture content below 12.5%.' },
   { crop: 'Sesame Seeds', price: '12,000', seller: 'Humera Traders', region: 'Tigray', stock: '15 Tonnes', rating: 4.7, category: 'Oil Seeds', emoji: '🫘', description: 'Humera-type sesame seeds, known worldwide for their exceptional oil content and nutty flavor.' },
   { crop: 'Wheat (Bread)', price: '4,100', seller: 'Arsi Union', region: 'Oromia', stock: '45 Tonnes', rating: 4.5, category: 'Grains', emoji: '🌾', description: 'Bread wheat variety from Arsi zone. High protein content suitable for bakery products.' },
-  { crop: 'Robusta Coffee (Natural)', price: '14,200', seller: 'Teppi Growers', region: 'SNNPR', stock: '12 Tonnes', rating: 4.3, category: 'Coffee', emoji: '☕', description: 'Sun-dried natural process Robusta beans. Bold flavor profile, ideal for espresso blends.' },
+  { crop: 'Robusta Coffee (Natural)', price: '14,200', seller: 'Teppi Growers', region: 'SNNPR', stock: '12 Tonnes', rating: 4.3, category: 'Coffee', emoji: '☕', description: 'Sun-dried natural process Robusta beans. Bold flavor profile, ideal for espresso blends.' },
+  { crop: 'Niger Seed (Noug)', price: '8,500', seller: 'Gojjam Farmers', region: 'Amhara', stock: '25 Tonnes', rating: 4.2, category: 'Oil Seeds', emoji: '🌻', description: 'Organic niger seed for premium cooking oil extraction. High omega-3 fatty acid content.' },
+  { crop: 'Black Cumin', price: '22,000', seller: 'Bale Spice Union', region: 'Oromia', stock: '5 Tonnes', rating: 4.9, category: 'Spices', emoji: '🫙', description: 'Rare Ethiopian black cumin (Tikur Azmud). Medicinal grade with intense aroma and flavor.' },
+];
+
+const mockOrders: Order[] = [
+  { id: 'ORD-2026-001', crop: 'White Teff (Export Grade)', seller: 'Hawassa Co-op', quantity: '10 Tonnes', totalPrice: '620,000', status: 'delivered', date: '2026-06-01', region: 'SNNPR', emoji: '🌾' },
