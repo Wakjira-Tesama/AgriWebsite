@@ -153,4 +153,10 @@ export default function BuyerDashboard() {
     if (orderFilter === 'all') return mockOrders;
     return mockOrders.filter(o => o.status === orderFilter);
   }, [orderFilter]);
-
+
+  const regions = ['All', ...new Set(marketplaceItems.map(i => i.region))];
+  const categories = ['All', 'Grains', 'Coffee', 'Oil Seeds', 'Spices'];
+
+  // ─── HANDLE ORDER ───
+  const handlePlaceOrder = () => {
+    setOrderSuccess(true);
