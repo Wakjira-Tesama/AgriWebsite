@@ -183,4 +183,10 @@ export default function BuyerDashboard() {
     <div className="space-y-6">
       {/* Stats Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-        {[
+        {[
+          { label: 'Total Spent', value: '1.47M ETB', icon: DollarSign, change: '+22.4%', color: 'from-emerald-500 to-green-600' },
+          { label: 'Active Orders', value: '3', icon: ShoppingBag, change: '2 in transit', color: 'from-amber-500 to-orange-500' },
+          { label: 'Products Bought', value: '28', icon: Package, change: '+5 this month', color: 'from-blue-500 to-indigo-600' },
+          { label: 'Suppliers', value: '12', icon: Store, change: '3 new', color: 'from-purple-500 to-violet-600' },
+        ].map((stat, i) => (
+          <div key={i} className="relative overflow-hidden bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
