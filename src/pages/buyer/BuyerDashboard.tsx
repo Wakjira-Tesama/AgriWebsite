@@ -141,4 +141,10 @@ export default function BuyerDashboard() {
   const filteredItems = useMemo(() => {
     return marketplaceItems.filter(item => {
       const matchesSearch = item.crop.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.seller.toLowerCase().includes(searchQuery.toLowerCase());
+        item.seller.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory;
+      const matchesRegion = selectedRegion === 'All' || item.region === selectedRegion;
+      return matchesSearch && matchesCategory && matchesRegion;
+    });
+  }, [searchQuery, selectedCategory, selectedRegion]);
+
