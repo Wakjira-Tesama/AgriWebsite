@@ -105,4 +105,10 @@ const categoryIcons: Record<string, any> = {
   'All': Store,
 };
 
-export default function BuyerDashboard() {
+export default function BuyerDashboard() {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<Tab>('overview');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedRegion, setSelectedRegion] = useState('All');
+  const [orderFilter, setOrderFilter] = useState<'all' | OrderStatus>('all');
