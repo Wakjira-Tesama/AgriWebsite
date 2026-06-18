@@ -249,4 +249,10 @@ export default function BuyerDashboard() {
                   {categoryData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={PIE_COLORS[index % PIE_COLORS.length]} />
                   ))}
-                </Pie>
+                </Pie>
+                <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="grid grid-cols-2 gap-2 mt-2">
+            {categoryData.map((cat, i) => (
