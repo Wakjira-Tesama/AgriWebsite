@@ -57,4 +57,10 @@ const categoryData = [
   { name: 'Coffee', value: 25 },
   { name: 'Oil Seeds', value: 18 },
   { name: 'Spices', value: 12 },
-];
+];
+const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20'];
+
+const topSuppliersData = [
+  { name: 'Jimma Co-op', volume: 85 },
+  { name: 'Hawassa Co-op', volume: 72 },
+  { name: 'Adama Union', volume: 65 },
