@@ -81,4 +81,10 @@ const marketplaceItems: MarketItem[] = [
 ];
 
 const mockOrders: Order[] = [
-  { id: 'ORD-2026-001', crop: 'White Teff (Export Grade)', seller: 'Hawassa Co-op', quantity: '10 Tonnes', totalPrice: '620,000', status: 'delivered', date: '2026-06-01', region: 'SNNPR', emoji: '🌾' },
+  { id: 'ORD-2026-001', crop: 'White Teff (Export Grade)', seller: 'Hawassa Co-op', quantity: '10 Tonnes', totalPrice: '620,000', status: 'delivered', date: '2026-06-01', region: 'SNNPR', emoji: '🌾' },
+  { id: 'ORD-2026-002', crop: 'Arabica Coffee (Washed)', seller: 'Jimma Co-op', quantity: '5 Tonnes', totalPrice: '925,000', status: 'shipped', date: '2026-06-15', region: 'Oromia', emoji: '☕' },
+  { id: 'ORD-2026-003', crop: 'Sesame Seeds', seller: 'Humera Traders', quantity: '8 Tonnes', totalPrice: '960,000', status: 'confirmed', date: '2026-06-22', region: 'Tigray', emoji: '🫘' },
+  { id: 'ORD-2026-004', crop: 'Black Cumin', seller: 'Bale Spice Union', quantity: '2 Tonnes', totalPrice: '440,000', status: 'pending', date: '2026-06-28', region: 'Oromia', emoji: '🫙' },
+  { id: 'ORD-2026-005', crop: 'White Maize', seller: 'Bahir Dar Coop', quantity: '20 Tonnes', totalPrice: '640,000', status: 'cancelled', date: '2026-06-10', region: 'Amhara', emoji: '🌽' },
+];
+
