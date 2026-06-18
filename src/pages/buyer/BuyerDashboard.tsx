@@ -165,4 +165,10 @@ export default function BuyerDashboard() {
       setOrderModal(null);
       setOrderQuantity('1');
     }, 2500);
-  };
+  };
+
+  // ─── SIDEBAR NAV ITEMS ───
+  const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
+    { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'marketplace', label: 'Marketplace', icon: Store },
+    { id: 'orders', label: 'My Orders', icon: ShoppingCart, badge: `${mockOrders.filter(o => o.status === 'pending' || o.status === 'shipped').length}` },
