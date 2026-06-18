@@ -99,4 +99,10 @@ const statusConfig: Record<OrderStatus, { color: string; bg: string; icon: any; 
 
 const categoryIcons: Record<string, any> = {
   'Grains': Wheat,
-  'Coffee': Coffee,
+  'Coffee': Coffee,
+  'Oil Seeds': Leaf,
+  'Spices': Leaf,
+  'All': Store,
+};
+
+export default function BuyerDashboard() {
