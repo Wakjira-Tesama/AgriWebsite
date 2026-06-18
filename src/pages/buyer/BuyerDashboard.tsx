@@ -135,4 +135,10 @@ export default function BuyerDashboard() {
       if (error) throw error;
       return data;
     }
-  });
+  });
+
+  // ─── FILTERED MARKETPLACE ───
+  const filteredItems = useMemo(() => {
+    return marketplaceItems.filter(item => {
+      const matchesSearch = item.crop.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.seller.toLowerCase().includes(searchQuery.toLowerCase());
