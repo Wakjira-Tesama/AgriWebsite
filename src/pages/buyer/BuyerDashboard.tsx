@@ -231,4 +231,10 @@ export default function BuyerDashboard() {
                 <RechartsTooltip
                   contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}
                   formatter={(value: any) => [`${Number(value).toLocaleString()} ETB`, 'Spending']}
-                />
+                />
+                <Area type="monotone" dataKey="amount" stroke="#2E7D32" strokeWidth={3} fill="url(#spendGrad)" />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
