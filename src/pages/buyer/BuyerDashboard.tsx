@@ -87,4 +87,10 @@ const mockOrders: Order[] = [
   { id: 'ORD-2026-004', crop: 'Black Cumin', seller: 'Bale Spice Union', quantity: '2 Tonnes', totalPrice: '440,000', status: 'pending', date: '2026-06-28', region: 'Oromia', emoji: '🫙' },
   { id: 'ORD-2026-005', crop: 'White Maize', seller: 'Bahir Dar Coop', quantity: '20 Tonnes', totalPrice: '640,000', status: 'cancelled', date: '2026-06-10', region: 'Amhara', emoji: '🌽' },
 ];
-
+
+// ─── HELPERS ───
+const statusConfig: Record<OrderStatus, { color: string; bg: string; icon: any; label: string }> = {
+  pending: { color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200', icon: Clock, label: 'Pending' },
+  confirmed: { color: 'text-blue-700', bg: 'bg-blue-50 border-blue-200', icon: CheckCircle, label: 'Confirmed' },
+  shipped: { color: 'text-purple-700', bg: 'bg-purple-50 border-purple-200', icon: Truck, label: 'Shipped' },
+  delivered: { color: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200', icon: CheckCircle, label: 'Delivered' },
