@@ -111,4 +111,10 @@ export default function BuyerDashboard() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedRegion, setSelectedRegion] = useState('All');
-  const [orderFilter, setOrderFilter] = useState<'all' | OrderStatus>('all');
+  const [orderFilter, setOrderFilter] = useState<'all' | OrderStatus>('all');
+  const [orderModal, setOrderModal] = useState<MarketItem | null>(null);
+  const [orderQuantity, setOrderQuantity] = useState('1');
+  const [orderSuccess, setOrderSuccess] = useState(false);
+  const [detailModal, setDetailModal] = useState<MarketItem | null>(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
