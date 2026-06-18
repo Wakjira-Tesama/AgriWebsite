@@ -123,4 +123,10 @@ export default function BuyerDashboard() {
     queryKey: ['market_prices'],
     queryFn: async () => {
       const { data, error } = await supabase.from('market_prices').select('*').order('created_at', { ascending: false });
-      if (error) throw error;
+      if (error) throw error;
+      return data;
+    }
+  });
+
+  const { data: announcements, isLoading: loadingAnns } = useQuery({
+    queryKey: ['announcements'],
