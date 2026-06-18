@@ -9,4 +9,10 @@ import {
 } from 'recharts';
 import {
   LogOut, ShoppingCart, Search, Store, LayoutDashboard, TrendingUp, TrendingDown,
-  Minus, Package, Bell, X, ChevronRight, MapPin, Filter, Star, Wheat,
+  Minus, Package, Bell, X, ChevronRight, MapPin, Filter, Star, Wheat,
+  Coffee, Leaf, ChevronDown, Clock, CheckCircle, Truck, Eye, BarChart3,
+  DollarSign, ShoppingBag, CalendarDays, ArrowUpRight, Menu, XCircle
+} from 'lucide-react';
+
+// ─── TYPES ───
+type Tab = 'overview' | 'marketplace' | 'orders' | 'prices' | 'announcements';
