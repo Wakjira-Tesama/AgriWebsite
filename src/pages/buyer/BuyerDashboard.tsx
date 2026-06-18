@@ -21,4 +21,10 @@ type OrderStatus = 'pending' | 'confirmed' | 'shipped' | 'delivered' | 'cancelle
 interface Order {
   id: string;
   crop: string;
-  seller: string;
+  seller: string;
+  quantity: string;
+  totalPrice: string;
+  status: OrderStatus;
+  date: string;
+  region: string;
+  emoji: string;
