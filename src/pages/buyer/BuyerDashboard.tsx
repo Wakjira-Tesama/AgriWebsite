@@ -69,4 +69,10 @@ const topSuppliersData = [
 ];
 
 const marketplaceItems: MarketItem[] = [
-  { crop: 'White Teff (Export Grade)', price: '6,200', seller: 'Hawassa Co-op', region: 'SNNPR', stock: '50 Tonnes', rating: 4.8, category: 'Grains', emoji: '🌾', description: 'Premium export-grade white teff, cleaned and sorted. Ideal for injera production and export markets.' },
+  { crop: 'White Teff (Export Grade)', price: '6,200', seller: 'Hawassa Co-op', region: 'SNNPR', stock: '50 Tonnes', rating: 4.8, category: 'Grains', emoji: '🌾', description: 'Premium export-grade white teff, cleaned and sorted. Ideal for injera production and export markets.' },
+  { crop: 'Red Teff (Premium)', price: '5,800', seller: 'Adama Farmers Union', region: 'Oromia', stock: '30 Tonnes', rating: 4.6, category: 'Grains', emoji: '🌾', description: 'High-quality red teff with rich mineral content. Traditionally grown in the highlands of Oromia.' },
+  { crop: 'Arabica Coffee (Washed)', price: '18,500', seller: 'Jimma Co-op', region: 'Oromia', stock: '20 Tonnes', rating: 4.9, category: 'Coffee', emoji: '☕', description: 'Specialty-grade washed Arabica coffee from Jimma region. Cupping score 85+. Perfect for export.' },
+  { crop: 'White Maize', price: '3,200', seller: 'Bahir Dar Coop', region: 'Amhara', stock: '100 Tonnes', rating: 4.4, category: 'Grains', emoji: '🌽', description: 'Bulk white maize suitable for animal feed and flour production. Moisture content below 12.5%.' },
+  { crop: 'Sesame Seeds', price: '12,000', seller: 'Humera Traders', region: 'Tigray', stock: '15 Tonnes', rating: 4.7, category: 'Oil Seeds', emoji: '🫘', description: 'Humera-type sesame seeds, known worldwide for their exceptional oil content and nutty flavor.' },
+  { crop: 'Wheat (Bread)', price: '4,100', seller: 'Arsi Union', region: 'Oromia', stock: '45 Tonnes', rating: 4.5, category: 'Grains', emoji: '🌾', description: 'Bread wheat variety from Arsi zone. High protein content suitable for bakery products.' },
+  { crop: 'Robusta Coffee (Natural)', price: '14,200', seller: 'Teppi Growers', region: 'SNNPR', stock: '12 Tonnes', rating: 4.3, category: 'Coffee', emoji: '☕', description: 'Sun-dried natural process Robusta beans. Bold flavor profile, ideal for espresso blends.' },
