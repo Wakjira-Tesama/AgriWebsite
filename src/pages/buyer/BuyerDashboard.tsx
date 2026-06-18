@@ -117,4 +117,10 @@ export default function BuyerDashboard() {
   const [orderSuccess, setOrderSuccess] = useState(false);
   const [detailModal, setDetailModal] = useState<MarketItem | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
+
+  // ─── SUPABASE QUERIES ───
+  const { data: prices, isLoading: loadingPrices } = useQuery({
+    queryKey: ['market_prices'],
+    queryFn: async () => {
+      const { data, error } = await supabase.from('market_prices').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
