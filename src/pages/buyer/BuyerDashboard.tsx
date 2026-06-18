@@ -27,4 +27,10 @@ interface Order {
   status: OrderStatus;
   date: string;
   region: string;
-  emoji: string;
+  emoji: string;
+}
+
+interface MarketItem {
+  crop: string;
+  price: string;
+  seller: string;
