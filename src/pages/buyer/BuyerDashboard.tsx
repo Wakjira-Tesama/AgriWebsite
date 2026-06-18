@@ -63,4 +63,10 @@ const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20'];
 const topSuppliersData = [
   { name: 'Jimma Co-op', volume: 85 },
   { name: 'Hawassa Co-op', volume: 72 },
-  { name: 'Adama Union', volume: 65 },
+  { name: 'Adama Union', volume: 65 },
+  { name: 'Bahir Dar Co-op', volume: 58 },
+  { name: 'Arsi Union', volume: 45 },
+];
+
+const marketplaceItems: MarketItem[] = [
+  { crop: 'White Teff (Export Grade)', price: '6,200', seller: 'Hawassa Co-op', region: 'SNNPR', stock: '50 Tonnes', rating: 4.8, category: 'Grains', emoji: '🌾', description: 'Premium export-grade white teff, cleaned and sorted. Ideal for injera production and export markets.' },
