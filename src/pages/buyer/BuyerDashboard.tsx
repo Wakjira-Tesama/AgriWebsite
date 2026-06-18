@@ -207,4 +207,10 @@ export default function BuyerDashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Spending Chart */}
         <div className="lg:col-span-2 bg-card rounded-2xl border border-border p-6">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex justify-between items-center mb-6">
+            <div>
+              <h3 className="text-lg font-bold font-display">Spending Overview</h3>
+              <p className="text-sm text-muted-foreground">Monthly purchase volume in ETB</p>
+            </div>
+            <span className="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full flex items-center gap-1">
+              <TrendingUp size={14} /> +35.5%
