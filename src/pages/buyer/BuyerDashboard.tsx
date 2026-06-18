@@ -15,4 +15,10 @@ import {
 } from 'lucide-react';
 
 // ─── TYPES ───
-type Tab = 'overview' | 'marketplace' | 'orders' | 'prices' | 'announcements';
+type Tab = 'overview' | 'marketplace' | 'orders' | 'prices' | 'announcements';
+type OrderStatus = 'pending' | 'confirmed' | 'shipped' | 'delivered' | 'cancelled';
+
+interface Order {
+  id: string;
+  crop: string;
+  seller: string;
