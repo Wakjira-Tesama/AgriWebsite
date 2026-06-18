@@ -33,4 +33,10 @@ interface Order {
 interface MarketItem {
   crop: string;
   price: string;
-  seller: string;
+  seller: string;
+  region: string;
+  stock: string;
+  rating: number;
+  category: string;
+  emoji: string;
+  description: string;
