@@ -171,4 +171,10 @@ export default function BuyerDashboard() {
   const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
     { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'marketplace', label: 'Marketplace', icon: Store },
-    { id: 'orders', label: 'My Orders', icon: ShoppingCart, badge: `${mockOrders.filter(o => o.status === 'pending' || o.status === 'shipped').length}` },
+    { id: 'orders', label: 'My Orders', icon: ShoppingCart, badge: `${mockOrders.filter(o => o.status === 'pending' || o.status === 'shipped').length}` },
+    { id: 'prices', label: 'Market Prices', icon: BarChart3 },
+    { id: 'announcements', label: 'Announcements', icon: Bell, badge: announcements?.length ? `${announcements.length}` : undefined },
+  ];
+
+  // ═══════════════════════════════════════════
+  // RENDER: OVERVIEW
