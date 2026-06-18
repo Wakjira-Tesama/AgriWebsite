@@ -93,4 +93,10 @@ const statusConfig: Record<OrderStatus, { color: string; bg: string; icon: any; 
   pending: { color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200', icon: Clock, label: 'Pending' },
   confirmed: { color: 'text-blue-700', bg: 'bg-blue-50 border-blue-200', icon: CheckCircle, label: 'Confirmed' },
   shipped: { color: 'text-purple-700', bg: 'bg-purple-50 border-purple-200', icon: Truck, label: 'Shipped' },
-  delivered: { color: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200', icon: CheckCircle, label: 'Delivered' },
+  delivered: { color: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200', icon: CheckCircle, label: 'Delivered' },
+  cancelled: { color: 'text-red-700', bg: 'bg-red-50 border-red-200', icon: XCircle, label: 'Cancelled' },
+};
+
+const categoryIcons: Record<string, any> = {
+  'Grains': Wheat,
+  'Coffee': Coffee,
