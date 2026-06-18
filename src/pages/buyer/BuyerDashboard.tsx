@@ -51,4 +51,10 @@ const spendingData = [
   { name: 'May', amount: 310000 },
   { name: 'Jun', amount: 420000 },
 ];
-
+
+const categoryData = [
+  { name: 'Grains', value: 45 },
+  { name: 'Coffee', value: 25 },
+  { name: 'Oil Seeds', value: 18 },
+  { name: 'Spices', value: 12 },
+];
