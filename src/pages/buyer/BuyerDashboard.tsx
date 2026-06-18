@@ -159,4 +159,10 @@ export default function BuyerDashboard() {
 
   // ─── HANDLE ORDER ───
   const handlePlaceOrder = () => {
-    setOrderSuccess(true);
+    setOrderSuccess(true);
+    setTimeout(() => {
+      setOrderSuccess(false);
+      setOrderModal(null);
+      setOrderQuantity('1');
+    }, 2500);
+  };
