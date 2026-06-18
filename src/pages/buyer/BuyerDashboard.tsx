@@ -129,4 +129,10 @@ export default function BuyerDashboard() {
   });
 
   const { data: announcements, isLoading: loadingAnns } = useQuery({
-    queryKey: ['announcements'],
+    queryKey: ['announcements'],
+    queryFn: async () => {
+      const { data, error } = await supabase.from('announcements').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
+      return data;
+    }
+  });
