@@ -45,4 +45,10 @@ interface MarketItem {
 // ─── MOCK DATA ───
 const spendingData = [
   { name: 'Jan', amount: 120000 },
-  { name: 'Feb', amount: 185000 },
+  { name: 'Feb', amount: 185000 },
+  { name: 'Mar', amount: 240000 },
+  { name: 'Apr', amount: 198000 },
+  { name: 'May', amount: 310000 },
+  { name: 'Jun', amount: 420000 },
+];
+
