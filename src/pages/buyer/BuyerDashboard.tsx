@@ -147,4 +147,10 @@ export default function BuyerDashboard() {
       return matchesSearch && matchesCategory && matchesRegion;
     });
   }, [searchQuery, selectedCategory, selectedRegion]);
+
+  // ─── FILTERED ORDERS ───
+  const filteredOrders = useMemo(() => {
+    if (orderFilter === 'all') return mockOrders;
+    return mockOrders.filter(o => o.status === orderFilter);
+  }, [orderFilter]);
 
