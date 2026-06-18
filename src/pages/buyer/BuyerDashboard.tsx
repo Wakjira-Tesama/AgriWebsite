@@ -39,4 +39,10 @@ interface MarketItem {
   rating: number;
   category: string;
   emoji: string;
-  description: string;
+  description: string;
+}
+
+// ─── MOCK DATA ───
+const spendingData = [
+  { name: 'Jan', amount: 120000 },
+  { name: 'Feb', amount: 185000 },
