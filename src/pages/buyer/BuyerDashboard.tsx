@@ -321,4 +321,10 @@ export default function BuyerDashboard() {
       </div>
     </div>
   );
-
+
+  // ═══════════════════════════════════════════
+  // RENDER: MARKETPLACE
+  // ═══════════════════════════════════════════
+  const renderMarketplace = () => (
+    <div className="space-y-6">
+      {/* Search & Filters */}
