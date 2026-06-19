@@ -453,4 +453,10 @@ export default function BuyerDashboard() {
         ))}
       </div>
 
-      {filteredItems.length === 0 && (
+      {filteredItems.length === 0 && (
+        <div className="text-center py-16">
+          <span className="text-5xl mb-4 block">🔍</span>
+          <h3 className="text-xl font-bold text-foreground">No products found</h3>
+          <p className="text-muted-foreground mt-2">Try adjusting your search or filter criteria</p>
+          <button onClick={() => { setSearchQuery(''); setSelectedCategory('All'); setSelectedRegion('All'); }}
+            className="mt-4 px-6 py-2.5 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90">
