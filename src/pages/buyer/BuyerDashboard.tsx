@@ -375,4 +375,10 @@ export default function BuyerDashboard() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                   selectedCategory === cat
-                    ? 'bg-primary text-primary-foreground shadow-md shadow-primary/20'
+                    ? 'bg-primary text-primary-foreground shadow-md shadow-primary/20'
+                    : 'bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground'
+                }`}
+              >
+                <Icon size={15} /> {cat}
+              </button>
+            );
