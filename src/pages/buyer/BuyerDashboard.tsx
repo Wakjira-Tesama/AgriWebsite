@@ -465,4 +465,10 @@ export default function BuyerDashboard() {
         </div>
       )}
     </div>
-  );
+  );
+
+  // ═══════════════════════════════════════════
+  // RENDER: ORDERS
+  // ═══════════════════════════════════════════
+  const renderOrders = () => (
+    <div className="space-y-6">
