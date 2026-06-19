@@ -273,4 +273,10 @@ export default function BuyerDashboard() {
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-lg font-bold font-display">Top Suppliers</h3>
             <button onClick={() => setActiveTab('marketplace')} className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">
-              View All <ChevronRight size={16} />
+              View All <ChevronRight size={16} />
+            </button>
+          </div>
+          <div className="h-[220px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={topSuppliersData} layout="vertical" margin={{ left: 10 }}>
+                <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
