@@ -423,4 +423,10 @@ export default function BuyerDashboard() {
                 <span>{item.seller} • {item.region}</span>
               </div>
 
-              <div className="flex items-baseline gap-1 mt-3">
+              <div className="flex items-baseline gap-1 mt-3">
+                <span className="text-2xl font-display font-bold text-primary">{item.price}</span>
+                <span className="text-sm text-muted-foreground font-medium">ETB / 100kg</span>
+              </div>
+
+              <div className="flex justify-between items-center mt-4 pt-4 border-t border-border/60">
+                <span className="text-sm font-semibold text-secondary bg-secondary/10 px-3 py-1 rounded-full">
