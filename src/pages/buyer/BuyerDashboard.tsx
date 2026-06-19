@@ -267,4 +267,10 @@ export default function BuyerDashboard() {
       </div>
 
       {/* Bottom Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Top Suppliers */}
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <div className="flex justify-between items-center mb-6">
+            <h3 className="text-lg font-bold font-display">Top Suppliers</h3>
+            <button onClick={() => setActiveTab('marketplace')} className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">
+              View All <ChevronRight size={16} />
