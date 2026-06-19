@@ -411,4 +411,10 @@ export default function BuyerDashboard() {
               </div>
               {/* Category Badge */}
               <div className="absolute top-3 left-3 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm">
-                {item.category}
+                {item.category}
+              </div>
+            </div>
+
+            {/* Card Body */}
+            <div className="p-5">
+              <h3 className="font-bold text-lg text-foreground leading-tight">{item.crop}</h3>
