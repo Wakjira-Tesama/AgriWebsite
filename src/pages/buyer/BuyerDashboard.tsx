@@ -393,4 +393,10 @@ export default function BuyerDashboard() {
         </p>
       </div>
 
-      {/* Product Grid */}
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {filteredItems.map((item, i) => (
+          <div
+            key={i}
+            className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+          >
