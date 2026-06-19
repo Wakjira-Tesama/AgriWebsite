@@ -333,4 +333,10 @@ export default function BuyerDashboard() {
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
             <input
-              type="text"
+              type="text"
+              placeholder="Search crops, sellers..."
+              className="w-full pl-11 pr-4 py-3 border border-border rounded-xl focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-background text-foreground"
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+            />
+          </div>
