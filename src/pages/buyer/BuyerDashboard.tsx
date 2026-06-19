@@ -429,4 +429,10 @@ export default function BuyerDashboard() {
               </div>
 
               <div className="flex justify-between items-center mt-4 pt-4 border-t border-border/60">
-                <span className="text-sm font-semibold text-secondary bg-secondary/10 px-3 py-1 rounded-full">
+                <span className="text-sm font-semibold text-secondary bg-secondary/10 px-3 py-1 rounded-full">
+                  📦 {item.stock}
+                </span>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setDetailModal(item)}
+                    className="p-2.5 border border-border rounded-xl hover:bg-muted transition-colors"
