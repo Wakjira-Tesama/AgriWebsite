@@ -315,4 +315,10 @@ export default function BuyerDashboard() {
                   </div>
                 </div>
               );
-            })}
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
