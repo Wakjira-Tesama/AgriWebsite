@@ -339,4 +339,10 @@ export default function BuyerDashboard() {
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
             />
-          </div>
+          </div>
+          <div className="flex gap-3 flex-wrap">
+            <div className="relative">
+              <Filter size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+              <select
+                className="pl-9 pr-8 py-3 border border-border rounded-xl focus:border-primary outline-none appearance-none bg-background text-foreground font-medium cursor-pointer"
+                value={selectedCategory}
