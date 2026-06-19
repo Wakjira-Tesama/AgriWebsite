@@ -405,4 +405,10 @@ export default function BuyerDashboard() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent group-hover:from-primary/[0.08] transition-all duration-500" />
               <span className="text-6xl transform group-hover:scale-110 transition-transform duration-500">{item.emoji}</span>
               {/* Rating Badge */}
-              <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1 shadow-sm">
+              <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1 shadow-sm">
+                <Star size={13} className="text-amber-500 fill-amber-500" />
+                <span className="text-xs font-bold text-foreground">{item.rating}</span>
+              </div>
+              {/* Category Badge */}
+              <div className="absolute top-3 left-3 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm">
+                {item.category}
