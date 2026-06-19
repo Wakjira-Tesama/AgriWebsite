@@ -489,4 +489,10 @@ export default function BuyerDashboard() {
           </button>
         ))}
       </div>
-
+
+      {/* Orders List */}
+      <div className="space-y-4">
+        {filteredOrders.map((order) => {
+          const sc = statusConfig[order.status];
+          const StatusIcon = sc.icon;
+          return (
