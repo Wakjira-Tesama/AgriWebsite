@@ -387,4 +387,10 @@ export default function BuyerDashboard() {
       </div>
 
       {/* Results Count */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center">
+        <p className="text-sm text-muted-foreground">
+          Showing <span className="font-bold text-foreground">{filteredItems.length}</span> products
+        </p>
+      </div>
+
+      {/* Product Grid */}
