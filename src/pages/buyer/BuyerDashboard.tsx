@@ -579,4 +579,10 @@ export default function BuyerDashboard() {
   // RENDER: MARKET PRICES (from Supabase)
   // ═══════════════════════════════════════════
   const renderPrices = () => (
-    <div className="space-y-6">
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-primary/10 via-secondary/5 to-accent/10 rounded-2xl border border-primary/20 p-6">
+        <div className="flex items-center gap-3 mb-2">
+          <div className="p-2.5 bg-primary/20 rounded-xl text-primary"><BarChart3 size={22} /></div>
+          <div>
+            <h3 className="font-bold font-display text-lg">Live Market Intelligence</h3>
+            <p className="text-sm text-muted-foreground">Real-time commodity prices updated by AgriBridge platform</p>
