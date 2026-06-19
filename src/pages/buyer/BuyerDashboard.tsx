@@ -345,4 +345,10 @@ export default function BuyerDashboard() {
               <Filter size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
               <select
                 className="pl-9 pr-8 py-3 border border-border rounded-xl focus:border-primary outline-none appearance-none bg-background text-foreground font-medium cursor-pointer"
-                value={selectedCategory}
+                value={selectedCategory}
+                onChange={e => setSelectedCategory(e.target.value)}
+              >
+                {categories.map(c => <option key={c} value={c}>{c === 'All' ? 'All Categories' : c}</option>)}
+              </select>
+              <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+            </div>
