@@ -447,4 +447,10 @@ export default function BuyerDashboard() {
                     Order Now
                   </button>
                 </div>
-              </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {filteredItems.length === 0 && (
