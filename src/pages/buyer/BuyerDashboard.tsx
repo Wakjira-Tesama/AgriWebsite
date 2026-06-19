@@ -261,4 +261,10 @@ export default function BuyerDashboard() {
                 <span className="text-muted-foreground">{cat.name}</span>
                 <span className="font-bold ml-auto">{cat.value}%</span>
               </div>
-            ))}
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Row */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
