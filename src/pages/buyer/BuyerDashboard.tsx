@@ -381,4 +381,10 @@ export default function BuyerDashboard() {
               >
                 <Icon size={15} /> {cat}
               </button>
-            );
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Results Count */}
+      <div className="flex justify-between items-center">
