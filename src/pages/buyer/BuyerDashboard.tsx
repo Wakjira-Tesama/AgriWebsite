@@ -309,4 +309,10 @@ export default function BuyerDashboard() {
                   </div>
                   <div className="text-right shrink-0">
                     <p className="font-bold text-sm">{order.totalPrice} ETB</p>
-                    <span className={`inline-flex items-center gap-1 text-xs font-bold ${sc.color}`}>
+                    <span className={`inline-flex items-center gap-1 text-xs font-bold ${sc.color}`}>
+                      <sc.icon size={12} /> {sc.label}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
