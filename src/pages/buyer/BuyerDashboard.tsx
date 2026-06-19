@@ -549,4 +549,10 @@ export default function BuyerDashboard() {
                   <div className="flex items-center gap-1">
                     {['Placed', 'Confirmed', 'Shipped', 'Delivered'].map((step, idx) => {
                       const progress = order.status === 'confirmed' ? 2 : 3;
-                      const isActive = idx < progress;
+                      const isActive = idx < progress;
+                      return (
+                        <div key={step} className="flex-1 flex flex-col items-center gap-1.5">
+                          <div className={`h-1.5 w-full rounded-full ${isActive ? 'bg-primary' : 'bg-border'}`} />
+                          <span className={`text-xs font-medium ${isActive ? 'text-primary' : 'text-muted-foreground'}`}>{step}</span>
+                        </div>
+                      );
