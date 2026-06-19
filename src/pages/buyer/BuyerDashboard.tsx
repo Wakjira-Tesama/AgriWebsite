@@ -369,4 +369,10 @@ export default function BuyerDashboard() {
         <div className="flex gap-2 mt-4 flex-wrap">
           {categories.map(cat => {
             const Icon = categoryIcons[cat] || Store;
-            return (
+            return (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  selectedCategory === cat
+                    ? 'bg-primary text-primary-foreground shadow-md shadow-primary/20'
