@@ -357,4 +357,10 @@ export default function BuyerDashboard() {
               <select
                 className="pl-9 pr-8 py-3 border border-border rounded-xl focus:border-primary outline-none appearance-none bg-background text-foreground font-medium cursor-pointer"
                 value={selectedRegion}
-                onChange={e => setSelectedRegion(e.target.value)}
+                onChange={e => setSelectedRegion(e.target.value)}
+              >
+                {regions.map(r => <option key={r} value={r}>{r === 'All' ? 'All Regions' : r}</option>)}
+              </select>
+              <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+            </div>
+          </div>
