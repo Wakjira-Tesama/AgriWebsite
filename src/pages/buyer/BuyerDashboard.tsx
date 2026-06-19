@@ -291,4 +291,10 @@ export default function BuyerDashboard() {
 
         {/* Recent Orders */}
         <div className="bg-card rounded-2xl border border-border p-6">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex justify-between items-center mb-6">
+            <h3 className="text-lg font-bold font-display">Recent Orders</h3>
+            <button onClick={() => setActiveTab('orders')} className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">
+              View All <ChevronRight size={16} />
+            </button>
+          </div>
+          <div className="space-y-3">
