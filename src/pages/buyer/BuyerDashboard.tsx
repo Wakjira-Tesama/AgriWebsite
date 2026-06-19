@@ -477,4 +477,10 @@ export default function BuyerDashboard() {
         {(['all', 'pending', 'confirmed', 'shipped', 'delivered', 'cancelled'] as const).map(status => (
           <button
             key={status}
-            onClick={() => setOrderFilter(status)}
+            onClick={() => setOrderFilter(status)}
+            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 capitalize ${
+              orderFilter === status
+                ? 'bg-primary text-primary-foreground shadow-md'
+                : 'bg-card border border-border text-muted-foreground hover:bg-muted hover:text-foreground'
+            }`}
+          >
