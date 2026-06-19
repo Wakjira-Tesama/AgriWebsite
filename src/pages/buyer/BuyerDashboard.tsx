@@ -573,4 +573,10 @@ export default function BuyerDashboard() {
         </div>
       )}
     </div>
-  );
+  );
+
+  // ═══════════════════════════════════════════
+  // RENDER: MARKET PRICES (from Supabase)
+  // ═══════════════════════════════════════════
+  const renderPrices = () => (
+    <div className="space-y-6">
