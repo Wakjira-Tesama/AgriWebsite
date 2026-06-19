@@ -285,4 +285,10 @@ export default function BuyerDashboard() {
                 <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} formatter={(v: any) => [`${v} Tonnes`, 'Volume']} />
                 <Bar dataKey="volume" fill="#2E7D32" radius={[0, 6, 6, 0]} barSize={20} />
               </BarChart>
-            </ResponsiveContainer>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Recent Orders */}
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <div className="flex justify-between items-center mb-6">
