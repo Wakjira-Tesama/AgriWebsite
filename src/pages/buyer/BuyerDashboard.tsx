@@ -555,4 +555,10 @@ export default function BuyerDashboard() {
                           <div className={`h-1.5 w-full rounded-full ${isActive ? 'bg-primary' : 'bg-border'}`} />
                           <span className={`text-xs font-medium ${isActive ? 'text-primary' : 'text-muted-foreground'}`}>{step}</span>
                         </div>
-                      );
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
