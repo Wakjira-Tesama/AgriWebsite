@@ -585,4 +585,10 @@ export default function BuyerDashboard() {
           <div className="p-2.5 bg-primary/20 rounded-xl text-primary"><BarChart3 size={22} /></div>
           <div>
             <h3 className="font-bold font-display text-lg">Live Market Intelligence</h3>
-            <p className="text-sm text-muted-foreground">Real-time commodity prices updated by AgriBridge platform</p>
+            <p className="text-sm text-muted-foreground">Real-time commodity prices updated by AgriBridge platform</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
+        <div className="overflow-x-auto">
