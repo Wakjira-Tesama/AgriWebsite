@@ -543,4 +543,10 @@ export default function BuyerDashboard() {
               {(order.status === 'shipped' || order.status === 'confirmed') && (
                 <div className="mt-5 pt-5 border-t border-border/60">
                   <div className="flex items-center gap-2 mb-2">
-                    <Truck size={16} className="text-primary" />
+                    <Truck size={16} className="text-primary" />
+                    <span className="text-sm font-semibold text-foreground">Order Progress</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    {['Placed', 'Confirmed', 'Shipped', 'Delivered'].map((step, idx) => {
+                      const progress = order.status === 'confirmed' ? 2 : 3;
+                      const isActive = idx < progress;
