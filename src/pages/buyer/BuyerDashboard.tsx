@@ -525,4 +525,10 @@ export default function BuyerDashboard() {
                   <div className="text-center">
                     <p className="text-xs text-muted-foreground font-medium">Quantity</p>
                     <p className="font-bold text-sm text-foreground">{order.quantity}</p>
-                  </div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-xs text-muted-foreground font-medium">Total</p>
+                    <p className="font-bold text-sm text-primary">{order.totalPrice} ETB</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-xs text-muted-foreground font-medium">Date</p>
