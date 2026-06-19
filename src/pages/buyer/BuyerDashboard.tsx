@@ -441,4 +441,10 @@ export default function BuyerDashboard() {
                     <Eye size={16} className="text-muted-foreground" />
                   </button>
                   <button
-                    onClick={() => { setOrderModal(item); setOrderQuantity('1'); }}
+                    onClick={() => { setOrderModal(item); setOrderQuantity('1'); }}
+                    className="px-5 py-2.5 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 hover:shadow-lg hover:shadow-primary/30 active:scale-95"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
