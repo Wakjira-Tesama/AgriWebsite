@@ -513,4 +513,10 @@ export default function BuyerDashboard() {
                     <p className="text-sm text-muted-foreground mt-1">
                       {order.seller} • <MapPin size={12} className="inline" /> {order.region}
                     </p>
-                  </div>
+                  </div>
+                </div>
+
+                {/* Order Details */}
+                <div className="flex items-center gap-8 flex-wrap">
+                  <div className="text-center">
+                    <p className="text-xs text-muted-foreground font-medium">Order ID</p>
