@@ -495,4 +495,10 @@ export default function BuyerDashboard() {
         {filteredOrders.map((order) => {
           const sc = statusConfig[order.status];
           const StatusIcon = sc.icon;
-          return (
+          return (
+            <div key={order.id} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-center gap-5">
+                {/* Icon + Info */}
+                <div className="flex items-center gap-4 flex-1 min-w-0">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl shrink-0">
+                    {order.emoji}
