@@ -507,4 +507,10 @@ export default function BuyerDashboard() {
                     <div className="flex items-center gap-2 flex-wrap">
                       <h3 className="font-bold text-foreground">{order.crop}</h3>
                       <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border ${sc.bg} ${sc.color}`}>
-                        <StatusIcon size={13} /> {sc.label}
+                        <StatusIcon size={13} /> {sc.label}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {order.seller} • <MapPin size={12} className="inline" /> {order.region}
+                    </p>
+                  </div>
