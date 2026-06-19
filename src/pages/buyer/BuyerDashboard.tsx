@@ -327,4 +327,10 @@ export default function BuyerDashboard() {
   // ═══════════════════════════════════════════
   const renderMarketplace = () => (
     <div className="space-y-6">
-      {/* Search & Filters */}
+      {/* Search & Filters */}
+      <div className="bg-card rounded-2xl border border-border p-5">
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="relative flex-1">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
+            <input
+              type="text"
