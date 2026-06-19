@@ -501,4 +501,10 @@ export default function BuyerDashboard() {
                 {/* Icon + Info */}
                 <div className="flex items-center gap-4 flex-1 min-w-0">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl shrink-0">
-                    {order.emoji}
+                    {order.emoji}
+                  </div>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <h3 className="font-bold text-foreground">{order.crop}</h3>
+                      <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border ${sc.bg} ${sc.color}`}>
+                        <StatusIcon size={13} /> {sc.label}
