@@ -363,4 +363,10 @@ export default function BuyerDashboard() {
               </select>
               <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
             </div>
-          </div>
+          </div>
+        </div>
+        {/* Category Pills */}
+        <div className="flex gap-2 mt-4 flex-wrap">
+          {categories.map(cat => {
+            const Icon = categoryIcons[cat] || Store;
+            return (
