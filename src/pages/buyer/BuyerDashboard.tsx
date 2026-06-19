@@ -567,4 +567,10 @@ export default function BuyerDashboard() {
 
       {filteredOrders.length === 0 && (
         <div className="text-center py-16">
-          <span className="text-5xl mb-4 block">📋</span>
+          <span className="text-5xl mb-4 block">📋</span>
+          <h3 className="text-xl font-bold text-foreground">No orders found</h3>
+          <p className="text-muted-foreground mt-2">No orders match the selected filter</p>
+        </div>
+      )}
+    </div>
+  );
