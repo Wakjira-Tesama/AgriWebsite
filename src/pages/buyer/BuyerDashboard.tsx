@@ -519,4 +519,10 @@ export default function BuyerDashboard() {
                 {/* Order Details */}
                 <div className="flex items-center gap-8 flex-wrap">
                   <div className="text-center">
-                    <p className="text-xs text-muted-foreground font-medium">Order ID</p>
+                    <p className="text-xs text-muted-foreground font-medium">Order ID</p>
+                    <p className="font-mono font-bold text-sm text-foreground">{order.id}</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-xs text-muted-foreground font-medium">Quantity</p>
+                    <p className="font-bold text-sm text-foreground">{order.quantity}</p>
+                  </div>
