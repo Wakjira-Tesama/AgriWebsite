@@ -399,4 +399,10 @@ export default function BuyerDashboard() {
           <div
             key={i}
             className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-          >
+          >
+            {/* Card Image Area */}
+            <div className="relative h-44 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent group-hover:from-primary/[0.08] transition-all duration-500" />
+              <span className="text-6xl transform group-hover:scale-110 transition-transform duration-500">{item.emoji}</span>
+              {/* Rating Badge */}
+              <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1 shadow-sm">
