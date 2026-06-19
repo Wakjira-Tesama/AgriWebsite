@@ -531,4 +531,10 @@ export default function BuyerDashboard() {
                     <p className="font-bold text-sm text-primary">{order.totalPrice} ETB</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-xs text-muted-foreground font-medium">Date</p>
+                    <p className="text-xs text-muted-foreground font-medium">Date</p>
+                    <p className="font-bold text-sm text-foreground flex items-center gap-1">
+                      <CalendarDays size={13} /> {format(new Date(order.date), 'MMM d, yyyy')}
+                    </p>
+                  </div>
+                </div>
+              </div>
