@@ -297,4 +297,10 @@ export default function BuyerDashboard() {
               View All <ChevronRight size={16} />
             </button>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3">
+            {mockOrders.slice(0, 4).map((order) => {
+              const sc = statusConfig[order.status];
+              return (
+                <div key={order.id} className="flex items-center gap-4 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
+                  <span className="text-2xl">{order.emoji}</span>
+                  <div className="flex-1 min-w-0">
