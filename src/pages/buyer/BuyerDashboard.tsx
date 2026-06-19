@@ -303,4 +303,10 @@ export default function BuyerDashboard() {
               return (
                 <div key={order.id} className="flex items-center gap-4 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
                   <span className="text-2xl">{order.emoji}</span>
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-sm text-foreground truncate">{order.crop}</p>
+                    <p className="text-xs text-muted-foreground">{order.quantity} • {order.seller}</p>
+                  </div>
+                  <div className="text-right shrink-0">
+                    <p className="font-bold text-sm">{order.totalPrice} ETB</p>
+                    <span className={`inline-flex items-center gap-1 text-xs font-bold ${sc.color}`}>
