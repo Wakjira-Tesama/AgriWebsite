@@ -435,4 +435,10 @@ export default function BuyerDashboard() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setDetailModal(item)}
-                    className="p-2.5 border border-border rounded-xl hover:bg-muted transition-colors"
+                    className="p-2.5 border border-border rounded-xl hover:bg-muted transition-colors"
+                    title="View Details"
+                  >
+                    <Eye size={16} className="text-muted-foreground" />
+                  </button>
+                  <button
+                    onClick={() => { setOrderModal(item); setOrderQuantity('1'); }}
