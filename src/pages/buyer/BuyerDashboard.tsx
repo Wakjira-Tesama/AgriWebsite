@@ -255,4 +255,10 @@ export default function BuyerDashboard() {
             </ResponsiveContainer>
           </div>
           <div className="grid grid-cols-2 gap-2 mt-2">
-            {categoryData.map((cat, i) => (
+            {categoryData.map((cat, i) => (
+              <div key={i} className="flex items-center gap-2 text-sm">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: PIE_COLORS[i] }} />
+                <span className="text-muted-foreground">{cat.name}</span>
+                <span className="font-bold ml-auto">{cat.value}%</span>
+              </div>
+            ))}
