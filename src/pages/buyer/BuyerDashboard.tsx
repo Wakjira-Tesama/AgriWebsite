@@ -471,4 +471,10 @@ export default function BuyerDashboard() {
   // RENDER: ORDERS
   // ═══════════════════════════════════════════
   const renderOrders = () => (
-    <div className="space-y-6">
+    <div className="space-y-6">
+      {/* Order Status Filters */}
+      <div className="flex gap-2 flex-wrap">
+        {(['all', 'pending', 'confirmed', 'shipped', 'delivered', 'cancelled'] as const).map(status => (
+          <button
+            key={status}
+            onClick={() => setOrderFilter(status)}
