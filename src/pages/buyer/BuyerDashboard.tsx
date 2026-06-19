@@ -537,4 +537,10 @@ export default function BuyerDashboard() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div>
+
+              {/* Progress Bar for shipped/confirmed */}
+              {(order.status === 'shipped' || order.status === 'confirmed') && (
+                <div className="mt-5 pt-5 border-t border-border/60">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Truck size={16} className="text-primary" />
