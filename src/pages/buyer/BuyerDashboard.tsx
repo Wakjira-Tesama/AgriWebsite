@@ -417,4 +417,10 @@ export default function BuyerDashboard() {
 
             {/* Card Body */}
             <div className="p-5">
-              <h3 className="font-bold text-lg text-foreground leading-tight">{item.crop}</h3>
+              <h3 className="font-bold text-lg text-foreground leading-tight">{item.crop}</h3>
+              <div className="flex items-center gap-1.5 mt-1.5 text-sm text-muted-foreground">
+                <MapPin size={13} />
+                <span>{item.seller} • {item.region}</span>
+              </div>
+
+              <div className="flex items-baseline gap-1 mt-3">
