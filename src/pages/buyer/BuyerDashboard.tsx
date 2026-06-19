@@ -483,4 +483,10 @@ export default function BuyerDashboard() {
                 ? 'bg-primary text-primary-foreground shadow-md'
                 : 'bg-card border border-border text-muted-foreground hover:bg-muted hover:text-foreground'
             }`}
-          >
+          >
+            {status === 'all' ? 'All Orders' : status}
+            {status === 'all' && <span className="ml-1.5 bg-white/20 px-1.5 py-0.5 rounded-full text-xs">{mockOrders.length}</span>}
+          </button>
+        ))}
+      </div>
+
