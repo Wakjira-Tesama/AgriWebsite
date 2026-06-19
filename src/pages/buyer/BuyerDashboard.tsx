@@ -561,4 +561,10 @@ export default function BuyerDashboard() {
                 </div>
               )}
             </div>
-          );
+          );
+        })}
+      </div>
+
+      {filteredOrders.length === 0 && (
+        <div className="text-center py-16">
+          <span className="text-5xl mb-4 block">📋</span>
