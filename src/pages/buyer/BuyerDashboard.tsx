@@ -885,4 +885,10 @@ export default function BuyerDashboard() {
                         className="w-11 h-11 rounded-xl border border-border flex items-center justify-center hover:bg-muted transition-colors font-bold text-lg"
                       >+</button>
                     </div>
-                  </div>
+                  </div>
+
+                  <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 flex justify-between items-center">
+                    <span className="font-semibold text-foreground">Estimated Total</span>
+                    <span className="text-2xl font-display font-bold text-primary">
+                      {(parseInt(orderQuantity || '0') * parseInt(orderModal.price.replace(/,/g, '')) * 10).toLocaleString()} ETB
+                    </span>
