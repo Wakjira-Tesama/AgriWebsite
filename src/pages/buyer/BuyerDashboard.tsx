@@ -861,4 +861,10 @@ export default function BuyerDashboard() {
                     </p>
                   </div>
 
-                  <div className="bg-muted/50 rounded-xl p-4 flex justify-between items-center">
+                  <div className="bg-muted/50 rounded-xl p-4 flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground font-medium">Unit Price</span>
+                    <span className="text-xl font-display font-bold text-primary">{orderModal.price} ETB <span className="text-sm font-normal text-muted-foreground">/ 100kg</span></span>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold text-foreground mb-2">Quantity (Tonnes)</label>
