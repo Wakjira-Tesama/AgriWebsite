@@ -897,4 +897,10 @@ export default function BuyerDashboard() {
                   <button
                     onClick={handlePlaceOrder}
                     disabled={!orderQuantity || parseInt(orderQuantity) < 1}
-                    className="w-full py-4 bg-primary text-primary-foreground font-bold rounded-xl text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 disabled:opacity-50 active:scale-[0.98]"
+                    className="w-full py-4 bg-primary text-primary-foreground font-bold rounded-xl text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 disabled:opacity-50 active:scale-[0.98]"
+                  >
+                    🛒 Place Order
+                  </button>
+                </div>
+              </>
+            )}
