@@ -819,4 +819,10 @@ export default function BuyerDashboard() {
         </header>
 
         {/* Page Content */}
-        <div className="p-6 lg:p-8">
+        <div className="p-6 lg:p-8">
+          {activeTab === 'overview' && renderOverview()}
+          {activeTab === 'marketplace' && renderMarketplace()}
+          {activeTab === 'orders' && renderOrders()}
+          {activeTab === 'prices' && renderPrices()}
+          {activeTab === 'announcements' && renderAnnouncements()}
+        </div>
