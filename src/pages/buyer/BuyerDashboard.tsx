@@ -603,4 +603,10 @@ export default function BuyerDashboard() {
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              {loadingPrices ? (
+              {loadingPrices ? (
+                <tr><td colSpan={5} className="p-12 text-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin" />
+                    <p className="text-muted-foreground font-medium">Loading market prices...</p>
+                  </div>
+                </td></tr>
