@@ -747,4 +747,10 @@ export default function BuyerDashboard() {
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
+        <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
+          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider px-4 mb-3">Menu</p>
+          {navItems.map(item => (
+            <button
+              key={item.id}
+              onClick={() => { setActiveTab(item.id); setSidebarOpen(false); }}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-200 group ${
