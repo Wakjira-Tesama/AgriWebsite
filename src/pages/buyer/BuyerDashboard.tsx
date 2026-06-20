@@ -795,4 +795,10 @@ export default function BuyerDashboard() {
               <div>
                 <h1 className="text-2xl lg:text-3xl font-display font-bold text-foreground">{tabTitles[activeTab].title}</h1>
                 <p className="text-sm text-muted-foreground mt-0.5 hidden sm:block">{tabTitles[activeTab].subtitle}</p>
-              </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <button className="relative w-10 h-10 rounded-xl bg-card border border-border flex items-center justify-center text-foreground hover:bg-muted transition-colors">
+                <Bell size={18} />
+                {announcements && announcements.length > 0 && (
