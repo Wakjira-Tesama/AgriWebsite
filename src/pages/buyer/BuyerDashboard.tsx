@@ -735,4 +735,10 @@ export default function BuyerDashboard() {
       `}>
         {/* Profile Header */}
         <div className="p-6 border-b border-border">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-accent to-amber-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-accent/30">
+              ST
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-foreground leading-tight">Selam Trading</h2>
+              <p className="text-xs text-muted-foreground font-medium">Wholesale Buyer • Verified ✓</p>
