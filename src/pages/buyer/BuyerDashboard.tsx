@@ -687,4 +687,10 @@ export default function BuyerDashboard() {
                   'bg-primary/10 text-primary'
                 }`}>{a.type === 'weather' ? '🌧 Weather' : a.type === 'alert' ? '⚠ Alert' : 'ℹ Info'}</span>
                 <p className="text-xs text-muted-foreground font-medium">
-                  {format(new Date(a.created_at), 'MMM d, yyyy • h:mm a')}
+                  {format(new Date(a.created_at), 'MMM d, yyyy • h:mm a')}
+                </p>
+              </div>
+              <h3 className="font-bold font-display text-xl text-foreground">{a.title}</h3>
+              <p className="text-foreground/80 mt-2 leading-relaxed">{a.body}</p>
+            </div>
+          </div>
