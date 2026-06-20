@@ -759,4 +759,10 @@ export default function BuyerDashboard() {
                   : 'text-muted-foreground hover:bg-muted hover:text-foreground'
               }`}
             >
-              <item.icon size={20} />
+              <item.icon size={20} />
+              <span className="flex-1 text-left">{item.label}</span>
+              {item.badge && (
+                <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                  activeTab === item.id
+                    ? 'bg-white/20 text-white'
+                    : 'bg-accent text-white'
