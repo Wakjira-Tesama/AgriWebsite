@@ -645,4 +645,10 @@ export default function BuyerDashboard() {
             </tbody>
           </table>
         </div>
-      </div>
+      </div>
+    </div>
+  );
+
+  // ═══════════════════════════════════════════
+  // RENDER: ANNOUNCEMENTS (from Supabase)
+  // ═══════════════════════════════════════════
