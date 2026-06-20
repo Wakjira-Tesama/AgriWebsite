@@ -591,4 +591,10 @@ export default function BuyerDashboard() {
       </div>
 
       <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-muted/70 border-b border-border">
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Crop</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Market</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Price (ETB)</th>
