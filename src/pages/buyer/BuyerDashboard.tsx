@@ -831,4 +831,10 @@ export default function BuyerDashboard() {
       {/* ═══════════════════════════════════════ */}
       {/* ORDER MODAL */}
       {/* ═══════════════════════════════════════ */}
-      {orderModal && (
+      {orderModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => { if (!orderSuccess) { setOrderModal(null); } }}>
+          <div
+            className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden"
+            onClick={e => e.stopPropagation()}
+          >
+            {orderSuccess ? (
