@@ -921,4 +921,10 @@ export default function BuyerDashboard() {
               </button>
               <div className="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full">{detailModal.category}</div>
               <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1 shadow-sm">
-                <Star size={14} className="text-amber-500 fill-amber-500" />
+                <Star size={14} className="text-amber-500 fill-amber-500" />
+                <span className="text-sm font-bold">{detailModal.rating}</span>
+              </div>
+            </div>
+            <div className="p-6 space-y-4">
+              <div>
+                <h3 className="text-xl font-display font-bold text-foreground">{detailModal.crop}</h3>
