@@ -849,4 +849,10 @@ export default function BuyerDashboard() {
               <>
                 <div className="relative h-36 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 flex items-center justify-center">
                   <span className="text-6xl">{orderModal.emoji}</span>
-                  <button onClick={() => setOrderModal(null)} className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-sm">
+                  <button onClick={() => setOrderModal(null)} className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-sm">
+                    <X size={18} />
+                  </button>
+                </div>
+                <div className="p-6 space-y-5">
+                  <div>
+                    <h3 className="text-xl font-display font-bold text-foreground">{orderModal.crop}</h3>
