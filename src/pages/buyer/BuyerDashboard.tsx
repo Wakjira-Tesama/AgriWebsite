@@ -657,4 +657,10 @@ export default function BuyerDashboard() {
       <div className="bg-gradient-to-r from-accent/10 via-amber-50 to-orange-50 rounded-2xl border border-accent/20 p-6">
         <div className="flex items-center gap-3">
           <div className="p-2.5 bg-accent/20 rounded-xl text-accent"><Bell size={22} /></div>
-          <div>
+          <div>
+            <h3 className="font-bold font-display text-lg">Platform Announcements</h3>
+            <p className="text-sm text-muted-foreground">Stay updated with the latest news and alerts from AgriBridge</p>
+          </div>
+        </div>
+      </div>
+
