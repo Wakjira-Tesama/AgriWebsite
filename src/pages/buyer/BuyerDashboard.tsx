@@ -597,4 +597,10 @@ export default function BuyerDashboard() {
               <tr className="bg-muted/70 border-b border-border">
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Crop</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Market</th>
-                <th className="p-4 font-semibold text-muted-foreground text-sm">Price (ETB)</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Price (ETB)</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Trend</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Updated</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              {loadingPrices ? (
