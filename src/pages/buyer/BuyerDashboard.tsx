@@ -843,4 +843,10 @@ export default function BuyerDashboard() {
                   <CheckCircle size={44} />
                 </div>
                 <h3 className="text-2xl font-display font-bold text-foreground">Order Placed!</h3>
-                <p className="text-muted-foreground mt-2">Your order has been submitted successfully.</p>
+                <p className="text-muted-foreground mt-2">Your order has been submitted successfully.</p>
+              </div>
+            ) : (
+              <>
+                <div className="relative h-36 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 flex items-center justify-center">
+                  <span className="text-6xl">{orderModal.emoji}</span>
+                  <button onClick={() => setOrderModal(null)} className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-sm">
