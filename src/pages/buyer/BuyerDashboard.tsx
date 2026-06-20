@@ -777,4 +777,10 @@ export default function BuyerDashboard() {
           <button
             onClick={() => navigate('/login')}
             className="w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-destructive hover:bg-destructive/10 transition-colors"
-          >
+          >
+            <LogOut size={20} /> Sign Out
+          </button>
+        </div>
+      </aside>
+
+      {/* ─── MAIN CONTENT ─── */}
