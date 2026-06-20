@@ -915,4 +915,10 @@ export default function BuyerDashboard() {
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setDetailModal(null)}>
           <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
             <div className="relative h-44 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 flex items-center justify-center">
-              <span className="text-7xl">{detailModal.emoji}</span>
+              <span className="text-7xl">{detailModal.emoji}</span>
+              <button onClick={() => setDetailModal(null)} className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-sm">
+                <X size={18} />
+              </button>
+              <div className="absolute top-4 left-4 bg-primary/90 text-white text-xs font-bold px-3 py-1 rounded-full">{detailModal.category}</div>
+              <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-1 shadow-sm">
+                <Star size={14} className="text-amber-500 fill-amber-500" />
