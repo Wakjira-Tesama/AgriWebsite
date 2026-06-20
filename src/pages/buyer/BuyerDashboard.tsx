@@ -753,4 +753,10 @@ export default function BuyerDashboard() {
             <button
               key={item.id}
               onClick={() => { setActiveTab(item.id); setSidebarOpen(false); }}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-200 group ${
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-200 group ${
+                activeTab === item.id
+                  ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20'
+                  : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+              }`}
+            >
+              <item.icon size={20} />
