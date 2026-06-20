@@ -723,4 +723,10 @@ export default function BuyerDashboard() {
     <div className="min-h-screen bg-background flex">
       {/* Mobile Overlay */}
       {sidebarOpen && (
-        <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />
+        <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />
+      )}
+
+      {/* ─── SIDEBAR ─── */}
+      <aside className={`
+        fixed lg:sticky top-0 left-0 z-50 lg:z-auto
+        w-72 lg:w-[280px] bg-card border-r border-border shrink-0 flex flex-col h-screen
