@@ -633,4 +633,10 @@ export default function BuyerDashboard() {
                     </span>
                   </td>
                   <td className="p-4 text-sm text-muted-foreground">
-                    {format(new Date(p.updated_at), 'MMM d, yyyy')}
+                    {format(new Date(p.updated_at), 'MMM d, yyyy')}
+                  </td>
+                </tr>
+              )) : (
+                <tr><td colSpan={5} className="p-12 text-center">
+                  <span className="text-4xl mb-3 block">📊</span>
+                  <p className="text-muted-foreground">No market prices available yet</p>
