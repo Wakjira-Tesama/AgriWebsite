@@ -609,4 +609,10 @@ export default function BuyerDashboard() {
                     <div className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin" />
                     <p className="text-muted-foreground font-medium">Loading market prices...</p>
                   </div>
-                </td></tr>
+                </td></tr>
+              ) : prices && prices.length > 0 ? prices.map((p: any) => (
+                <tr key={p.id} className="hover:bg-muted/40 transition-colors">
+                  <td className="p-4">
+                    <span className="font-bold text-foreground">{p.crop}</span>
+                  </td>
+                  <td className="p-4 text-muted-foreground font-medium">{p.market}</td>
