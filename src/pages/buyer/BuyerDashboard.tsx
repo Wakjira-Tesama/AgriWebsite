@@ -855,4 +855,10 @@ export default function BuyerDashboard() {
                 </div>
                 <div className="p-6 space-y-5">
                   <div>
-                    <h3 className="text-xl font-display font-bold text-foreground">{orderModal.crop}</h3>
+                    <h3 className="text-xl font-display font-bold text-foreground">{orderModal.crop}</h3>
+                    <p className="text-sm text-muted-foreground mt-1 flex items-center gap-1.5">
+                      <MapPin size={14} /> {orderModal.seller} • {orderModal.region}
+                    </p>
+                  </div>
+
+                  <div className="bg-muted/50 rounded-xl p-4 flex justify-between items-center">
