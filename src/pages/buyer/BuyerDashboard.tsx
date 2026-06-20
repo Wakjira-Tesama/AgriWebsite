@@ -903,4 +903,10 @@ export default function BuyerDashboard() {
                   </button>
                 </div>
               </>
-            )}
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* ═══════════════════════════════════════ */}
+      {/* PRODUCT DETAIL MODAL */}
