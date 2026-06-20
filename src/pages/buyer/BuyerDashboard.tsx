@@ -867,4 +867,10 @@ export default function BuyerDashboard() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">Quantity (Tonnes)</label>
+                    <label className="block text-sm font-semibold text-foreground mb-2">Quantity (Tonnes)</label>
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => setOrderQuantity(Math.max(1, parseInt(orderQuantity) - 1).toString())}
+                        className="w-11 h-11 rounded-xl border border-border flex items-center justify-center hover:bg-muted transition-colors font-bold text-lg"
+                      >−</button>
+                      <input
