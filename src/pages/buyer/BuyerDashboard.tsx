@@ -783,4 +783,10 @@ export default function BuyerDashboard() {
         </div>
       </aside>
 
-      {/* ─── MAIN CONTENT ─── */}
+      {/* ─── MAIN CONTENT ─── */}
+      <main className="flex-1 min-w-0 overflow-y-auto max-h-screen">
+        {/* Top Bar */}
+        <header className="sticky top-0 z-30 bg-background/80 backdrop-blur-xl border-b border-border/60 px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 rounded-xl hover:bg-muted transition-colors">
