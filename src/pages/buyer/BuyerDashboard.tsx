@@ -699,4 +699,10 @@ export default function BuyerDashboard() {
         <div className="text-center py-16">
           <span className="text-5xl mb-4 block">📢</span>
           <h3 className="text-xl font-bold text-foreground">No announcements yet</h3>
-          <p className="text-muted-foreground mt-2">Check back later for platform updates</p>
+          <p className="text-muted-foreground mt-2">Check back later for platform updates</p>
+        </div>
+      )}
+    </div>
+  );
+
+  // ═══════════════════════════════════════════
