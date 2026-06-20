@@ -729,4 +729,10 @@ export default function BuyerDashboard() {
       {/* ─── SIDEBAR ─── */}
       <aside className={`
         fixed lg:sticky top-0 left-0 z-50 lg:z-auto
-        w-72 lg:w-[280px] bg-card border-r border-border shrink-0 flex flex-col h-screen
+        w-72 lg:w-[280px] bg-card border-r border-border shrink-0 flex flex-col h-screen
+        transform transition-transform duration-300 ease-out
+        ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      `}>
+        {/* Profile Header */}
+        <div className="p-6 border-b border-border">
+          <div className="flex items-center gap-3">
