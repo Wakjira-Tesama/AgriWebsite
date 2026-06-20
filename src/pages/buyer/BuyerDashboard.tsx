@@ -705,4 +705,10 @@ export default function BuyerDashboard() {
     </div>
   );
 
-  // ═══════════════════════════════════════════
+  // ═══════════════════════════════════════════
+  // TAB TITLES
+  // ═══════════════════════════════════════════
+  const tabTitles: Record<Tab, { title: string; subtitle: string }> = {
+    overview: { title: 'Dashboard Overview', subtitle: 'Your purchase analytics and activity summary' },
+    marketplace: { title: 'Wholesale Marketplace', subtitle: 'Browse and purchase produce directly from verified farmers' },
+    orders: { title: 'My Orders', subtitle: 'Track and manage your purchase orders' },
