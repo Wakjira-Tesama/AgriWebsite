@@ -627,4 +627,10 @@ export default function BuyerDashboard() {
                       'bg-slate-100 text-slate-600'
                     }`}>
                       {p.trend === 'up' ? <TrendingUp size={15} /> :
-                       p.trend === 'down' ? <TrendingDown size={15} /> :
+                       p.trend === 'down' ? <TrendingDown size={15} /> :
+                       <Minus size={15} />}
+                      {p.trend === 'up' ? 'Rising' : p.trend === 'down' ? 'Falling' : 'Stable'}
+                    </span>
+                  </td>
+                  <td className="p-4 text-sm text-muted-foreground">
+                    {format(new Date(p.updated_at), 'MMM d, yyyy')}
