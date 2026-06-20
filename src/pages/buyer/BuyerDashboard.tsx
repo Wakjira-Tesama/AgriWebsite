@@ -879,4 +879,10 @@ export default function BuyerDashboard() {
                         value={orderQuantity}
                         onChange={e => setOrderQuantity(e.target.value)}
                         className="flex-1 px-4 py-3 border border-border rounded-xl text-center text-lg font-bold focus:border-primary outline-none transition-all"
-                      />
+                      />
+                      <button
+                        onClick={() => setOrderQuantity((parseInt(orderQuantity) + 1).toString())}
+                        className="w-11 h-11 rounded-xl border border-border flex items-center justify-center hover:bg-muted transition-colors font-bold text-lg"
+                      >+</button>
+                    </div>
+                  </div>
