@@ -909,4 +909,10 @@ export default function BuyerDashboard() {
       )}
 
       {/* ═══════════════════════════════════════ */}
-      {/* PRODUCT DETAIL MODAL */}
+      {/* PRODUCT DETAIL MODAL */}
+      {/* ═══════════════════════════════════════ */}
+      {detailModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setDetailModal(null)}>
+          <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="relative h-44 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 flex items-center justify-center">
+              <span className="text-7xl">{detailModal.emoji}</span>
