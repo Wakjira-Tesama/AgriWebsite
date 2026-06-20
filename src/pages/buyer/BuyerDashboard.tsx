@@ -813,4 +813,10 @@ export default function BuyerDashboard() {
                   <p className="font-bold text-foreground leading-tight">Selam Trading</p>
                   <p className="text-muted-foreground text-xs">Addis Ababa</p>
                 </div>
-              </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        {/* Page Content */}
+        <div className="p-6 lg:p-8">
