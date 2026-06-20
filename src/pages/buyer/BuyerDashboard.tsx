@@ -825,4 +825,10 @@ export default function BuyerDashboard() {
           {activeTab === 'orders' && renderOrders()}
           {activeTab === 'prices' && renderPrices()}
           {activeTab === 'announcements' && renderAnnouncements()}
-        </div>
+        </div>
+      </main>
+
+      {/* ═══════════════════════════════════════ */}
+      {/* ORDER MODAL */}
+      {/* ═══════════════════════════════════════ */}
+      {orderModal && (
