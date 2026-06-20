@@ -765,4 +765,10 @@ export default function BuyerDashboard() {
                 <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                   activeTab === item.id
                     ? 'bg-white/20 text-white'
-                    : 'bg-accent text-white'
+                    : 'bg-accent text-white'
+                }`}>{item.badge}</span>
+              )}
+            </button>
+          ))}
+        </nav>
+
