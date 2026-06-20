@@ -837,4 +837,10 @@ export default function BuyerDashboard() {
             className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden"
             onClick={e => e.stopPropagation()}
           >
-            {orderSuccess ? (
+            {orderSuccess ? (
+              <div className="p-10 text-center">
+                <div className="w-20 h-20 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mx-auto mb-5">
+                  <CheckCircle size={44} />
+                </div>
+                <h3 className="text-2xl font-display font-bold text-foreground">Order Placed!</h3>
+                <p className="text-muted-foreground mt-2">Your order has been submitted successfully.</p>
