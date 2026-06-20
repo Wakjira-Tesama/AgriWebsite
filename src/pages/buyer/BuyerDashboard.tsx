@@ -741,4 +741,10 @@ export default function BuyerDashboard() {
             </div>
             <div>
               <h2 className="font-display font-bold text-foreground leading-tight">Selam Trading</h2>
-              <p className="text-xs text-muted-foreground font-medium">Wholesale Buyer • Verified ✓</p>
+              <p className="text-xs text-muted-foreground font-medium">Wholesale Buyer • Verified ✓</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <nav className="flex-1 p-4 space-y-1.5 overflow-y-auto">
