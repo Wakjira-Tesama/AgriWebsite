@@ -639,4 +639,10 @@ export default function BuyerDashboard() {
               )) : (
                 <tr><td colSpan={5} className="p-12 text-center">
                   <span className="text-4xl mb-3 block">📊</span>
-                  <p className="text-muted-foreground">No market prices available yet</p>
+                  <p className="text-muted-foreground">No market prices available yet</p>
+                </td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
