@@ -615,4 +615,10 @@ export default function BuyerDashboard() {
                   <td className="p-4">
                     <span className="font-bold text-foreground">{p.crop}</span>
                   </td>
-                  <td className="p-4 text-muted-foreground font-medium">{p.market}</td>
+                  <td className="p-4 text-muted-foreground font-medium">{p.market}</td>
+                  <td className="p-4">
+                    <span className="font-display font-bold text-primary text-lg">{p.price}</span>
+                    <span className="text-sm text-muted-foreground ml-1">/ {p.unit}</span>
+                  </td>
+                  <td className="p-4">
+                    <span className={`inline-flex items-center gap-1.5 text-sm font-bold px-3 py-1 rounded-full ${
