@@ -711,4 +711,10 @@ export default function BuyerDashboard() {
   const tabTitles: Record<Tab, { title: string; subtitle: string }> = {
     overview: { title: 'Dashboard Overview', subtitle: 'Your purchase analytics and activity summary' },
     marketplace: { title: 'Wholesale Marketplace', subtitle: 'Browse and purchase produce directly from verified farmers' },
-    orders: { title: 'My Orders', subtitle: 'Track and manage your purchase orders' },
+    orders: { title: 'My Orders', subtitle: 'Track and manage your purchase orders' },
+    prices: { title: 'Market Prices', subtitle: 'Live commodity prices across Ethiopian markets' },
+    announcements: { title: 'Announcements', subtitle: 'Platform news, weather alerts, and important updates' },
+  };
+
+  // ═══════════════════════════════════════════
+  // MAIN LAYOUT
