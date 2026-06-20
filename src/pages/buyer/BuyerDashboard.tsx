@@ -771,4 +771,10 @@ export default function BuyerDashboard() {
             </button>
           ))}
         </nav>
-
+
+        {/* Sign Out */}
+        <div className="p-4 border-t border-border">
+          <button
+            onClick={() => navigate('/login')}
+            className="w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-destructive hover:bg-destructive/10 transition-colors"
+          >
