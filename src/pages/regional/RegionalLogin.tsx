@@ -50,3 +50,7 @@ export default function RegionalLogin() {
                   className="w-full pl-10 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 transition-all appearance-none cursor-pointer [&>option]:text-foreground [&>option]:bg-card"
                   value={selectedRegion}
                   onChange={e => setSelectedRegion(e.target.value)}
+                >
+                  {regions.map(r => (
+                    <option key={r.value} value={r.value}>{r.label} ({r.lang})</option>
+                  ))}
