@@ -78,3 +78,7 @@ export default function RegionalLogin() {
 
             <button
               type="submit"
+              className="w-full py-3.5 bg-accent text-white font-bold rounded-xl hover:bg-accent/90 transition-all shadow-lg shadow-accent/30 active:scale-[0.98] text-lg"
+            >
+              Sign In as Regional Manager
+            </button>
