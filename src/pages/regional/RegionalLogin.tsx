@@ -42,3 +42,7 @@ export default function RegionalLogin() {
         {/* Login Card */}
         <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 shadow-2xl">
           <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); navigate(`/regional?region=${selectedRegion}`); }}>
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">Region</label>
+              <div className="relative">
+                <MapPin size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/50" />
