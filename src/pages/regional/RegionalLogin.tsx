@@ -54,3 +54,6 @@ export default function RegionalLogin() {
                   {regions.map(r => (
                     <option key={r.value} value={r.value}>{r.label} ({r.lang})</option>
                   ))}
+                </select>
+              </div>
+            </div>
