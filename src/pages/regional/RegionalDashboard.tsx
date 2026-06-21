@@ -110,3 +110,10 @@ const getMockFarmers = (region: string): Farmer[] => {
     { id: 'F006', name: region === 'oromia' ? 'Abbaa Gadaa Turaa' : 'Ato Lemma Megersa', zone: zones[1], woreda: 'Bishoftu', crops: ['Teff', 'Chickpea'], phone: '+251966666666', language: cfg.language, status: 'active', farmSize: '2.0 ha', joinedDate: '2025-11-12' },
     { id: 'F007', name: region === 'oromia' ? 'Aadde Urjii Baatii' : 'W/ro Meseret Gebre', zone: zones[4] || zones[0], woreda: 'Jimma', crops: ['Coffee', 'Spices'], phone: '+251977777777', language: cfg.language, status: 'verified', farmSize: '5.5 ha', joinedDate: '2025-02-14' },
     { id: 'F008', name: region === 'oromia' ? 'Obbo Hundumaa Tolasaa' : 'Ato Negash Tefera', zone: zones[2], woreda: 'Nekemte', crops: ['Maize', 'Niger Seed'], phone: '+251988888888', language: cfg.language, status: 'active', farmSize: '3.0 ha', joinedDate: '2025-07-19' },
+  ];
+};
+
+const getMockRequests = (region: string): FarmerRequest[] => {
+  const cfg = regionConfig[region] || regionConfig.oromia;
+  return [
+    { id: 'REQ-001', farmerId: 'F001', farmerName: region === 'oromia' ? 'Abbaa Bokkuu Hundee' : 'Abebe Kebede', zone: cfg.zones[0], title: region === 'oromia' ? 'Baalli qamadii koo boorateera' : 'My wheat leaves are yellowing', description: 'The lower leaves of my wheat field are turning yellow despite recent fertilizer application. Need expert advice.', category: 'Crop Disease', language: cfg.language, status: 'open', createdAt: '2026-06-28T10:30:00', priority: 'high' },
