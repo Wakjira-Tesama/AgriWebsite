@@ -40,3 +40,10 @@ interface Farmer {
   name: string;
   zone: string;
   woreda: string;
+  crops: string[];
+  phone: string;
+  language: string;
+  status: 'active' | 'verified' | 'pending';
+  farmSize: string;
+  joinedDate: string;
+}
