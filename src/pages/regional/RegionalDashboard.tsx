@@ -26,3 +26,10 @@ interface Expert {
   specialty: string;
   languages: string[];
   zone: string;
+  phone: string;
+  email: string;
+  status: 'active' | 'inactive';
+  ticketsResolved: number;
+  rating: number;
+  avatar: string;
+  joinedDate: string;
