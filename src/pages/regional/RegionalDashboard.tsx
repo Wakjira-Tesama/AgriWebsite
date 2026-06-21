@@ -124,3 +124,10 @@ const getMockRequests = (region: string): FarmerRequest[] => {
     { id: 'REQ-006', farmerId: 'F006', farmerName: region === 'oromia' ? 'Abbaa Gadaa Turaa' : 'Ato Lemma Megersa', zone: cfg.zones[1], title: region === 'oromia' ? 'Beelladni koo dhukkubsateera' : 'My livestock is sick', description: 'Two of my cattle are showing signs of illness - loss of appetite and lethargy. Need veterinary advice.', category: 'Livestock', language: cfg.language, status: 'open', createdAt: '2026-06-29T07:30:00', priority: 'high' },
   ];
 };
+
+const mockLearning: LearningContent[] = [
+  { id: 'L001', title: 'Modern Teff Farming Techniques', type: 'video', language: 'Afaan Oromoo', author: 'Dr. Chaltu Abera', status: 'pending', category: 'Crop Production', submittedAt: '2026-06-25' },
+  { id: 'L002', title: 'Soil Conservation Methods', type: 'guide', language: 'Amharic', author: 'Obbo Daadhii Tasfaa', status: 'approved', category: 'Soil Management', submittedAt: '2026-06-20' },
+  { id: 'L003', title: 'Coffee Processing Best Practices', type: 'article', language: 'Afaan Oromoo', author: 'Dr. Gammachuu Baqqalaa', status: 'pending', category: 'Post-Harvest', submittedAt: '2026-06-27' },
+  { id: 'L004', title: 'Irrigation Scheduling Guide', type: 'guide', language: 'English', author: 'Obbo Tashoomaa Guutaa', status: 'approved', category: 'Irrigation', submittedAt: '2026-06-18' },
+  { id: 'L005', title: 'Pest Control Without Chemicals', type: 'video', language: 'Afaan Oromoo', author: 'Aadde Biiftu Lammii', status: 'rejected', category: 'Pest Management', submittedAt: '2026-06-22' },
