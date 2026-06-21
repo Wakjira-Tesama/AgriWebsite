@@ -62,3 +62,7 @@ export default function RegionalLogin() {
               <label className="block text-sm font-medium text-white/80 mb-1.5">Email Address</label>
               <input
                 type="email"
+                className="w-full px-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 transition-all"
+                placeholder="manager@agribridge.gov.et"
+              />
+            </div>
