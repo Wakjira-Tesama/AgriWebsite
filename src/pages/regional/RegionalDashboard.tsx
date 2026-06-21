@@ -54,3 +54,10 @@ interface FarmerRequest {
   farmerName: string;
   zone: string;
   title: string;
+  description: string;
+  category: string;
+  language: string;
+  status: 'open' | 'assigned' | 'resolved';
+  assignedExpert?: string;
+  createdAt: string;
+  priority: 'low' | 'medium' | 'high' | 'urgent';
