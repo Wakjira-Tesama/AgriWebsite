@@ -30,3 +30,7 @@ export default function RegionalLogin() {
       </div>
 
       <div className="relative z-10 w-full max-w-md">
+        {/* Logo Area */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
+            <Shield size={32} className="text-white" />
