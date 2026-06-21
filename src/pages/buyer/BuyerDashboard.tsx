@@ -951,4 +951,10 @@ export default function BuyerDashboard() {
               >
                 🛒 Order This Product
               </button>
-            </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
