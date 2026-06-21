@@ -70,3 +70,7 @@ export default function RegionalLogin() {
             <div>
               <label className="block text-sm font-medium text-white/80 mb-1.5">Password</label>
               <input
+                type="password"
+                className="w-full px-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 transition-all"
+                placeholder="••••••••"
+              />
