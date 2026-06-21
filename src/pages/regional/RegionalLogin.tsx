@@ -90,3 +90,7 @@ export default function RegionalLogin() {
             </button>
           </p>
         </div>
+
+        <p className="text-center text-xs text-white/30 mt-6">
+          AgriBridge Regional Administration • Government Portal
+        </p>
