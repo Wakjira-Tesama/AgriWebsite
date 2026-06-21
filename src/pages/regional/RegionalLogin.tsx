@@ -18,3 +18,7 @@ const regions = [
 ];
 
 export default function RegionalLogin() {
+  const navigate = useNavigate();
+  const [selectedRegion, setSelectedRegion] = useState('oromia');
+
+  return (
