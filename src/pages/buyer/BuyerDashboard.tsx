@@ -945,4 +945,10 @@ export default function BuyerDashboard() {
                   <p className="text-xs text-muted-foreground">in warehouse</p>
                 </div>
               </div>
-              <button
+              <button
+                onClick={() => { setDetailModal(null); setOrderModal(detailModal); setOrderQuantity('1'); }}
+                className="w-full py-3.5 bg-primary text-primary-foreground font-bold rounded-xl text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-[0.98]"
+              >
+                🛒 Order This Product
+              </button>
+            </div>
