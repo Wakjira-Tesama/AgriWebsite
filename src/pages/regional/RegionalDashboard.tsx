@@ -33,3 +33,10 @@ interface Expert {
   rating: number;
   avatar: string;
   joinedDate: string;
+}
+
+interface Farmer {
+  id: string;
+  name: string;
+  zone: string;
+  woreda: string;
