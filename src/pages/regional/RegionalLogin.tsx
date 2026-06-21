@@ -38,3 +38,7 @@ export default function RegionalLogin() {
           <h1 className="text-3xl font-display font-bold text-white">Regional Manager</h1>
           <p className="text-white/60 mt-2">Agriculture Administration Portal</p>
         </div>
+
+        {/* Login Card */}
+        <div className="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-8 shadow-2xl">
+          <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); navigate(`/regional?region=${selectedRegion}`); }}>
