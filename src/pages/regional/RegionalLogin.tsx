@@ -86,3 +86,7 @@ export default function RegionalLogin() {
 
           <p className="text-center text-sm text-white/50 mt-6">
             <button onClick={() => navigate('/')} className="font-semibold text-white/70 hover:text-white hover:underline transition-colors">
+              ← Back to Home
+            </button>
+          </p>
+        </div>
