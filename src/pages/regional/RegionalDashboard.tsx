@@ -47,3 +47,10 @@ interface Farmer {
   farmSize: string;
   joinedDate: string;
 }
+
+interface FarmerRequest {
+  id: string;
+  farmerId: string;
+  farmerName: string;
+  zone: string;
+  title: string;
