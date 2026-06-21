@@ -74,3 +74,7 @@ export default function RegionalLogin() {
                 className="w-full px-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/40 outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 transition-all"
                 placeholder="••••••••"
               />
+            </div>
+
+            <button
+              type="submit"
