@@ -61,3 +61,10 @@ interface FarmerRequest {
   assignedExpert?: string;
   createdAt: string;
   priority: 'low' | 'medium' | 'high' | 'urgent';
+}
+
+interface LearningContent {
+  id: string;
+  title: string;
+  type: 'video' | 'article' | 'guide';
+  language: string;
