@@ -10,3 +10,7 @@ const regions = [
   { value: 'sidama', label: 'Sidama', lang: 'Sidaamu Afoo' },
   { value: 'somali', label: 'Somali', lang: 'Somali' },
   { value: 'afar', label: 'Afar', lang: 'Afaraf' },
+  { value: 'benishangul', label: 'Benishangul-Gumuz', lang: 'Multiple' },
+  { value: 'gambela', label: 'Gambela', lang: 'Multiple' },
+  { value: 'harari', label: 'Harari', lang: 'Harari' },
+  { value: 'addis', label: 'Addis Ababa', lang: 'Amharic' },
