@@ -14,3 +14,7 @@ const regions = [
   { value: 'gambela', label: 'Gambela', lang: 'Multiple' },
   { value: 'harari', label: 'Harari', lang: 'Harari' },
   { value: 'addis', label: 'Addis Ababa', lang: 'Amharic' },
+  { value: 'dire', label: 'Dire Dawa', lang: 'Multiple' },
+];
+
+export default function RegionalLogin() {
