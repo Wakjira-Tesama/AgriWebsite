@@ -131,3 +131,10 @@ const mockLearning: LearningContent[] = [
   { id: 'L003', title: 'Coffee Processing Best Practices', type: 'article', language: 'Afaan Oromoo', author: 'Dr. Gammachuu Baqqalaa', status: 'pending', category: 'Post-Harvest', submittedAt: '2026-06-27' },
   { id: 'L004', title: 'Irrigation Scheduling Guide', type: 'guide', language: 'English', author: 'Obbo Tashoomaa Guutaa', status: 'approved', category: 'Irrigation', submittedAt: '2026-06-18' },
   { id: 'L005', title: 'Pest Control Without Chemicals', type: 'video', language: 'Afaan Oromoo', author: 'Aadde Biiftu Lammii', status: 'rejected', category: 'Pest Management', submittedAt: '2026-06-22' },
+];
+
+const farmerGrowthData = [
+  { name: 'Jan', farmers: 1200, experts: 8 },
+  { name: 'Feb', farmers: 1450, experts: 10 },
+  { name: 'Mar', farmers: 1800, experts: 12 },
+  { name: 'Apr', farmers: 2300, experts: 14 },
