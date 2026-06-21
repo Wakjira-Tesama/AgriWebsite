@@ -68,3 +68,10 @@ interface LearningContent {
   title: string;
   type: 'video' | 'article' | 'guide';
   language: string;
+  author: string;
+  status: 'pending' | 'approved' | 'rejected';
+  category: string;
+  submittedAt: string;
+}
+
+// ─── REGION CONFIG ───
