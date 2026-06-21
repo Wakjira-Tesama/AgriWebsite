@@ -933,4 +933,10 @@ export default function BuyerDashboard() {
                 </p>
               </div>
               <p className="text-foreground/80 leading-relaxed">{detailModal.description}</p>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                  <p className="text-xs text-muted-foreground font-medium">Price</p>
+                  <p className="font-display font-bold text-primary text-lg">{detailModal.price} ETB</p>
+                  <p className="text-xs text-muted-foreground">per 100kg</p>
+                </div>
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
