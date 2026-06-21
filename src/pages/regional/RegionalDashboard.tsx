@@ -19,3 +19,10 @@ import {
 
 // ─── TYPES ───
 type Tab = 'overview' | 'experts' | 'farmers' | 'requests' | 'reports' | 'analytics' | 'learning' | 'weather' | 'notifications' | 'profile';
+
+interface Expert {
+  id: string;
+  name: string;
+  specialty: string;
+  languages: string[];
+  zone: string;
