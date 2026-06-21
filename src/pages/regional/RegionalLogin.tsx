@@ -46,3 +46,7 @@ export default function RegionalLogin() {
               <label className="block text-sm font-medium text-white/80 mb-1.5">Region</label>
               <div className="relative">
                 <MapPin size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/50" />
+                <select
+                  className="w-full pl-10 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 transition-all appearance-none cursor-pointer [&>option]:text-foreground [&>option]:bg-card"
+                  value={selectedRegion}
+                  onChange={e => setSelectedRegion(e.target.value)}
