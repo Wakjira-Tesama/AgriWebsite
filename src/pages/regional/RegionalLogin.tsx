@@ -26,3 +26,7 @@ export default function RegionalLogin() {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-72 h-72 rounded-full bg-white blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-accent blur-3xl" />
+      </div>
+
+      <div className="relative z-10 w-full max-w-md">
