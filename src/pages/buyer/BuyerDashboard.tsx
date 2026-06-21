@@ -939,4 +939,10 @@ export default function BuyerDashboard() {
                   <p className="font-display font-bold text-primary text-lg">{detailModal.price} ETB</p>
                   <p className="text-xs text-muted-foreground">per 100kg</p>
                 </div>
-                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                  <p className="text-xs text-muted-foreground font-medium">Available Stock</p>
+                  <p className="font-display font-bold text-secondary text-lg">{detailModal.stock}</p>
+                  <p className="text-xs text-muted-foreground">in warehouse</p>
+                </div>
+              </div>
+              <button
