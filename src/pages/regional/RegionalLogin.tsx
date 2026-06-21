@@ -22,3 +22,7 @@ export default function RegionalLogin() {
   const [selectedRegion, setSelectedRegion] = useState('oromia');
 
   return (
+    <div className="min-h-screen bg-gradient-to-br from-[#1a3a2a] via-[#1B5E20] to-[#0d2818] flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-20 w-72 h-72 rounded-full bg-white blur-3xl" />
