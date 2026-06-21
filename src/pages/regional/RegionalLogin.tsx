@@ -57,3 +57,8 @@ export default function RegionalLogin() {
                 </select>
               </div>
             </div>
+
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">Email Address</label>
+              <input
+                type="email"
