@@ -66,3 +66,7 @@ export default function RegionalLogin() {
                 placeholder="manager@agribridge.gov.et"
               />
             </div>
+
+            <div>
+              <label className="block text-sm font-medium text-white/80 mb-1.5">Password</label>
+              <input
