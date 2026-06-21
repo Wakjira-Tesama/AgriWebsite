@@ -34,3 +34,7 @@ export default function RegionalLogin() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
             <Shield size={32} className="text-white" />
+          </div>
+          <h1 className="text-3xl font-display font-bold text-white">Regional Manager</h1>
+          <p className="text-white/60 mt-2">Agriculture Administration Portal</p>
+        </div>
