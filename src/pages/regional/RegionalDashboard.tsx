@@ -229,3 +229,10 @@ export default function RegionalDashboard() {
   }, [searchQuery, zoneFilter, farmers]);
 
   // Stats
+  const openRequests = requests.filter(r => r.status === 'open').length;
+  const urgentRequests = requests.filter(r => r.priority === 'urgent').length;
+
+  // ─── SIDEBAR NAV ───
+  const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
+    { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'experts', label: 'Experts', icon: UserCheck },
