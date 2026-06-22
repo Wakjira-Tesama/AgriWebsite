@@ -362,3 +362,10 @@ export default function RegionalDashboard() {
             {requests.slice(0, 4).map(req => {
               const sc = requestStatusConfig[req.status];
               const pc = priorityConfig[req.priority];
+              return (
+                <div key={req.id} className="flex items-start gap-3 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
+                  <div className={`p-2 rounded-lg shrink-0 ${pc.bg} border`}><MessageSquare size={16} className={pc.color} /></div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-sm text-foreground truncate">{req.title}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{req.farmerName} • {req.zone}</p>
+                  </div>
