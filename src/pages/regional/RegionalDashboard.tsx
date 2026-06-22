@@ -215,3 +215,10 @@ export default function RegionalDashboard() {
   const filteredExperts = useMemo(() => {
     return experts.filter(e => {
       const matchesSearch = e.name.toLowerCase().includes(searchQuery.toLowerCase()) || e.specialty.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesZone = zoneFilter === 'All' || e.zone === zoneFilter;
+      return matchesSearch && matchesZone;
+    });
+  }, [searchQuery, zoneFilter, experts]);
+
+  const filteredFarmers = useMemo(() => {
+    return farmers.filter(f => {
