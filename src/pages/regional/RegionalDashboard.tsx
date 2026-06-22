@@ -453,3 +453,10 @@ export default function RegionalDashboard() {
                 <Phone size={14} /> <span>{expert.phone}</span>
               </div>
             </div>
+
+            <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/60">
+              <div className="flex items-center gap-3">
+                <div className="text-center">
+                  <p className="text-lg font-bold text-primary">{expert.ticketsResolved}</p>
+                  <p className="text-xs text-muted-foreground">Resolved</p>
+                </div>
