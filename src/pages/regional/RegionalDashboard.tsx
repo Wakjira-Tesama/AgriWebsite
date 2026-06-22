@@ -425,3 +425,10 @@ export default function RegionalDashboard() {
 
       {/* Expert Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        {filteredExperts.map(expert => (
+          <div key={expert.id} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold shadow-lg">
+                  {expert.avatar}
+                </div>
