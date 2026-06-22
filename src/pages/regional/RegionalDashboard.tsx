@@ -201,3 +201,10 @@ export default function RegionalDashboard() {
   const { data: announcements } = useQuery({
     queryKey: ['announcements'],
     queryFn: async () => {
+      const { data, error } = await supabase.from('announcements').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
+      return data;
+    }
+  });
+
+  const experts = getMockExperts(region);
