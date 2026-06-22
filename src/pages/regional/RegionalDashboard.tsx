@@ -375,3 +375,11 @@ export default function RegionalDashboard() {
             })}
           </div>
         </div>
+
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <h3 className="text-lg font-bold font-display mb-5">Quick Actions</h3>
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { label: 'Add Expert', icon: UserPlus, onClick: () => { setActiveTab('experts'); setShowAddExpert(true); }, color: 'bg-primary hover:bg-primary/90 text-white' },
+              { label: 'View Requests', icon: MessageSquare, onClick: () => setActiveTab('requests'), color: 'bg-amber-500 hover:bg-amber-600 text-white' },
+              { label: 'Weather Report', icon: CloudRain, onClick: () => setActiveTab('weather'), color: 'bg-blue-500 hover:bg-blue-600 text-white' },
