@@ -320,3 +320,10 @@ export default function RegionalDashboard() {
                 <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
                 <Area type="monotone" dataKey="farmers" stroke="#2E7D32" strokeWidth={3} fill="url(#farmGrad)" name="Farmers" />
               </AreaChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <h3 className="text-lg font-bold font-display mb-1">Crop Distribution</h3>
+          <p className="text-sm text-muted-foreground mb-4">What farmers are growing</p>
