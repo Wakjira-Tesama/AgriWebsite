@@ -509,3 +509,10 @@ export default function RegionalDashboard() {
         </div>
         <p className="text-sm text-muted-foreground">Showing <span className="font-bold text-foreground">{filteredFarmers.length}</span> farmers</p>
       </div>
+
+      <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-muted/70 border-b border-border">
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Farmer</th>
