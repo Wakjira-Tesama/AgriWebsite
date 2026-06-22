@@ -523,3 +523,10 @@ export default function RegionalDashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Status</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Joined</th>
               </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              {filteredFarmers.map(f => (
+                <tr key={f.id} className="hover:bg-muted/40 transition-colors">
+                  <td className="p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
