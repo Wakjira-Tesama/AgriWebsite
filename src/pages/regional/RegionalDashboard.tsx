@@ -271,3 +271,9 @@ export default function RegionalDashboard() {
           <div className="flex-1">
             <p className="font-bold text-red-800">{urgentRequests} Urgent Request{urgentRequests > 1 ? 's' : ''} Pending</p>
             <p className="text-sm text-red-600">Farmers need immediate assistance. Please review and assign experts.</p>
+          </div>
+          <button onClick={() => setActiveTab('requests')} className="px-4 py-2 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-colors text-sm">
+            Review Now
+          </button>
+        </div>
+      )}
