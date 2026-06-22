@@ -194,3 +194,10 @@ export default function RegionalDashboard() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showAddExpert, setShowAddExpert] = useState(false);
   const [showAssignModal, setShowAssignModal] = useState<FarmerRequest | null>(null);
+  const [zoneFilter, setZoneFilter] = useState('All');
+  const [expertForm, setExpertForm] = useState({ name: '', specialty: '', phone: '', email: '', zone: cfg.zones[0], languages: [cfg.language] });
+
+  // Supabase queries
+  const { data: announcements } = useQuery({
+    queryKey: ['announcements'],
+    queryFn: async () => {
