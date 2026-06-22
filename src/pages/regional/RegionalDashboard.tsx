@@ -383,3 +383,10 @@ export default function RegionalDashboard() {
               { label: 'Add Expert', icon: UserPlus, onClick: () => { setActiveTab('experts'); setShowAddExpert(true); }, color: 'bg-primary hover:bg-primary/90 text-white' },
               { label: 'View Requests', icon: MessageSquare, onClick: () => setActiveTab('requests'), color: 'bg-amber-500 hover:bg-amber-600 text-white' },
               { label: 'Weather Report', icon: CloudRain, onClick: () => setActiveTab('weather'), color: 'bg-blue-500 hover:bg-blue-600 text-white' },
+              { label: 'Review Learning', icon: BookOpen, onClick: () => setActiveTab('learning'), color: 'bg-purple-500 hover:bg-purple-600 text-white' },
+              { label: 'Farmer Stats', icon: BarChart3, onClick: () => setActiveTab('analytics'), color: 'bg-emerald-500 hover:bg-emerald-600 text-white' },
+              { label: 'Generate Report', icon: FileText, onClick: () => setActiveTab('reports'), color: 'bg-indigo-500 hover:bg-indigo-600 text-white' },
+            ].map((action, i) => (
+              <button key={i} onClick={action.onClick} className={`flex items-center gap-3 p-4 rounded-xl font-semibold transition-all shadow-sm hover:shadow-md active:scale-[0.97] ${action.color}`}>
+                <action.icon size={20} />
+                <span className="text-sm">{action.label}</span>
