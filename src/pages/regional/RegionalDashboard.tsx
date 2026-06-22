@@ -299,3 +299,10 @@ export default function RegionalDashboard() {
           </div>
         ))}
       </div>
+
+      {/* Charts */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 bg-card rounded-2xl border border-border p-6">
+          <h3 className="text-lg font-bold font-display mb-1">Farmer & Expert Growth</h3>
+          <p className="text-sm text-muted-foreground mb-6">Monthly registration trends in {cfg.name}</p>
+          <div className="h-[280px]">
