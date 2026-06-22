@@ -173,3 +173,10 @@ const priorityConfig = {
   low: { color: 'text-slate-600', bg: 'bg-slate-50 border-slate-200' },
   medium: { color: 'text-blue-600', bg: 'bg-blue-50 border-blue-200' },
   high: { color: 'text-amber-600', bg: 'bg-amber-50 border-amber-200' },
+  urgent: { color: 'text-red-600', bg: 'bg-red-50 border-red-200' },
+};
+
+const requestStatusConfig = {
+  open: { color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200', label: 'Open' },
+  assigned: { color: 'text-blue-700', bg: 'bg-blue-50 border-blue-200', label: 'Assigned' },
+  resolved: { color: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200', label: 'Resolved' },
