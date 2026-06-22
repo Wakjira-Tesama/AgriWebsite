@@ -432,3 +432,10 @@ export default function RegionalDashboard() {
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold shadow-lg">
                   {expert.avatar}
                 </div>
+                <div>
+                  <h3 className="font-bold text-foreground">{expert.name}</h3>
+                  <p className="text-sm text-muted-foreground">{expert.specialty}</p>
+                </div>
+              </div>
+              <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${expert.status === 'active' ? 'bg-emerald-50 text-emerald-600 border border-emerald-200' : 'bg-slate-100 text-slate-500 border border-slate-200'}`}>
+                {expert.status === 'active' ? '● Active' : '○ Inactive'}
