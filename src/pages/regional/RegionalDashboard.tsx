@@ -166,3 +166,10 @@ const weatherData = [
   { zone: 'Jimma', temp: 22, humidity: 72, rainfall: 95, condition: 'Rainy', icon: CloudRain, alert: null },
   { zone: 'Wellega', temp: 26, humidity: 55, rainfall: 40, condition: 'Partly Cloudy', icon: Sun, alert: null },
   { zone: 'Borena', temp: 32, humidity: 25, rainfall: 5, condition: 'Hot & Dry', icon: ThermometerSun, alert: 'Drought Warning' },
+];
+
+// ─── HELPERS ───
+const priorityConfig = {
+  low: { color: 'text-slate-600', bg: 'bg-slate-50 border-slate-200' },
+  medium: { color: 'text-blue-600', bg: 'bg-blue-50 border-blue-200' },
+  high: { color: 'text-amber-600', bg: 'bg-amber-50 border-amber-200' },
