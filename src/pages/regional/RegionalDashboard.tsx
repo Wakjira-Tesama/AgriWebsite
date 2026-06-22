@@ -257,3 +257,10 @@ export default function RegionalDashboard() {
     weather: { title: 'Weather Intelligence', subtitle: `Zone-by-zone weather data for ${cfg.name}` },
     notifications: { title: 'Notifications', subtitle: 'Platform alerts and announcements' },
     profile: { title: 'Profile & Settings', subtitle: 'Manage your regional manager account' },
+  };
+
+  // ════════════════════════════════
+  // OVERVIEW
+  // ════════════════════════════════
+  const renderOverview = () => (
+    <div className="space-y-6">
