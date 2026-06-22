@@ -236,3 +236,10 @@ export default function RegionalDashboard() {
   const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
     { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'experts', label: 'Experts', icon: UserCheck },
+    { id: 'farmers', label: 'Farmers', icon: Users },
+    { id: 'requests', label: 'Requests', icon: MessageSquare, badge: `${openRequests}` },
+    { id: 'reports', label: 'Reports', icon: FileText },
+    { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+    { id: 'learning', label: 'Learning', icon: BookOpen, badge: `${mockLearning.filter(l => l.status === 'pending').length}` },
+    { id: 'weather', label: 'Weather', icon: CloudRain },
+    { id: 'notifications', label: 'Notifications', icon: Bell, badge: announcements?.length ? `${announcements.length}` : undefined },
