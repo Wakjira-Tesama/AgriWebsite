@@ -516,3 +516,10 @@ export default function RegionalDashboard() {
             <thead>
               <tr className="bg-muted/70 border-b border-border">
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Farmer</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Zone / Woreda</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Crops</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Farm Size</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Language</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Status</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Joined</th>
+              </tr>
