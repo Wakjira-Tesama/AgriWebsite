@@ -446,3 +446,10 @@ export default function RegionalDashboard() {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={14} /> <span>{expert.zone}</span>
               </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Languages size={14} /> <span>{expert.languages.join(', ')}</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Phone size={14} /> <span>{expert.phone}</span>
+              </div>
+            </div>
