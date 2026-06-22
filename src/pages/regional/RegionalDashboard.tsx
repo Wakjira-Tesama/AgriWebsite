@@ -474,3 +474,10 @@ export default function RegionalDashboard() {
                 </button>
               </div>
             </div>
+          </div>
+        ))}
+      </div>
+
+      {filteredExperts.length === 0 && (
+        <div className="text-center py-16">
+          <span className="text-5xl mb-4 block">👨‍🌾</span>
