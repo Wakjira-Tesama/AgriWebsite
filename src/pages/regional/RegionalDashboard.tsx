@@ -292,3 +292,10 @@ export default function RegionalDashboard() {
               <stat.icon size={22} />
             </div>
             <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
+            <h3 className="text-2xl font-display font-bold text-foreground mt-1">{stat.value}</h3>
+            <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+              <ArrowUpRight size={14} className="text-secondary" /> {stat.change}
+            </p>
+          </div>
+        ))}
+      </div>
