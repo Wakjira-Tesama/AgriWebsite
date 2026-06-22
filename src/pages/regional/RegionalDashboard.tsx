@@ -158,3 +158,11 @@ const requestsByCategoryData = [
   { name: 'Livestock', count: 18 },
   { name: 'Agronomy', count: 15 },
 ];
+
+const weatherData = [
+  { zone: 'West Shewa', temp: 24, humidity: 65, rainfall: 85, condition: 'Rainy', icon: CloudRain, alert: null },
+  { zone: 'East Shewa', temp: 28, humidity: 45, rainfall: 20, condition: 'Sunny', icon: Sun, alert: null },
+  { zone: 'Arsi', temp: 18, humidity: 80, rainfall: 120, condition: 'Heavy Rain', icon: CloudLightning, alert: 'Flood Warning' },
+  { zone: 'Jimma', temp: 22, humidity: 72, rainfall: 95, condition: 'Rainy', icon: CloudRain, alert: null },
+  { zone: 'Wellega', temp: 26, humidity: 55, rainfall: 40, condition: 'Partly Cloudy', icon: Sun, alert: null },
+  { zone: 'Borena', temp: 32, humidity: 25, rainfall: 5, condition: 'Hot & Dry', icon: ThermometerSun, alert: 'Drought Warning' },
