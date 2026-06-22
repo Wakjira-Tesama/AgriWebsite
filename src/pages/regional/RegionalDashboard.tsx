@@ -481,3 +481,9 @@ export default function RegionalDashboard() {
       {filteredExperts.length === 0 && (
         <div className="text-center py-16">
           <span className="text-5xl mb-4 block">👨‍🌾</span>
+          <h3 className="text-xl font-bold">No experts found</h3>
+          <p className="text-muted-foreground mt-2">Try adjusting your search or add new experts</p>
+        </div>
+      )}
+    </div>
+  );
