@@ -460,3 +460,10 @@ export default function RegionalDashboard() {
                   <p className="text-lg font-bold text-primary">{expert.ticketsResolved}</p>
                   <p className="text-xs text-muted-foreground">Resolved</p>
                 </div>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-amber-500 flex items-center gap-1"><Star size={14} className="fill-amber-500" />{expert.rating}</p>
+                  <p className="text-xs text-muted-foreground">Rating</p>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <button className="p-2 rounded-xl border border-border hover:bg-muted transition-colors" title="Edit">
