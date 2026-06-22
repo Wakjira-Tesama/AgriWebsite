@@ -277,3 +277,11 @@ export default function RegionalDashboard() {
           </button>
         </div>
       )}
+
+      {/* Stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+        {[
+          { label: 'Total Farmers', value: '3,500', icon: Users, change: '+320 this month', color: 'from-emerald-500 to-green-600' },
+          { label: 'Active Experts', value: `${experts.filter(e => e.status === 'active').length}`, icon: UserCheck, change: `${cfg.zones.length} zones covered`, color: 'from-blue-500 to-indigo-600' },
+          { label: 'Open Requests', value: `${openRequests}`, icon: MessageSquare, change: `${urgentRequests} urgent`, color: 'from-amber-500 to-orange-500' },
+          { label: 'Resolved (Monthly)', value: '142', icon: CheckCircle, change: '92% satisfaction', color: 'from-purple-500 to-violet-600' },
