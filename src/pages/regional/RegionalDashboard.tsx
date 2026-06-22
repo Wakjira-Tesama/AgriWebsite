@@ -369,3 +369,9 @@ export default function RegionalDashboard() {
                     <p className="font-semibold text-sm text-foreground truncate">{req.title}</p>
                     <p className="text-xs text-muted-foreground mt-0.5">{req.farmerName} • {req.zone}</p>
                   </div>
+                  <span className={`text-xs font-bold px-2.5 py-1 rounded-full border shrink-0 ${sc.bg} ${sc.color}`}>{sc.label}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
