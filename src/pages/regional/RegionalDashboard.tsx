@@ -390,3 +390,10 @@ export default function RegionalDashboard() {
               <button key={i} onClick={action.onClick} className={`flex items-center gap-3 p-4 rounded-xl font-semibold transition-all shadow-sm hover:shadow-md active:scale-[0.97] ${action.color}`}>
                 <action.icon size={20} />
                 <span className="text-sm">{action.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
