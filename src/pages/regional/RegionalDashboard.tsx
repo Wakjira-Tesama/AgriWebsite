@@ -180,3 +180,10 @@ const requestStatusConfig = {
   open: { color: 'text-amber-700', bg: 'bg-amber-50 border-amber-200', label: 'Open' },
   assigned: { color: 'text-blue-700', bg: 'bg-blue-50 border-blue-200', label: 'Assigned' },
   resolved: { color: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200', label: 'Resolved' },
+};
+
+
+export default function RegionalDashboard() {
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const region = searchParams.get('region') || 'oromia';
