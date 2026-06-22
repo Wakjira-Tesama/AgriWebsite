@@ -138,3 +138,10 @@ const farmerGrowthData = [
   { name: 'Feb', farmers: 1450, experts: 10 },
   { name: 'Mar', farmers: 1800, experts: 12 },
   { name: 'Apr', farmers: 2300, experts: 14 },
+  { name: 'May', farmers: 2900, experts: 16 },
+  { name: 'Jun', farmers: 3500, experts: 18 },
+];
+
+const cropDistribution = [
+  { name: 'Teff', value: 35 },
+  { name: 'Coffee', value: 25 },
