@@ -313,3 +313,10 @@ export default function RegionalDashboard() {
                     <stop offset="5%" stopColor="#2E7D32" stopOpacity={0.3} />
                     <stop offset="95%" stopColor="#2E7D32" stopOpacity={0} />
                   </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+                <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
+                <Area type="monotone" dataKey="farmers" stroke="#2E7D32" strokeWidth={3} fill="url(#farmGrad)" name="Farmers" />
+              </AreaChart>
