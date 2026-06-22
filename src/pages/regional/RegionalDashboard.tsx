@@ -418,3 +418,10 @@ export default function RegionalDashboard() {
             <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
           </div>
         </div>
+        <button onClick={() => setShowAddExpert(true)} className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 active:scale-[0.97]">
+          <UserPlus size={18} /> Add New Expert
+        </button>
+      </div>
+
+      {/* Expert Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
