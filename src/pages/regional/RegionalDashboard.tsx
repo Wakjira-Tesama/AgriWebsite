@@ -467,3 +467,10 @@ export default function RegionalDashboard() {
               </div>
               <div className="flex gap-2">
                 <button className="p-2 rounded-xl border border-border hover:bg-muted transition-colors" title="Edit">
+                  <Edit3 size={16} className="text-muted-foreground" />
+                </button>
+                <button className="p-2 rounded-xl border border-border hover:bg-red-50 hover:border-red-200 transition-colors" title="Remove">
+                  <Trash2 size={16} className="text-red-400" />
+                </button>
+              </div>
+            </div>
