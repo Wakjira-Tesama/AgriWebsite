@@ -187,3 +187,10 @@ export default function RegionalDashboard() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const region = searchParams.get('region') || 'oromia';
+  const cfg = regionConfig[region] || regionConfig.oromia;
+
+  const [activeTab, setActiveTab] = useState<Tab>('overview');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showAddExpert, setShowAddExpert] = useState(false);
+  const [showAssignModal, setShowAssignModal] = useState<FarmerRequest | null>(null);
