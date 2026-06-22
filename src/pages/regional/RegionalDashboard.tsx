@@ -243,3 +243,10 @@ export default function RegionalDashboard() {
     { id: 'learning', label: 'Learning', icon: BookOpen, badge: `${mockLearning.filter(l => l.status === 'pending').length}` },
     { id: 'weather', label: 'Weather', icon: CloudRain },
     { id: 'notifications', label: 'Notifications', icon: Bell, badge: announcements?.length ? `${announcements.length}` : undefined },
+    { id: 'profile', label: 'Profile', icon: Settings },
+  ];
+
+  const tabTitles: Record<Tab, { title: string; subtitle: string }> = {
+    overview: { title: `${cfg.name} Region Dashboard`, subtitle: `Regional agriculture management overview` },
+    experts: { title: 'Expert Management', subtitle: `Manage agricultural experts in ${cfg.name} region` },
+    farmers: { title: 'Farmer Registry', subtitle: `All registered farmers in ${cfg.name}` },
