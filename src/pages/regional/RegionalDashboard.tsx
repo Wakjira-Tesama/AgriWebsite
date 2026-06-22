@@ -285,3 +285,10 @@ export default function RegionalDashboard() {
           { label: 'Active Experts', value: `${experts.filter(e => e.status === 'active').length}`, icon: UserCheck, change: `${cfg.zones.length} zones covered`, color: 'from-blue-500 to-indigo-600' },
           { label: 'Open Requests', value: `${openRequests}`, icon: MessageSquare, change: `${urgentRequests} urgent`, color: 'from-amber-500 to-orange-500' },
           { label: 'Resolved (Monthly)', value: '142', icon: CheckCircle, change: '92% satisfaction', color: 'from-purple-500 to-violet-600' },
+        ].map((stat, i) => (
+          <div key={i} className="relative overflow-hidden bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
+            <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${stat.color} opacity-[0.08] rounded-bl-[60px] group-hover:opacity-[0.15] transition-opacity`} />
+            <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${stat.color} text-white mb-4 shadow-lg`}>
+              <stat.icon size={22} />
+            </div>
+            <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
