@@ -355,3 +355,10 @@ export default function RegionalDashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-card rounded-2xl border border-border p-6">
           <div className="flex justify-between items-center mb-5">
+            <h3 className="text-lg font-bold font-display">Recent Farmer Requests</h3>
+            <button onClick={() => setActiveTab('requests')} className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">View All <ChevronRight size={16} /></button>
+          </div>
+          <div className="space-y-3">
+            {requests.slice(0, 4).map(req => {
+              const sc = requestStatusConfig[req.status];
+              const pc = priorityConfig[req.priority];
