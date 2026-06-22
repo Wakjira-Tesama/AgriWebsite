@@ -208,3 +208,10 @@ export default function RegionalDashboard() {
   });
 
   const experts = getMockExperts(region);
+  const farmers = getMockFarmers(region);
+  const requests = getMockRequests(region);
+
+  // Filter logic
+  const filteredExperts = useMemo(() => {
+    return experts.filter(e => {
+      const matchesSearch = e.name.toLowerCase().includes(searchQuery.toLowerCase()) || e.specialty.toLowerCase().includes(searchQuery.toLowerCase());
