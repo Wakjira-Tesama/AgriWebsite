@@ -348,3 +348,10 @@ export default function RegionalDashboard() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Recent Requests + Quick Actions */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <div className="flex justify-between items-center mb-5">
