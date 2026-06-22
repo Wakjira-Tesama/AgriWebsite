@@ -145,3 +145,10 @@ const farmerGrowthData = [
 const cropDistribution = [
   { name: 'Teff', value: 35 },
   { name: 'Coffee', value: 25 },
+  { name: 'Maize', value: 20 },
+  { name: 'Wheat', value: 12 },
+  { name: 'Other', value: 8 },
+];
+const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20', '#64748b'];
+
+const requestsByCategoryData = [
