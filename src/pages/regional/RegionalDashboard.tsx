@@ -264,3 +264,10 @@ export default function RegionalDashboard() {
   // ════════════════════════════════
   const renderOverview = () => (
     <div className="space-y-6">
+      {/* Alert Banner */}
+      {urgentRequests > 0 && (
+        <div className="bg-red-50 border border-red-200 rounded-2xl p-4 flex items-center gap-4">
+          <div className="p-3 bg-red-100 rounded-xl text-red-600"><AlertTriangle size={22} /></div>
+          <div className="flex-1">
+            <p className="font-bold text-red-800">{urgentRequests} Urgent Request{urgentRequests > 1 ? 's' : ''} Pending</p>
+            <p className="text-sm text-red-600">Farmers need immediate assistance. Please review and assign experts.</p>
