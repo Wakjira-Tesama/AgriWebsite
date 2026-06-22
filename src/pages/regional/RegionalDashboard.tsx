@@ -152,3 +152,9 @@ const cropDistribution = [
 const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20', '#64748b'];
 
 const requestsByCategoryData = [
+  { name: 'Crop Disease', count: 42 },
+  { name: 'Soil Science', count: 28 },
+  { name: 'Irrigation', count: 22 },
+  { name: 'Livestock', count: 18 },
+  { name: 'Agronomy', count: 15 },
+];
