@@ -397,3 +397,10 @@ export default function RegionalDashboard() {
       </div>
     </div>
   );
+
+  // ════════════════════════════════
+  // EXPERTS
+  // ════════════════════════════════
+  const renderExperts = () => (
+    <div className="space-y-6">
+      {/* Toolbar */}
