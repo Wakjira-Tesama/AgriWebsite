@@ -411,3 +411,10 @@ export default function RegionalDashboard() {
             <input type="text" placeholder="Search experts..." className="w-full pl-10 pr-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
           </div>
           <div className="relative">
+            <select className="pl-3 pr-8 py-2.5 border border-border rounded-xl focus:border-primary outline-none appearance-none font-medium cursor-pointer" value={zoneFilter} onChange={e => setZoneFilter(e.target.value)}>
+              <option value="All">All Zones</option>
+              {cfg.zones.map(z => <option key={z} value={z}>{z}</option>)}
+            </select>
+            <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+          </div>
+        </div>
