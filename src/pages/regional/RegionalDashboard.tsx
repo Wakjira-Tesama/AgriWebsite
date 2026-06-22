@@ -222,3 +222,10 @@ export default function RegionalDashboard() {
 
   const filteredFarmers = useMemo(() => {
     return farmers.filter(f => {
+      const matchesSearch = f.name.toLowerCase().includes(searchQuery.toLowerCase()) || f.crops.some(c => c.toLowerCase().includes(searchQuery.toLowerCase()));
+      const matchesZone = zoneFilter === 'All' || f.zone === zoneFilter;
+      return matchesSearch && matchesZone;
+    });
+  }, [searchQuery, zoneFilter, farmers]);
+
+  // Stats
