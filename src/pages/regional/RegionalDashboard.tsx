@@ -873,3 +873,10 @@ export default function RegionalDashboard() {
               <p className="text-foreground/80 mt-2 leading-relaxed">{a.body}</p>
             </div>
           </div>
+        </div>
+      )) : (
+        <div className="text-center py-16">
+          <span className="text-5xl mb-4 block">🔔</span>
+          <h3 className="text-xl font-bold">No notifications</h3>
+          <p className="text-muted-foreground mt-2">You're all caught up!</p>
+        </div>
