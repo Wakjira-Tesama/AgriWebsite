@@ -571,3 +571,11 @@ export default function RegionalDashboard() {
       </div>
     </div>
   );
+
+  // ════════════════════════════════
+  // REQUESTS
+  // ════════════════════════════════
+  const renderRequests = () => (
+    <div className="space-y-6">
+      {/* Request Filter Pills */}
+      <div className="flex gap-2 flex-wrap">
