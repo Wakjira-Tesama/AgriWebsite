@@ -712,3 +712,10 @@ export default function RegionalDashboard() {
                     <p className="font-semibold text-sm text-foreground truncate">{expert.name}</p>
                     <span className="text-xs font-bold text-primary">{Math.floor(Math.random() * 4) + 1}h avg</span>
                   </div>
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style={{ width: `${60 + Math.random() * 35}%` }} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
