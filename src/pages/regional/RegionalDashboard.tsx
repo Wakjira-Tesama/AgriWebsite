@@ -719,3 +719,10 @@ export default function RegionalDashboard() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="bg-card rounded-2xl border border-border p-6">
+        <h3 className="text-lg font-bold font-display mb-1">Zone-wise Farmer Distribution</h3>
+        <p className="text-sm text-muted-foreground mb-6">Number of registered farmers per zone</p>
+        <div className="h-[300px]">
