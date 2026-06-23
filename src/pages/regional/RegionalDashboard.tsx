@@ -544,3 +544,10 @@ export default function RegionalDashboard() {
                   </td>
                   <td className="p-4">
                     <div className="flex gap-1 flex-wrap">
+                      {f.crops.map(c => (
+                        <span key={c} className="text-xs font-semibold bg-primary/10 text-primary px-2 py-0.5 rounded-full">{c}</span>
+                      ))}
+                    </div>
+                  </td>
+                  <td className="p-4 text-sm font-medium text-foreground">{f.farmSize}</td>
+                  <td className="p-4">
