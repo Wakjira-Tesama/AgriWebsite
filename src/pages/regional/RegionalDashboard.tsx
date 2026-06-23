@@ -558,3 +558,10 @@ export default function RegionalDashboard() {
                   <td className="p-4">
                     <span className={`text-xs font-bold px-2.5 py-1 rounded-full capitalize ${
                       f.status === 'verified' ? 'bg-emerald-50 text-emerald-600 border border-emerald-200' :
+                      f.status === 'active' ? 'bg-blue-50 text-blue-600 border border-blue-200' :
+                      'bg-amber-50 text-amber-600 border border-amber-200'
+                    }`}>{f.status === 'verified' && '✓ '}{f.status}</span>
+                  </td>
+                  <td className="p-4 text-sm text-muted-foreground">{format(new Date(f.joinedDate), 'MMM d, yyyy')}</td>
+                </tr>
+              ))}
