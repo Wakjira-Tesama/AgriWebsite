@@ -817,3 +817,10 @@ export default function RegionalDashboard() {
                 </div>
               )}
               <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h3 className="font-bold text-foreground">{w.zone}</h3>
+                  <p className="text-sm text-muted-foreground">{w.condition}</p>
+                </div>
+                <WeatherIcon size={36} className="text-blue-500" />
+              </div>
+              <div className="grid grid-cols-3 gap-3">
