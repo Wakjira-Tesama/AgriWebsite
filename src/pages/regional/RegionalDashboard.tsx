@@ -705,3 +705,10 @@ export default function RegionalDashboard() {
           <p className="text-sm text-muted-foreground mb-6">Average time to first response</p>
           <div className="space-y-4">
             {experts.filter(e => e.status === 'active').map(expert => (
+              <div key={expert.id} className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm shrink-0">{expert.avatar}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex justify-between items-center mb-1">
+                    <p className="font-semibold text-sm text-foreground truncate">{expert.name}</p>
+                    <span className="text-xs font-bold text-primary">{Math.floor(Math.random() * 4) + 1}h avg</span>
+                  </div>
