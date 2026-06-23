@@ -915,3 +915,10 @@ export default function RegionalDashboard() {
                 <p className="text-xs text-muted-foreground font-medium">{field.label}</p>
                 <p className="font-semibold text-foreground">{field.value}</p>
               </div>
+            </div>
+          ))}
+        </div>
+
+        <button className="w-full mt-6 py-3 border border-border rounded-xl font-bold text-foreground hover:bg-muted transition-colors flex items-center justify-center gap-2">
+          <Edit3 size={18} /> Edit Profile
+        </button>
