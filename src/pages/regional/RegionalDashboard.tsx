@@ -733,3 +733,9 @@ export default function RegionalDashboard() {
               <YAxis dataKey="zone" type="category" axisLine={false} tickLine={false} width={120} tick={{ fill: '#64748b', fontSize: 12 }} />
               <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} />
               <Bar dataKey="farmers" fill="#F4A000" radius={[0, 6, 6, 0]} barSize={22} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+    </div>
+  );
