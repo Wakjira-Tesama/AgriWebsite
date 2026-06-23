@@ -656,3 +656,10 @@ export default function RegionalDashboard() {
           { title: 'Monthly Farmer Report', desc: 'Summary of farmer registrations, activity, and crop production', icon: Users, color: 'from-emerald-500 to-green-600', date: 'June 2026' },
           { title: 'Expert Performance', desc: 'Expert response times, satisfaction ratings, and ticket resolution', icon: UserCheck, color: 'from-blue-500 to-indigo-600', date: 'June 2026' },
           { title: 'Crop Production Forecast', desc: 'Estimated yields by zone based on weather and planting data', icon: Leaf, color: 'from-amber-500 to-orange-500', date: 'Q2 2026' },
+          { title: 'Weather Impact Analysis', desc: 'How recent weather patterns affected agricultural output', icon: CloudRain, color: 'from-purple-500 to-violet-600', date: 'June 2026' },
+          { title: 'Market Price Trends', desc: 'Regional commodity price movements and market analysis', icon: BarChart3, color: 'from-pink-500 to-rose-600', date: 'June 2026' },
+          { title: 'Annual Regional Review', desc: 'Comprehensive yearly report of all agricultural activities', icon: FileText, color: 'from-teal-500 to-cyan-600', date: '2025-2026' },
+        ].map((report, i) => (
+          <div key={i} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group cursor-pointer">
+            <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${report.color} text-white mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
+              <report.icon size={22} />
