@@ -607,3 +607,10 @@ export default function RegionalDashboard() {
                     <span className={`text-xs font-bold px-2.5 py-1 rounded-full border uppercase ${pc.bg} ${pc.color}`}>{req.priority}</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-1">{req.description}</p>
+                  <div className="flex items-center gap-4 mt-3 text-xs text-muted-foreground flex-wrap">
+                    <span className="flex items-center gap-1"><Users size={13} /> {req.farmerName}</span>
+                    <span className="flex items-center gap-1"><MapPin size={13} /> {req.zone}</span>
+                    <span className="flex items-center gap-1"><Globe size={13} /> {req.language}</span>
+                    <span className="flex items-center gap-1"><Clock size={13} /> {format(new Date(req.createdAt), 'MMM d, h:mm a')}</span>
+                    <span className="flex items-center gap-1"><Leaf size={13} /> {req.category}</span>
+                  </div>
