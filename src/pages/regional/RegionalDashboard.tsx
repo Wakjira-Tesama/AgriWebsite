@@ -726,3 +726,10 @@ export default function RegionalDashboard() {
         <h3 className="text-lg font-bold font-display mb-1">Zone-wise Farmer Distribution</h3>
         <p className="text-sm text-muted-foreground mb-6">Number of registered farmers per zone</p>
         <div className="h-[300px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={cfg.zones.slice(0, 8).map(z => ({ zone: z, farmers: Math.floor(200 + Math.random() * 600) }))} layout="vertical" margin={{ left: 20 }}>
+              <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
+              <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 12 }} />
+              <YAxis dataKey="zone" type="category" axisLine={false} tickLine={false} width={120} tick={{ fill: '#64748b', fontSize: 12 }} />
+              <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} />
+              <Bar dataKey="farmers" fill="#F4A000" radius={[0, 6, 6, 0]} barSize={22} />
