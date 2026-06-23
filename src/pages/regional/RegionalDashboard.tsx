@@ -684,3 +684,10 @@ export default function RegionalDashboard() {
   const renderAnalytics = () => (
     <div className="space-y-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <h3 className="text-lg font-bold font-display mb-1">Requests by Category</h3>
+          <p className="text-sm text-muted-foreground mb-6">Distribution of farmer inquiries</p>
+          <div className="h-[280px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={requestsByCategoryData}>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
