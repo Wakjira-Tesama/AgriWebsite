@@ -739,3 +739,11 @@ export default function RegionalDashboard() {
       </div>
     </div>
   );
+
+  // ════════════════════════════════
+  // LEARNING
+  // ════════════════════════════════
+  const renderLearning = () => (
+    <div className="space-y-6">
+      <div className="flex gap-2 flex-wrap">
+        {['all', 'pending', 'approved', 'rejected'].map(s => (
