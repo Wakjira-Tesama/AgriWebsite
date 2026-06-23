@@ -663,3 +663,10 @@ export default function RegionalDashboard() {
           <div key={i} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group cursor-pointer">
             <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${report.color} text-white mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
               <report.icon size={22} />
+            </div>
+            <h3 className="font-bold text-foreground text-lg">{report.title}</h3>
+            <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{report.desc}</p>
+            <div className="flex items-center justify-between mt-4 pt-4 border-t border-border/60">
+              <span className="text-xs text-muted-foreground font-medium">{report.date}</span>
+              <button className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">
+                Generate <ChevronRight size={16} />
