@@ -593,3 +593,10 @@ export default function RegionalDashboard() {
       <div className="space-y-4">
         {requests.filter(r => zoneFilter === 'All' || r.status === zoneFilter).map(req => {
           const sc = requestStatusConfig[req.status];
+          const pc = priorityConfig[req.priority];
+          return (
+            <div key={req.id} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-start gap-5">
+                <div className={`p-3 rounded-xl shrink-0 ${pc.bg} border`}>
+                  <MessageSquare size={22} className={pc.color} />
+                </div>
