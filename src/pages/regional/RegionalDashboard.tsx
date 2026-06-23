@@ -894,3 +894,10 @@ export default function RegionalDashboard() {
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-2xl shadow-xl">RM</div>
           <div>
             <h3 className="text-2xl font-display font-bold text-foreground">Regional Manager</h3>
+            <p className="text-muted-foreground">{cfg.name} Region • <span className="text-primary font-semibold">{cfg.language}</span></p>
+            <span className="inline-flex items-center gap-1.5 mt-1 text-sm text-emerald-600 font-semibold"><Shield size={14} /> Verified Government Official</span>
+          </div>
+        </div>
+
+        <div className="space-y-5">
+          {[
