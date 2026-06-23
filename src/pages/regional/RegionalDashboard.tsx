@@ -747,3 +747,10 @@ export default function RegionalDashboard() {
     <div className="space-y-6">
       <div className="flex gap-2 flex-wrap">
         {['all', 'pending', 'approved', 'rejected'].map(s => (
+          <button key={s} className={`px-4 py-2 rounded-full text-sm font-semibold capitalize transition-all ${s === 'all' ? 'bg-primary text-white shadow-md' : 'bg-card border border-border text-muted-foreground hover:bg-muted'}`}>
+            {s === 'all' ? `All (${mockLearning.length})` : `${s} (${mockLearning.filter(l => l.status === s).length})`}
+          </button>
+        ))}
+      </div>
+
+      <div className="space-y-4">
