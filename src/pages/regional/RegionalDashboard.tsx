@@ -831,3 +831,10 @@ export default function RegionalDashboard() {
                 </div>
                 <div className="bg-muted/50 rounded-xl p-3 text-center">
                   <Droplets size={18} className="text-blue-500 mx-auto mb-1" />
+                  <p className="text-lg font-bold">{w.humidity}%</p>
+                  <p className="text-xs text-muted-foreground">Humidity</p>
+                </div>
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                  <CloudRain size={18} className="text-cyan-500 mx-auto mb-1" />
+                  <p className="text-lg font-bold">{w.rainfall}mm</p>
+                  <p className="text-xs text-muted-foreground">Rain</p>
