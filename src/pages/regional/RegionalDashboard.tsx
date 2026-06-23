@@ -614,3 +614,10 @@ export default function RegionalDashboard() {
                     <span className="flex items-center gap-1"><Clock size={13} /> {format(new Date(req.createdAt), 'MMM d, h:mm a')}</span>
                     <span className="flex items-center gap-1"><Leaf size={13} /> {req.category}</span>
                   </div>
+                  {req.assignedExpert && (
+                    <div className="mt-3 flex items-center gap-2 text-sm">
+                      <UserCheck size={15} className="text-primary" />
+                      <span className="font-semibold text-primary">Assigned to: {experts.find(e => e.id === req.assignedExpert)?.name || req.assignedExpert}</span>
+                    </div>
+                  )}
+                </div>
