@@ -621,3 +621,10 @@ export default function RegionalDashboard() {
                     </div>
                   )}
                 </div>
+                <div className="flex gap-2 shrink-0">
+                  {req.status === 'open' && (
+                    <button onClick={() => setShowAssignModal(req)} className="flex items-center gap-2 px-4 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md text-sm active:scale-[0.97]">
+                      <Send size={16} /> Assign Expert
+                    </button>
+                  )}
+                  {req.status === 'assigned' && (
