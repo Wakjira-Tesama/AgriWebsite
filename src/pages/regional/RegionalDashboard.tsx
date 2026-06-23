@@ -803,3 +803,10 @@ export default function RegionalDashboard() {
         <div>
           <h3 className="font-bold font-display text-lg">Regional Weather Intelligence</h3>
           <p className="text-sm text-muted-foreground">Live weather data across {cfg.name} zones — Updated every 3 hours</p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        {weatherData.map((w, i) => {
+          const WeatherIcon = w.icon;
+          return (
