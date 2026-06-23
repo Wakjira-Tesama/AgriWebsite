@@ -887,3 +887,10 @@ export default function RegionalDashboard() {
   // ════════════════════════════════
   // PROFILE
   // ════════════════════════════════
+  const renderProfile = () => (
+    <div className="max-w-2xl space-y-6">
+      <div className="bg-card rounded-2xl border border-border p-8">
+        <div className="flex items-center gap-5 mb-8">
+          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-2xl shadow-xl">RM</div>
+          <div>
+            <h3 className="text-2xl font-display font-bold text-foreground">Regional Manager</h3>
