@@ -775,3 +775,10 @@ export default function RegionalDashboard() {
                   <span className="flex items-center gap-1"><Leaf size={14} /> {item.category}</span>
                   <span className="flex items-center gap-1"><Clock size={14} /> {format(new Date(item.submittedAt), 'MMM d, yyyy')}</span>
                 </div>
+              </div>
+              {item.status === 'pending' && (
+                <div className="flex gap-2 shrink-0">
+                  <button className="px-4 py-2 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all text-sm flex items-center gap-1.5">
+                    <CheckCircle size={16} /> Approve
+                  </button>
+                  <button className="px-4 py-2 border border-red-200 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-all text-sm flex items-center gap-1.5">
