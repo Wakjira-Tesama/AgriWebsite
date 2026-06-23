@@ -838,3 +838,10 @@ export default function RegionalDashboard() {
                   <CloudRain size={18} className="text-cyan-500 mx-auto mb-1" />
                   <p className="text-lg font-bold">{w.rainfall}mm</p>
                   <p className="text-xs text-muted-foreground">Rain</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
