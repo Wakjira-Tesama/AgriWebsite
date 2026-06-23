@@ -866,3 +866,10 @@ export default function RegionalDashboard() {
                   a.type === 'weather' ? 'bg-blue-100 text-blue-700' :
                   a.type === 'alert' ? 'bg-red-100 text-red-700' :
                   'bg-primary/10 text-primary'
+                }`}>{a.type === 'weather' ? '🌧 Weather' : a.type === 'alert' ? '⚠ Alert' : 'ℹ Info'}</span>
+                <p className="text-xs text-muted-foreground">{format(new Date(a.created_at), 'MMM d, yyyy • h:mm a')}</p>
+              </div>
+              <h3 className="font-bold font-display text-xl">{a.title}</h3>
+              <p className="text-foreground/80 mt-2 leading-relaxed">{a.body}</p>
+            </div>
+          </div>
