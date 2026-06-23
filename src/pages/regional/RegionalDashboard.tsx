@@ -768,3 +768,10 @@ export default function RegionalDashboard() {
                     item.status === 'approved' ? 'bg-emerald-50 text-emerald-600 border-emerald-200' :
                     'bg-red-50 text-red-600 border-red-200'
                   }`}>{item.status}</span>
+                </div>
+                <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground flex-wrap">
+                  <span className="flex items-center gap-1"><GraduationCap size={14} /> {item.author}</span>
+                  <span className="flex items-center gap-1"><Globe size={14} /> {item.language}</span>
+                  <span className="flex items-center gap-1"><Leaf size={14} /> {item.category}</span>
+                  <span className="flex items-center gap-1"><Clock size={14} /> {format(new Date(item.submittedAt), 'MMM d, yyyy')}</span>
+                </div>
