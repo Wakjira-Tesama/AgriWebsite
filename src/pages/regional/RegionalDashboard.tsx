@@ -670,3 +670,10 @@ export default function RegionalDashboard() {
               <span className="text-xs text-muted-foreground font-medium">{report.date}</span>
               <button className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">
                 Generate <ChevronRight size={16} />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
