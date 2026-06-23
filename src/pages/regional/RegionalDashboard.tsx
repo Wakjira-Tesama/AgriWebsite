@@ -600,3 +600,10 @@ export default function RegionalDashboard() {
                 <div className={`p-3 rounded-xl shrink-0 ${pc.bg} border`}>
                   <MessageSquare size={22} className={pc.color} />
                 </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap mb-1">
+                    <h3 className="font-bold text-foreground text-lg">{req.title}</h3>
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${sc.bg} ${sc.color}`}>{sc.label}</span>
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full border uppercase ${pc.bg} ${pc.color}`}>{req.priority}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-1">{req.description}</p>
