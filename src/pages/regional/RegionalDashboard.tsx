@@ -824,3 +824,10 @@ export default function RegionalDashboard() {
                 <WeatherIcon size={36} className="text-blue-500" />
               </div>
               <div className="grid grid-cols-3 gap-3">
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                  <ThermometerSun size={18} className="text-amber-500 mx-auto mb-1" />
+                  <p className="text-lg font-bold">{w.temp}°C</p>
+                  <p className="text-xs text-muted-foreground">Temp</p>
+                </div>
+                <div className="bg-muted/50 rounded-xl p-3 text-center">
+                  <Droplets size={18} className="text-blue-500 mx-auto mb-1" />
