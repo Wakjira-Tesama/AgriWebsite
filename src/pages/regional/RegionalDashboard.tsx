@@ -761,3 +761,10 @@ export default function RegionalDashboard() {
                 {item.type === 'video' ? <Eye size={22} /> : item.type === 'article' ? <FileText size={22} /> : <BookOpen size={22} />}
               </div>
               <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h3 className="font-bold text-foreground">{item.title}</h3>
+                  <span className={`text-xs font-bold px-2.5 py-1 rounded-full border capitalize ${
+                    item.status === 'pending' ? 'bg-amber-50 text-amber-600 border-amber-200' :
+                    item.status === 'approved' ? 'bg-emerald-50 text-emerald-600 border-emerald-200' :
+                    'bg-red-50 text-red-600 border-red-200'
+                  }`}>{item.status}</span>
