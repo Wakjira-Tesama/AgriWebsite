@@ -859,3 +859,10 @@ export default function RegionalDashboard() {
               a.type === 'weather' ? 'bg-blue-50 text-blue-600' :
               a.type === 'alert' ? 'bg-red-50 text-red-600' :
               'bg-primary/10 text-primary'
+            }`}><Bell size={24} /></div>
+            <div className="flex-1">
+              <div className="flex items-center gap-3 mb-2 flex-wrap">
+                <span className={`text-xs font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider ${
+                  a.type === 'weather' ? 'bg-blue-100 text-blue-700' :
+                  a.type === 'alert' ? 'bg-red-100 text-red-700' :
+                  'bg-primary/10 text-primary'
