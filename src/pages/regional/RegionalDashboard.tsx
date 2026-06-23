@@ -635,3 +635,10 @@ export default function RegionalDashboard() {
                   {req.status === 'resolved' && (
                     <span className="flex items-center gap-2 px-4 py-2.5 text-emerald-600 font-bold text-sm">
                       <CheckCircle size={16} /> Complete
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
