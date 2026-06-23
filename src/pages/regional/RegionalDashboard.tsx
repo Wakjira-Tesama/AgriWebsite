@@ -782,3 +782,10 @@ export default function RegionalDashboard() {
                     <CheckCircle size={16} /> Approve
                   </button>
                   <button className="px-4 py-2 border border-red-200 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-all text-sm flex items-center gap-1.5">
+                    <XCircle size={16} /> Reject
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
