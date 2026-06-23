@@ -628,3 +628,10 @@ export default function RegionalDashboard() {
                     </button>
                   )}
                   {req.status === 'assigned' && (
+                    <button className="flex items-center gap-2 px-4 py-2.5 border border-border text-foreground font-bold rounded-xl hover:bg-muted transition-all text-sm">
+                      <Eye size={16} /> View Thread
+                    </button>
+                  )}
+                  {req.status === 'resolved' && (
+                    <span className="flex items-center gap-2 px-4 py-2.5 text-emerald-600 font-bold text-sm">
+                      <CheckCircle size={16} /> Complete
