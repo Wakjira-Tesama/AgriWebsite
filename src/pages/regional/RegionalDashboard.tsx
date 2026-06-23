@@ -880,3 +880,10 @@ export default function RegionalDashboard() {
           <h3 className="text-xl font-bold">No notifications</h3>
           <p className="text-muted-foreground mt-2">You're all caught up!</p>
         </div>
+      )}
+    </div>
+  );
+
+  // ════════════════════════════════
+  // PROFILE
+  // ════════════════════════════════
