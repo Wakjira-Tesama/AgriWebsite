@@ -796,3 +796,10 @@ export default function RegionalDashboard() {
   // ════════════════════════════════
   // WEATHER
   // ════════════════════════════════
+  const renderWeather = () => (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-blue-500/10 via-cyan-50 to-sky-50 rounded-2xl border border-blue-200 p-6 flex items-center gap-4">
+        <div className="p-3 bg-blue-100 rounded-xl text-blue-600"><CloudRain size={24} /></div>
+        <div>
+          <h3 className="font-bold font-display text-lg">Regional Weather Intelligence</h3>
+          <p className="text-sm text-muted-foreground">Live weather data across {cfg.name} zones — Updated every 3 hours</p>
