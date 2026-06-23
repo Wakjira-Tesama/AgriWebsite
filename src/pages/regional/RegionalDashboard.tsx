@@ -789,3 +789,10 @@ export default function RegionalDashboard() {
             </div>
           </div>
         ))}
+      </div>
+    </div>
+  );
+
+  // ════════════════════════════════
+  // WEATHER
+  // ════════════════════════════════
