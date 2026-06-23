@@ -810,3 +810,10 @@ export default function RegionalDashboard() {
         {weatherData.map((w, i) => {
           const WeatherIcon = w.icon;
           return (
+            <div key={i} className={`bg-card rounded-2xl border p-6 hover:shadow-lg transition-all duration-300 ${w.alert ? 'border-red-200' : 'border-border'}`}>
+              {w.alert && (
+                <div className="flex items-center gap-2 text-red-600 bg-red-50 rounded-xl px-3 py-2 mb-4 text-sm font-bold">
+                  <AlertTriangle size={16} /> {w.alert}
+                </div>
+              )}
+              <div className="flex items-center justify-between mb-4">
