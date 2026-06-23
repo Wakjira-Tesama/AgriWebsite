@@ -852,3 +852,10 @@ export default function RegionalDashboard() {
   // ════════════════════════════════
   const renderNotifications = () => (
     <div className="space-y-5">
+      {announcements && announcements.length > 0 ? announcements.map((a: any) => (
+        <div key={a.id} className="bg-card p-6 rounded-2xl border border-border hover:shadow-lg transition-all duration-300">
+          <div className="flex gap-5">
+            <div className={`p-4 rounded-2xl h-fit shrink-0 ${
+              a.type === 'weather' ? 'bg-blue-50 text-blue-600' :
+              a.type === 'alert' ? 'bg-red-50 text-red-600' :
+              'bg-primary/10 text-primary'
