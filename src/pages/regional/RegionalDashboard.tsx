@@ -901,3 +901,10 @@ export default function RegionalDashboard() {
 
         <div className="space-y-5">
           {[
+            { label: 'Full Name', value: region === 'oromia' ? 'Obbo Dassaaleny Fufaa' : 'Ato Abebe Kebede', icon: Users },
+            { label: 'Email', value: `manager.${region}@agribridge.gov.et`, icon: Mail },
+            { label: 'Phone', value: '+251 911 234 567', icon: Phone },
+            { label: 'Region', value: cfg.name, icon: MapPin },
+            { label: 'Primary Language', value: cfg.language, icon: Globe },
+            { label: 'Zones Managed', value: cfg.zones.length.toString(), icon: MapPin },
+            { label: 'Role', value: 'Regional Agriculture Manager', icon: Award },
