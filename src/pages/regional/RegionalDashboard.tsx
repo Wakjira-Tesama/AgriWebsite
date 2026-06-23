@@ -565,3 +565,9 @@ export default function RegionalDashboard() {
                   <td className="p-4 text-sm text-muted-foreground">{format(new Date(f.joinedDate), 'MMM d, yyyy')}</td>
                 </tr>
               ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
