@@ -908,3 +908,10 @@ export default function RegionalDashboard() {
             { label: 'Primary Language', value: cfg.language, icon: Globe },
             { label: 'Zones Managed', value: cfg.zones.length.toString(), icon: MapPin },
             { label: 'Role', value: 'Regional Agriculture Manager', icon: Award },
+          ].map((field, i) => (
+            <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-muted/40">
+              <field.icon size={18} className="text-muted-foreground shrink-0" />
+              <div className="flex-1">
+                <p className="text-xs text-muted-foreground font-medium">{field.label}</p>
+                <p className="font-semibold text-foreground">{field.value}</p>
+              </div>
