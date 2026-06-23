@@ -649,3 +649,10 @@ export default function RegionalDashboard() {
   // ════════════════════════════════
   // REPORTS
   // ════════════════════════════════
+  const renderReports = () => (
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        {[
+          { title: 'Monthly Farmer Report', desc: 'Summary of farmer registrations, activity, and crop production', icon: Users, color: 'from-emerald-500 to-green-600', date: 'June 2026' },
+          { title: 'Expert Performance', desc: 'Expert response times, satisfaction ratings, and ticket resolution', icon: UserCheck, color: 'from-blue-500 to-indigo-600', date: 'June 2026' },
+          { title: 'Crop Production Forecast', desc: 'Estimated yields by zone based on weather and planting data', icon: Leaf, color: 'from-amber-500 to-orange-500', date: 'Q2 2026' },
