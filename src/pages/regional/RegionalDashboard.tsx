@@ -754,3 +754,10 @@ export default function RegionalDashboard() {
       </div>
 
       <div className="space-y-4">
+        {mockLearning.map(item => (
+          <div key={item.id} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-center gap-5">
+              <div className={`p-3 rounded-xl shrink-0 ${item.type === 'video' ? 'bg-red-50 text-red-500' : item.type === 'article' ? 'bg-blue-50 text-blue-500' : 'bg-emerald-50 text-emerald-500'}`}>
+                {item.type === 'video' ? <Eye size={22} /> : item.type === 'article' ? <FileText size={22} /> : <BookOpen size={22} />}
+              </div>
+              <div className="flex-1 min-w-0">
