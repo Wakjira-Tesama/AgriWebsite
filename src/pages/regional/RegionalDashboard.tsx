@@ -586,3 +586,10 @@ export default function RegionalDashboard() {
           }`} onClick={() => setZoneFilter(status === 'all' ? 'All' : status)}>
             {status === 'all' ? `All Requests (${requests.length})` : `${status} (${requests.filter(r => r.status === status).length})`}
           </button>
+        ))}
+      </div>
+
+      {/* Request Cards */}
+      <div className="space-y-4">
+        {requests.filter(r => zoneFilter === 'All' || r.status === zoneFilter).map(req => {
+          const sc = requestStatusConfig[req.status];
