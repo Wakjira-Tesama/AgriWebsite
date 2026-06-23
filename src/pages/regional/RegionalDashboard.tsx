@@ -845,3 +845,10 @@ export default function RegionalDashboard() {
         })}
       </div>
     </div>
+  );
+
+  // ════════════════════════════════
+  // NOTIFICATIONS
+  // ════════════════════════════════
+  const renderNotifications = () => (
+    <div className="space-y-5">
