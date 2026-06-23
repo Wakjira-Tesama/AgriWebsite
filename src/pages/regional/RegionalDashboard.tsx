@@ -579,3 +579,10 @@ export default function RegionalDashboard() {
     <div className="space-y-6">
       {/* Request Filter Pills */}
       <div className="flex gap-2 flex-wrap">
+        {['all', 'open', 'assigned', 'resolved'].map(status => (
+          <button key={status} className={`px-4 py-2 rounded-full text-sm font-semibold capitalize transition-all ${
+            zoneFilter === status || (status === 'all' && zoneFilter === 'All')
+              ? 'bg-primary text-white shadow-md' : 'bg-card border border-border text-muted-foreground hover:bg-muted'
+          }`} onClick={() => setZoneFilter(status === 'all' ? 'All' : status)}>
+            {status === 'all' ? `All Requests (${requests.length})` : `${status} (${requests.filter(r => r.status === status).length})`}
+          </button>
