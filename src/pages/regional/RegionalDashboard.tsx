@@ -551,3 +551,10 @@ export default function RegionalDashboard() {
                   </td>
                   <td className="p-4 text-sm font-medium text-foreground">{f.farmSize}</td>
                   <td className="p-4">
+                    <span className="text-xs font-medium bg-accent/10 text-accent px-2 py-1 rounded-full flex items-center gap-1 w-fit">
+                      <Globe size={12} /> {f.language}
+                    </span>
+                  </td>
+                  <td className="p-4">
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full capitalize ${
+                      f.status === 'verified' ? 'bg-emerald-50 text-emerald-600 border border-emerald-200' :
