@@ -530,3 +530,10 @@ export default function RegionalDashboard() {
                   <td className="p-4">
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
+                        {f.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                      </div>
+                      <div>
+                        <p className="font-semibold text-foreground">{f.name}</p>
+                        <p className="text-xs text-muted-foreground">{f.phone}</p>
+                      </div>
+                    </div>
