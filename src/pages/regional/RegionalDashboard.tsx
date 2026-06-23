@@ -537,3 +537,10 @@ export default function RegionalDashboard() {
                         <p className="text-xs text-muted-foreground">{f.phone}</p>
                       </div>
                     </div>
+                  </td>
+                  <td className="p-4">
+                    <p className="text-sm font-medium text-foreground">{f.zone}</p>
+                    <p className="text-xs text-muted-foreground">{f.woreda}</p>
+                  </td>
+                  <td className="p-4">
+                    <div className="flex gap-1 flex-wrap">
