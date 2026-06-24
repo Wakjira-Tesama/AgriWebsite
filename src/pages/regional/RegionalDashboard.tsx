@@ -1153,3 +1153,10 @@ export default function RegionalDashboard() {
                         <p className="font-bold text-foreground">{expert.name}</p>
                         {matchesCategory && matchesLanguage && (
                           <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">Best Match</span>
+                        )}
+                      </div>
+                      <p className="text-sm text-muted-foreground">{expert.specialty} • {expert.languages.join(', ')}</p>
+                      <p className="text-xs text-muted-foreground flex items-center gap-2 mt-1">
+                        <span><Star size={11} className="inline fill-amber-500 text-amber-500" /> {expert.rating}</span>
+                        <span>• {expert.ticketsResolved} resolved</span>
+                        <span>• {expert.zone}</span>
