@@ -22,4 +22,9 @@ type Tab = 'overview' | 'regions' | 'buyers' | 'prices' | 'announcements' | 'pla
 interface RegionalManager {
   id: string;
   name: string;
-  region: string;
+  region: string;
+  language: string;
+  email: string;
+  phone: string;
+  status: 'active' | 'suspended' | 'pending';
+  farmers: number;
