@@ -57,4 +57,9 @@ const platformGrowthData = [
   { name: 'May', users: 13200, transactions: 7800, revenue: 6.5 },
   { name: 'Jun', users: 18500, transactions: 11200, revenue: 9.2 },
 ];
-
+
+const revenueByRegionData = [
+  { name: 'Oromia', revenue: 3200, transactions: 4500 },
+  { name: 'Amhara', revenue: 2400, transactions: 3200 },
+  { name: 'SNNPR', revenue: 1800, transactions: 2100 },
+  { name: 'Tigray', revenue: 1200, transactions: 1500 },
