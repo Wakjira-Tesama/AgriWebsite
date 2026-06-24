@@ -32,4 +32,9 @@ interface RegionalManager {
   performance: number;
   joinedDate: string;
   avatar: string;
-}
+}
+
+interface Buyer {
+  id: string;
+  name: string;
+  type: 'wholesale' | 'exporter' | 'processor' | 'retailer';
