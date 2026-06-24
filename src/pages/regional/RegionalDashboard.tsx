@@ -1124,3 +1124,11 @@ export default function RegionalDashboard() {
           </div>
         </div>
       )}
+
+      {/* ═══ ASSIGN EXPERT MODAL ═══ */}
+      {showAssignModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowAssignModal(null)}>
+          <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="p-6 border-b border-border">
+              <h3 className="text-xl font-display font-bold">Assign Expert</h3>
+              <p className="text-sm text-muted-foreground mt-1">
