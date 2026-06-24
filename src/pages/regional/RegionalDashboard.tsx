@@ -1034,3 +1034,10 @@ export default function RegionalDashboard() {
             </div>
           </div>
         </header>
+
+        {/* Page Content */}
+        <div className="p-6 lg:p-8">
+          {activeTab === 'overview' && renderOverview()}
+          {activeTab === 'experts' && renderExperts()}
+          {activeTab === 'farmers' && renderFarmers()}
+          {activeTab === 'requests' && renderRequests()}
