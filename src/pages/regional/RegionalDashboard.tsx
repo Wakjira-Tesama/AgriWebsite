@@ -1055,3 +1055,10 @@ export default function RegionalDashboard() {
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowAddExpert(false)}>
           <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
             <div className="p-6 border-b border-border flex items-center justify-between">
+              <div>
+                <h3 className="text-xl font-display font-bold">Add New Expert</h3>
+                <p className="text-sm text-muted-foreground">Register an agricultural expert for {cfg.name}</p>
+              </div>
+              <button onClick={() => setShowAddExpert(false)} className="p-2 rounded-full hover:bg-muted transition-colors"><X size={20} /></button>
+            </div>
+            <div className="p-6 space-y-4 max-h-[60vh] overflow-y-auto">
