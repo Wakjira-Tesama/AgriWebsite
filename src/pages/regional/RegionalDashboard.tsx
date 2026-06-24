@@ -1076,3 +1076,10 @@ export default function RegionalDashboard() {
                     <option value="Livestock">Livestock</option>
                     <option value="Agronomy">Agronomy</option>
                     <option value="Irrigation">Irrigation</option>
+                    <option value="Post-Harvest">Post-Harvest</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Zone</label>
+                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.zone} onChange={e => setExpertForm({ ...expertForm, zone: e.target.value })}>
+                    {cfg.zones.map(z => <option key={z} value={z}>{z}</option>)}
