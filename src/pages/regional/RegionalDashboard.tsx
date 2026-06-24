@@ -1069,3 +1069,10 @@ export default function RegionalDashboard() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Specialty</label>
+                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.specialty} onChange={e => setExpertForm({ ...expertForm, specialty: e.target.value })}>
+                    <option value="">Select...</option>
+                    <option value="Crop Disease">Crop Disease</option>
+                    <option value="Soil Science">Soil Science</option>
+                    <option value="Livestock">Livestock</option>
+                    <option value="Agronomy">Agronomy</option>
+                    <option value="Irrigation">Irrigation</option>
