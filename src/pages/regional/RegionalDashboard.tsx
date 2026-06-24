@@ -1083,3 +1083,10 @@ export default function RegionalDashboard() {
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Zone</label>
                   <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.zone} onChange={e => setExpertForm({ ...expertForm, zone: e.target.value })}>
                     {cfg.zones.map(z => <option key={z} value={z}>{z}</option>)}
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-1.5">Languages Spoken</label>
+                <div className="flex gap-2 flex-wrap">
+                  {[cfg.language, 'Amharic', 'English', 'Somali', 'Tigrinya'].map(lang => (
