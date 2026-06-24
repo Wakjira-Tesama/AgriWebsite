@@ -1160,3 +1160,10 @@ export default function RegionalDashboard() {
                         <span><Star size={11} className="inline fill-amber-500 text-amber-500" /> {expert.rating}</span>
                         <span>• {expert.ticketsResolved} resolved</span>
                         <span>• {expert.zone}</span>
+                      </p>
+                    </div>
+                    <Send size={18} className="text-primary shrink-0" />
+                  </button>
+                );
+              })}
+            </div>
