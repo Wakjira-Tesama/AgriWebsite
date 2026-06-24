@@ -1146,3 +1146,10 @@ export default function RegionalDashboard() {
                   <button key={expert.id} onClick={() => setShowAssignModal(null)}
                     className={`w-full flex items-center gap-4 p-4 rounded-xl border transition-all hover:shadow-md active:scale-[0.98] text-left ${
                       matchesCategory && matchesLanguage ? 'border-primary/30 bg-primary/5 hover:bg-primary/10' : 'border-border hover:bg-muted'
+                    }`}>
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-sm shrink-0">{expert.avatar}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <p className="font-bold text-foreground">{expert.name}</p>
+                        {matchesCategory && matchesLanguage && (
+                          <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">Best Match</span>
