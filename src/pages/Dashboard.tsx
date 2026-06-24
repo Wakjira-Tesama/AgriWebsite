@@ -67,4 +67,9 @@ const revenueByRegionData = [
   { name: 'Others', revenue: 600, transactions: 800 },
 ];
 
-const marketShareData = [
+const marketShareData = [
+  { name: 'Teff', value: 32 },
+  { name: 'Coffee', value: 28 },
+  { name: 'Maize', value: 18 },
+  { name: 'Sesame', value: 12 },
+  { name: 'Others', value: 10 },
