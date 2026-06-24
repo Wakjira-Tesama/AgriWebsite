@@ -1041,3 +1041,10 @@ export default function RegionalDashboard() {
           {activeTab === 'experts' && renderExperts()}
           {activeTab === 'farmers' && renderFarmers()}
           {activeTab === 'requests' && renderRequests()}
+          {activeTab === 'reports' && renderReports()}
+          {activeTab === 'analytics' && renderAnalytics()}
+          {activeTab === 'learning' && renderLearning()}
+          {activeTab === 'weather' && renderWeather()}
+          {activeTab === 'notifications' && renderNotifications()}
+          {activeTab === 'profile' && renderProfile()}
+        </div>
