@@ -1167,3 +1167,10 @@ export default function RegionalDashboard() {
                 );
               })}
             </div>
+            <div className="p-4 border-t border-border">
+              <button onClick={() => setShowAssignModal(null)} className="w-full py-3 border border-border rounded-xl font-bold hover:bg-muted transition-colors">Cancel</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
