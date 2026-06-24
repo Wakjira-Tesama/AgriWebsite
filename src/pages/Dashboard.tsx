@@ -27,4 +27,9 @@ interface RegionalManager {
   email: string;
   phone: string;
   status: 'active' | 'suspended' | 'pending';
-  farmers: number;
+  farmers: number;
+  experts: number;
+  performance: number;
+  joinedDate: string;
+  avatar: string;
+}
