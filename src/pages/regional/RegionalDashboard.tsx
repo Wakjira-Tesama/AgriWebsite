@@ -1013,3 +1013,10 @@ export default function RegionalDashboard() {
                 <h1 className="text-2xl lg:text-3xl font-display font-bold text-foreground">{tabTitles[activeTab].title}</h1>
                 <p className="text-sm text-muted-foreground mt-0.5 hidden sm:block">{tabTitles[activeTab].subtitle}</p>
               </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">
+                <MapPin size={15} /> {cfg.name}
+              </div>
+              <button onClick={() => setActiveTab('notifications')} className="relative w-10 h-10 rounded-xl bg-card border border-border flex items-center justify-center hover:bg-muted transition-colors">
+                <Bell size={18} />
