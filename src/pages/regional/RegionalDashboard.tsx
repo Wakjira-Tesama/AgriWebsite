@@ -1132,3 +1132,10 @@ export default function RegionalDashboard() {
             <div className="p-6 border-b border-border">
               <h3 className="text-xl font-display font-bold">Assign Expert</h3>
               <p className="text-sm text-muted-foreground mt-1">
+                Select an expert for: <span className="font-semibold text-foreground">{showAssignModal.title}</span>
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Category: {showAssignModal.category} • Language: {showAssignModal.language}
+              </p>
+            </div>
+            <div className="p-6 space-y-3 max-h-[50vh] overflow-y-auto">
