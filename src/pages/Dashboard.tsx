@@ -52,4 +52,9 @@ interface Buyer {
 const platformGrowthData = [
   { name: 'Jan', users: 2400, transactions: 1200, revenue: 1.2 },
   { name: 'Feb', users: 4200, transactions: 2100, revenue: 2.1 },
-  { name: 'Mar', users: 6800, transactions: 3400, revenue: 3.4 },
+  { name: 'Mar', users: 6800, transactions: 3400, revenue: 3.4 },
+  { name: 'Apr', users: 9500, transactions: 5200, revenue: 4.8 },
+  { name: 'May', users: 13200, transactions: 7800, revenue: 6.5 },
+  { name: 'Jun', users: 18500, transactions: 11200, revenue: 9.2 },
+];
+
