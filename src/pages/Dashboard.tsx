@@ -17,4 +17,9 @@ import {
 } from 'recharts';
 
 // ─── TYPES ───
-type Tab = 'overview' | 'regions' | 'buyers' | 'prices' | 'announcements' | 'platform' | 'settings';
+type Tab = 'overview' | 'regions' | 'buyers' | 'prices' | 'announcements' | 'platform' | 'settings';
+
+interface RegionalManager {
+  id: string;
+  name: string;
+  region: string;
