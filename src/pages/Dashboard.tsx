@@ -7,4 +7,9 @@ import {
   Shield, MapPin, Globe, Search, Menu, X, ChevronRight, ChevronDown,
   Settings, ArrowUpRight, Edit3, Eye, UserCheck, UserPlus,
   DollarSign, Activity, AlertTriangle, Crown, Lock,
-  ShoppingBag, Mail,
+  ShoppingBag, Mail,
+  Megaphone, Zap, Database, Server, Layers
+} from 'lucide-react';
+import { format } from 'date-fns';
+import {
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer,
