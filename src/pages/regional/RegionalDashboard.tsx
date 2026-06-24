@@ -964,3 +964,10 @@ export default function RegionalDashboard() {
               }`}>
               <item.icon size={19} />
               <span className="flex-1 text-left">{item.label}</span>
+              {item.badge && <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${activeTab === item.id ? 'bg-white/20' : 'bg-accent text-white'}`}>{item.badge}</span>}
+            </button>
+          ))}
+
+          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider px-3 mb-2 mt-4">Insights</p>
+          {navItems.slice(4, 8).map(item => (
+            <button key={item.id} onClick={() => { setActiveTab(item.id); setSidebarOpen(false); setSearchQuery(''); setZoneFilter('All'); }}
