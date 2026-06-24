@@ -1104,3 +1104,10 @@ export default function RegionalDashboard() {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Phone</label>
+                  <input type="tel" placeholder="+251 9XX XXX XXX" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.phone} onChange={e => setExpertForm({ ...expertForm, phone: e.target.value })} />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Email</label>
+                  <input type="email" placeholder="expert@email.com" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.email} onChange={e => setExpertForm({ ...expertForm, email: e.target.value })} />
