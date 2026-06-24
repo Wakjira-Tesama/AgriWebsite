@@ -42,4 +42,9 @@ interface Buyer {
   status: 'active' | 'suspended' | 'pending' | 'verified';
   totalOrders: number;
   totalSpent: string;
-  phone: string;
+  phone: string;
+  email: string;
+  joinedDate: string;
+  avatar: string;
+}
+
