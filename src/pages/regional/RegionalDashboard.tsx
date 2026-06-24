@@ -1097,3 +1097,10 @@ export default function RegionalDashboard() {
                       }}
                       className={`px-3 py-1.5 rounded-full text-sm font-semibold transition-all ${
                         expertForm.languages.includes(lang) ? 'bg-primary text-white' : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                      }`}>
+                      {lang}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
