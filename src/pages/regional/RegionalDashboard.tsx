@@ -1139,3 +1139,10 @@ export default function RegionalDashboard() {
               </p>
             </div>
             <div className="p-6 space-y-3 max-h-[50vh] overflow-y-auto">
+              {experts.filter(e => e.status === 'active').map(expert => {
+                const matchesCategory = expert.specialty === showAssignModal.category;
+                const matchesLanguage = expert.languages.includes(showAssignModal.language);
+                return (
+                  <button key={expert.id} onClick={() => setShowAssignModal(null)}
+                    className={`w-full flex items-center gap-4 p-4 rounded-xl border transition-all hover:shadow-md active:scale-[0.98] text-left ${
+                      matchesCategory && matchesLanguage ? 'border-primary/30 bg-primary/5 hover:bg-primary/10' : 'border-border hover:bg-muted'
