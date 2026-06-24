@@ -999,3 +999,10 @@ export default function RegionalDashboard() {
             className="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-medium text-destructive hover:bg-destructive/10 transition-colors text-sm">
             <LogOut size={19} /> Sign Out
           </button>
+        </div>
+      </aside>
+
+      {/* MAIN CONTENT */}
+      <main className="flex-1 min-w-0 overflow-y-auto max-h-screen">
+        {/* Top Bar */}
+        <header className="sticky top-0 z-30 bg-background/80 backdrop-blur-xl border-b border-border/60 px-6 lg:px-8 py-4">
