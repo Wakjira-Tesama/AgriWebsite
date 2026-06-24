@@ -1118,3 +1118,9 @@ export default function RegionalDashboard() {
               <button onClick={() => setShowAddExpert(false)} className="px-6 py-3 border border-border rounded-xl font-bold hover:bg-muted transition-colors">Cancel</button>
               <button onClick={() => { setShowAddExpert(false); setExpertForm({ name: '', specialty: '', phone: '', email: '', zone: cfg.zones[0], languages: [cfg.language] }); }}
                 className="px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 flex items-center gap-2">
+                <UserPlus size={18} /> Add Expert
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
