@@ -943,3 +943,10 @@ export default function RegionalDashboard() {
       `}>
         {/* Header */}
         <div className="p-5 border-b border-border">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1B5E20] to-primary flex items-center justify-center text-white shadow-lg">
+              <Shield size={24} />
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-foreground leading-tight">{cfg.name} Region</h2>
+              <p className="text-xs text-muted-foreground font-medium">{cfg.language} • Regional Manager</p>
