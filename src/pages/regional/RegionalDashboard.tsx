@@ -992,3 +992,10 @@ export default function RegionalDashboard() {
             </button>
           ))}
         </nav>
+
+        {/* Sign Out */}
+        <div className="p-3 border-t border-border">
+          <button onClick={() => navigate('/regional-login')}
+            className="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-medium text-destructive hover:bg-destructive/10 transition-colors text-sm">
+            <LogOut size={19} /> Sign Out
+          </button>
