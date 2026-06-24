@@ -1174,3 +1174,5 @@ export default function RegionalDashboard() {
         </div>
       )}
     </div>
+  );
+}
