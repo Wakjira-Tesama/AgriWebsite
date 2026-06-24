@@ -922,3 +922,10 @@ export default function RegionalDashboard() {
         <button className="w-full mt-6 py-3 border border-border rounded-xl font-bold text-foreground hover:bg-muted transition-colors flex items-center justify-center gap-2">
           <Edit3 size={18} /> Edit Profile
         </button>
+      </div>
+    </div>
+  );
+
+  // ═══════════════════════════════════════
+  // MAIN LAYOUT
+  // ═══════════════════════════════════════
