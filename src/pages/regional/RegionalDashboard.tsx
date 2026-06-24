@@ -1020,3 +1020,10 @@ export default function RegionalDashboard() {
               </div>
               <button onClick={() => setActiveTab('notifications')} className="relative w-10 h-10 rounded-xl bg-card border border-border flex items-center justify-center hover:bg-muted transition-colors">
                 <Bell size={18} />
+                {announcements && announcements.length > 0 && (
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-[10px] font-bold rounded-full flex items-center justify-center">{announcements.length}</span>
+                )}
+              </button>
+              <div className="hidden sm:flex items-center gap-3 pl-3 border-l border-border">
+                <div className="w-9 h-9 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold text-sm"><Shield size={18} /></div>
+                <div className="text-sm">
