@@ -72,4 +72,9 @@ const marketShareData = [
   { name: 'Coffee', value: 28 },
   { name: 'Maize', value: 18 },
   { name: 'Sesame', value: 12 },
-  { name: 'Others', value: 10 },
+  { name: 'Others', value: 10 },
+];
+const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20', '#64748b'];
+
+const mockRegionalManagers: RegionalManager[] = [
+  { id: 'RM001', name: 'Obbo Dassaaleny Fufaa', region: 'Oromia', language: 'Afaan Oromoo', email: 'manager.oromia@agribridge.gov.et', phone: '+251911234567', status: 'active', farmers: 3500, experts: 18, performance: 94, joinedDate: '2025-01-15', avatar: 'DF' },
