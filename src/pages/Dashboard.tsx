@@ -77,4 +77,9 @@ const marketShareData = [
 const PIE_COLORS = ['#2E7D32', '#F4A000', '#4CAF50', '#1B5E20', '#64748b'];
 
 const mockRegionalManagers: RegionalManager[] = [
-  { id: 'RM001', name: 'Obbo Dassaaleny Fufaa', region: 'Oromia', language: 'Afaan Oromoo', email: 'manager.oromia@agribridge.gov.et', phone: '+251911234567', status: 'active', farmers: 3500, experts: 18, performance: 94, joinedDate: '2025-01-15', avatar: 'DF' },
+  { id: 'RM001', name: 'Obbo Dassaaleny Fufaa', region: 'Oromia', language: 'Afaan Oromoo', email: 'manager.oromia@agribridge.gov.et', phone: '+251911234567', status: 'active', farmers: 3500, experts: 18, performance: 94, joinedDate: '2025-01-15', avatar: 'DF' },
+  { id: 'RM002', name: 'Ato Abebe Kebede', region: 'Amhara', language: 'Amharic', email: 'manager.amhara@agribridge.gov.et', phone: '+251922345678', status: 'active', farmers: 2800, experts: 14, performance: 88, joinedDate: '2025-02-20', avatar: 'AK' },
+  { id: 'RM003', name: 'W/ro Selamawit Gebre', region: 'SNNPR', language: 'Multiple', email: 'manager.snnpr@agribridge.gov.et', phone: '+251933456789', status: 'active', farmers: 2100, experts: 12, performance: 91, joinedDate: '2025-03-10', avatar: 'SG' },
+  { id: 'RM004', name: 'Ato Gebremariam Tekle', region: 'Tigray', language: 'Tigrinya', email: 'manager.tigray@agribridge.gov.et', phone: '+251944567890', status: 'suspended', farmers: 1500, experts: 8, performance: 72, joinedDate: '2025-04-05', avatar: 'GT' },
+  { id: 'RM005', name: 'Ato Hawaz Wondosen', region: 'Sidama', language: 'Sidaamu Afoo', email: 'manager.sidama@agribridge.gov.et', phone: '+251955678901', status: 'active', farmers: 1200, experts: 6, performance: 86, joinedDate: '2025-05-18', avatar: 'HW' },
+  { id: 'RM006', name: 'Ato Ahmed Hassan', region: 'Somali', language: 'Somali', email: 'manager.somali@agribridge.gov.et', phone: '+251966789012', status: 'pending', farmers: 0, experts: 0, performance: 0, joinedDate: '2026-06-28', avatar: 'AH' },
