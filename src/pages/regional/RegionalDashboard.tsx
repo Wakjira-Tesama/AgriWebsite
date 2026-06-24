@@ -1090,3 +1090,10 @@ export default function RegionalDashboard() {
                 <label className="block text-sm font-semibold text-foreground mb-1.5">Languages Spoken</label>
                 <div className="flex gap-2 flex-wrap">
                   {[cfg.language, 'Amharic', 'English', 'Somali', 'Tigrinya'].map(lang => (
+                    <button key={lang} type="button"
+                      onClick={() => {
+                        const langs = expertForm.languages.includes(lang) ? expertForm.languages.filter(l => l !== lang) : [...expertForm.languages, lang];
+                        setExpertForm({ ...expertForm, languages: langs });
+                      }}
+                      className={`px-3 py-1.5 rounded-full text-sm font-semibold transition-all ${
+                        expertForm.languages.includes(lang) ? 'bg-primary text-white' : 'bg-muted text-muted-foreground hover:bg-muted/80'
