@@ -1062,3 +1062,10 @@ export default function RegionalDashboard() {
               <button onClick={() => setShowAddExpert(false)} className="p-2 rounded-full hover:bg-muted transition-colors"><X size={20} /></button>
             </div>
             <div className="p-6 space-y-4 max-h-[60vh] overflow-y-auto">
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-1.5">Full Name</label>
+                <input type="text" placeholder="Dr. Expert Name" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" value={expertForm.name} onChange={e => setExpertForm({ ...expertForm, name: e.target.value })} />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Specialty</label>
