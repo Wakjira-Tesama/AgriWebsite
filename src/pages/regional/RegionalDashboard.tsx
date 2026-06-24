@@ -950,3 +950,10 @@ export default function RegionalDashboard() {
             <div>
               <h2 className="font-display font-bold text-foreground leading-tight">{cfg.name} Region</h2>
               <p className="text-xs text-muted-foreground font-medium">{cfg.language} • Regional Manager</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Nav */}
+        <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
+          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider px-3 mb-2 mt-1">Management</p>
