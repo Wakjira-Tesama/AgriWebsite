@@ -37,4 +37,9 @@ interface RegionalManager {
 interface Buyer {
   id: string;
   name: string;
-  type: 'wholesale' | 'exporter' | 'processor' | 'retailer';
+  type: 'wholesale' | 'exporter' | 'processor' | 'retailer';
+  location: string;
+  status: 'active' | 'suspended' | 'pending' | 'verified';
+  totalOrders: number;
+  totalSpent: string;
+  phone: string;
