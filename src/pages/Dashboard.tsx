@@ -62,4 +62,9 @@ const revenueByRegionData = [
   { name: 'Oromia', revenue: 3200, transactions: 4500 },
   { name: 'Amhara', revenue: 2400, transactions: 3200 },
   { name: 'SNNPR', revenue: 1800, transactions: 2100 },
-  { name: 'Tigray', revenue: 1200, transactions: 1500 },
+  { name: 'Tigray', revenue: 1200, transactions: 1500 },
+  { name: 'Sidama', revenue: 900, transactions: 1100 },
+  { name: 'Others', revenue: 600, transactions: 800 },
+];
+
+const marketShareData = [
