@@ -92,4 +92,9 @@ const mockBuyers: Buyer[] = [
   { id: 'B003', name: 'Hawassa Grain Mill', type: 'processor', location: 'Sidama', status: 'active', totalOrders: 25, totalSpent: '1.8M', phone: '+251933333333', email: 'hawassa@mill.et', joinedDate: '2025-08-10', avatar: 'HG' },
   { id: 'B004', name: 'Bahir Dar Foods PLC', type: 'processor', location: 'Amhara', status: 'active', totalOrders: 19, totalSpent: '920K', phone: '+251944444444', email: 'bd@foods.et', joinedDate: '2025-11-22', avatar: 'BF' },
   { id: 'B005', name: 'Oromia Cooperative Union', type: 'wholesale', location: 'Oromia', status: 'verified', totalOrders: 65, totalSpent: '5.6M', phone: '+251955555555', email: 'ocu@coop.et', joinedDate: '2025-01-08', avatar: 'OC' },
-  { id: 'B006', name: 'Tigray Sesame Export', type: 'exporter', location: 'Tigray', status: 'suspended', totalOrders: 12, totalSpent: '1.1M', phone: '+251966666666', email: 'tse@export.et', joinedDate: '2025-09-30', avatar: 'TS' },
+  { id: 'B006', name: 'Tigray Sesame Export', type: 'exporter', location: 'Tigray', status: 'suspended', totalOrders: 12, totalSpent: '1.1M', phone: '+251966666666', email: 'tse@export.et', joinedDate: '2025-09-30', avatar: 'TS' },
+  { id: 'B007', name: 'Jimma Coffee Union', type: 'wholesale', location: 'Oromia', status: 'pending', totalOrders: 0, totalSpent: '0', phone: '+251977777777', email: 'jcu@coffee.et', joinedDate: '2026-06-27', avatar: 'JC' },
+  { id: 'B008', name: 'Capital Supermarkets', type: 'retailer', location: 'Addis Ababa', status: 'verified', totalOrders: 38, totalSpent: '3.1M', phone: '+251988888888', email: 'capital@super.et', joinedDate: '2025-04-14', avatar: 'CS' },
+];
+
+const statusColors: Record<string, { text: string; bg: string }> = {
