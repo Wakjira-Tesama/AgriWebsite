@@ -222,4 +222,9 @@ export default function Dashboard() {
     prices: { title: 'Market Price Control', subtitle: 'Set and manage commodity prices across all markets' },
     announcements: { title: 'Broadcast Center', subtitle: 'Send platform-wide announcements and alerts' },
     platform: { title: 'Platform Analytics', subtitle: 'System-wide performance metrics and growth data' },
-    settings: { title: 'System Settings', subtitle: 'Platform configuration and administration' },
+    settings: { title: 'System Settings', subtitle: 'Platform configuration and administration' },
+  };
+
+  // ════════════════════════════════════════════
+  // OVERVIEW TAB
+  // ════════════════════════════════════════════
