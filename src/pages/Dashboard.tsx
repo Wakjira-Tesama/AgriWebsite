@@ -212,4 +212,9 @@ export default function Dashboard() {
     { id: 'prices', label: 'Market Prices', icon: DollarSign },
     { id: 'announcements', label: 'Announcements', icon: Megaphone },
     { id: 'platform', label: 'Platform Stats', icon: Activity },
-    { id: 'settings', label: 'System Settings', icon: Settings },
+    { id: 'settings', label: 'System Settings', icon: Settings },
+  ];
+
+  const tabTitles: Record<Tab, { title: string; subtitle: string }> = {
+    overview: { title: 'Super Admin Dashboard', subtitle: 'Complete platform overview and management controls' },
+    regions: { title: 'Regional Managers', subtitle: 'Manage and monitor all regional agriculture managers' },
