@@ -292,4 +292,9 @@ export default function Dashboard() {
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
                 <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
                 <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
-                <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
+                <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
+                <Area type="monotone" dataKey="users" stroke="#2E7D32" strokeWidth={2.5} fill="url(#userGrad)" name="Users" />
+                <Area type="monotone" dataKey="transactions" stroke="#F4A000" strokeWidth={2.5} fill="url(#txGrad)" name="Transactions" />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
