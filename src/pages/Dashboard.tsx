@@ -282,4 +282,9 @@ export default function Dashboard() {
                 <defs>
                   <linearGradient id="userGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#2E7D32" stopOpacity={0.3} />
-                    <stop offset="95%" stopColor="#2E7D32" stopOpacity={0} />
+                    <stop offset="95%" stopColor="#2E7D32" stopOpacity={0} />
+                  </linearGradient>
+                  <linearGradient id="txGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#F4A000" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#F4A000" stopOpacity={0} />
+                  </linearGradient>
