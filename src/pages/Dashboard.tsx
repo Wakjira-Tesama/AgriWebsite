@@ -287,4 +287,9 @@ export default function Dashboard() {
                   <linearGradient id="txGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#F4A000" stopOpacity={0.3} />
                     <stop offset="95%" stopColor="#F4A000" stopOpacity={0} />
-                  </linearGradient>
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+                <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+                <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }} />
