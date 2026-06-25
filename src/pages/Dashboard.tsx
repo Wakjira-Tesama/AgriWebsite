@@ -87,4 +87,9 @@ const mockRegionalManagers: RegionalManager[] = [
 ];
 
 const mockBuyers: Buyer[] = [
-  { id: 'B001', name: 'Selam Trading PLC', type: 'wholesale', location: 'Addis Ababa', status: 'verified', totalOrders: 48, totalSpent: '2.4M', phone: '+251911111111', email: 'selam@trading.et', joinedDate: '2025-06-20', avatar: 'ST' },
+  { id: 'B001', name: 'Selam Trading PLC', type: 'wholesale', location: 'Addis Ababa', status: 'verified', totalOrders: 48, totalSpent: '2.4M', phone: '+251911111111', email: 'selam@trading.et', joinedDate: '2025-06-20', avatar: 'ST' },
+  { id: 'B002', name: 'Ethiopian Coffee Exporters', type: 'exporter', location: 'Addis Ababa', status: 'verified', totalOrders: 32, totalSpent: '8.2M', phone: '+251922222222', email: 'ece@export.et', joinedDate: '2025-03-15', avatar: 'EC' },
+  { id: 'B003', name: 'Hawassa Grain Mill', type: 'processor', location: 'Sidama', status: 'active', totalOrders: 25, totalSpent: '1.8M', phone: '+251933333333', email: 'hawassa@mill.et', joinedDate: '2025-08-10', avatar: 'HG' },
+  { id: 'B004', name: 'Bahir Dar Foods PLC', type: 'processor', location: 'Amhara', status: 'active', totalOrders: 19, totalSpent: '920K', phone: '+251944444444', email: 'bd@foods.et', joinedDate: '2025-11-22', avatar: 'BF' },
+  { id: 'B005', name: 'Oromia Cooperative Union', type: 'wholesale', location: 'Oromia', status: 'verified', totalOrders: 65, totalSpent: '5.6M', phone: '+251955555555', email: 'ocu@coop.et', joinedDate: '2025-01-08', avatar: 'OC' },
+  { id: 'B006', name: 'Tigray Sesame Export', type: 'exporter', location: 'Tigray', status: 'suspended', totalOrders: 12, totalSpent: '1.1M', phone: '+251966666666', email: 'tse@export.et', joinedDate: '2025-09-30', avatar: 'TS' },
