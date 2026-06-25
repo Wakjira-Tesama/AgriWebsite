@@ -247,4 +247,9 @@ export default function Dashboard() {
         {[
           { label: 'Active Regions', value: `${activeRegions}/${mockRegionalManagers.length}`, icon: Shield, change: '2 pending approval', color: 'from-emerald-500 to-green-600' },
           { label: 'Platform Revenue', value: '9.2M ETB', icon: DollarSign, change: '+41.5% this quarter', color: 'from-amber-500 to-orange-500' },
-          { label: 'Total Buyers', value: `${mockBuyers.length}`, icon: ShoppingBag, change: `${mockBuyers.filter(b => b.status === 'verified').length} verified`, color: 'from-blue-500 to-indigo-600' },
+          { label: 'Total Buyers', value: `${mockBuyers.length}`, icon: ShoppingBag, change: `${mockBuyers.filter(b => b.status === 'verified').length} verified`, color: 'from-blue-500 to-indigo-600' },
+          { label: 'Total Transactions', value: '11,200', icon: Activity, change: '+35.5% growth', color: 'from-purple-500 to-violet-600' },
+        ].map((stat, i) => (
+          <div key={i} className="relative overflow-hidden bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
+            <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${stat.color} opacity-[0.08] rounded-bl-[60px] group-hover:opacity-[0.15] transition-opacity`} />
+            <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${stat.color} text-white mb-4 shadow-lg`}>
