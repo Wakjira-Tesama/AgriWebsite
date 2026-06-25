@@ -137,4 +137,9 @@ export default function Dashboard() {
 
   const { data: announcements, isLoading: loadingAnns } = useQuery({
     queryKey: ['announcements'],
-    queryFn: async () => {
+    queryFn: async () => {
+      const { data, error } = await supabase.from('announcements').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
+      return data;
+    }
+  });
