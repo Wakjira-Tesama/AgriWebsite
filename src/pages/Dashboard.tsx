@@ -342,4 +342,9 @@ export default function Dashboard() {
                 <div className="flex-1 min-w-0">
                   <p className="font-semibold text-sm text-foreground truncate">{m.region}</p>
                   <p className="text-xs text-muted-foreground">{m.farmers.toLocaleString()} farmers • {m.experts} experts</p>
-                </div>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className={`font-bold text-sm ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</p>
+                  <p className="text-xs text-muted-foreground">score</p>
+                </div>
+              </div>
