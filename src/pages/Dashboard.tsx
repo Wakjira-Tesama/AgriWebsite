@@ -147,4 +147,9 @@ export default function Dashboard() {
   // ─── MUTATIONS ───
   const addPrice = useMutation({
     mutationFn: async (price: any) => {
-      const { error } = await supabase.from('market_prices').insert(price);
+      const { error } = await supabase.from('market_prices').insert(price);
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['market_prices'] });
+      setNewPrice({ crop: '', market: '', price: '', unit: '100kg', trend: 'stable' });
