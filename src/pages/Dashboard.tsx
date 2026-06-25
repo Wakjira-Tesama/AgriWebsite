@@ -272,4 +272,9 @@ export default function Dashboard() {
               <h3 className="text-lg font-bold font-display">Platform Growth</h3>
               <p className="text-sm text-muted-foreground">Users, transactions & revenue (M ETB)</p>
             </div>
-            <span className="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full flex items-center gap-1">
+            <span className="text-xs font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full flex items-center gap-1">
+              <TrendingUp size={14} /> +41.5%
+            </span>
+          </div>
+          <div className="h-[300px]">
+            <ResponsiveContainer width="100%" height="100%">
