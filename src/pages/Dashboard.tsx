@@ -302,4 +302,9 @@ export default function Dashboard() {
 
         <div className="bg-card rounded-2xl border border-border p-6">
           <h3 className="text-lg font-bold font-display mb-1">Market Share</h3>
-          <p className="text-sm text-muted-foreground mb-4">Transaction volume by crop</p>
+          <p className="text-sm text-muted-foreground mb-4">Transaction volume by crop</p>
+          <div className="h-[200px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie data={marketShareData} cx="50%" cy="50%" innerRadius={55} outerRadius={80} paddingAngle={4} dataKey="value" stroke="none">
+                  {marketShareData.map((_, index) => (
