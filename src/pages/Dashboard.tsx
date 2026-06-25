@@ -122,4 +122,9 @@ export default function Dashboard() {
 
   // Market Prices State
   const [newPrice, setNewPrice] = useState({ crop: '', market: '', price: '', unit: '100kg', trend: 'stable' });
-  // Announcements State
+  // Announcements State
+  const [newAnn, setNewAnn] = useState({ title: '', body: '', type: 'info' });
+
+  // ─── SUPABASE QUERIES ───
+  const { data: prices, isLoading: loadingPrices } = useQuery({
+    queryKey: ['market_prices'],
