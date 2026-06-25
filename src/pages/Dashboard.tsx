@@ -202,4 +202,9 @@ export default function Dashboard() {
 
   const totalFarmers = mockRegionalManagers.reduce((sum, m) => sum + m.farmers, 0);
   const totalExperts = mockRegionalManagers.reduce((sum, m) => sum + m.experts, 0);
-  const activeRegions = mockRegionalManagers.filter(m => m.status === 'active').length;
+  const activeRegions = mockRegionalManagers.filter(m => m.status === 'active').length;
+
+  // ─── NAV ITEMS ───
+  const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
+    { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'regions', label: 'Regional Managers', icon: Shield },
