@@ -142,4 +142,9 @@ export default function Dashboard() {
       if (error) throw error;
       return data;
     }
-  });
+  });
+
+  // ─── MUTATIONS ───
+  const addPrice = useMutation({
+    mutationFn: async (price: any) => {
+      const { error } = await supabase.from('market_prices').insert(price);
