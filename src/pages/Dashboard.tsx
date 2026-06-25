@@ -162,4 +162,9 @@ export default function Dashboard() {
       if (error) throw error;
     },
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['market_prices'] })
-  });
+  });
+
+  const addAnn = useMutation({
+    mutationFn: async (ann: any) => {
+      const { error } = await supabase.from('announcements').insert(ann);
+      if (error) throw error;
