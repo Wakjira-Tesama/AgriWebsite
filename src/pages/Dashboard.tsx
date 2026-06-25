@@ -312,4 +312,9 @@ export default function Dashboard() {
                   ))}
                 </Pie>
                 <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} />
-              </PieChart>
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+          <div className="grid grid-cols-2 gap-2 mt-2">
+            {marketShareData.map((c, i) => (
+              <div key={i} className="flex items-center gap-2 text-sm">
