@@ -207,4 +207,9 @@ export default function Dashboard() {
   // ─── NAV ITEMS ───
   const navItems: { id: Tab; label: string; icon: any; badge?: string }[] = [
     { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'regions', label: 'Regional Managers', icon: Shield },
+    { id: 'regions', label: 'Regional Managers', icon: Shield },
+    { id: 'buyers', label: 'Buyers & Traders', icon: ShoppingBag },
+    { id: 'prices', label: 'Market Prices', icon: DollarSign },
+    { id: 'announcements', label: 'Announcements', icon: Megaphone },
+    { id: 'platform', label: 'Platform Stats', icon: Activity },
+    { id: 'settings', label: 'System Settings', icon: Settings },
