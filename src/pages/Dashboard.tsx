@@ -332,4 +332,9 @@ export default function Dashboard() {
         {/* Regional Performance */}
         <div className="bg-card rounded-2xl border border-border p-6">
           <div className="flex justify-between items-center mb-5">
-            <h3 className="text-lg font-bold font-display">Regional Performance</h3>
+            <h3 className="text-lg font-bold font-display">Regional Performance</h3>
+            <button onClick={() => setActiveTab('regions')} className="text-sm text-primary font-semibold hover:underline flex items-center gap-1">View All <ChevronRight size={16} /></button>
+          </div>
+          <div className="space-y-3">
+            {mockRegionalManagers.filter(m => m.status === 'active').slice(0, 5).map(m => (
+              <div key={m.id} className="flex items-center gap-4 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
