@@ -352,4 +352,9 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Revenue by Region */}
+        {/* Revenue by Region */}
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <h3 className="text-lg font-bold font-display mb-1">Revenue by Region</h3>
+          <p className="text-sm text-muted-foreground mb-6">Monthly revenue in thousands ETB</p>
+          <div className="h-[250px]">
+            <ResponsiveContainer width="100%" height="100%">
