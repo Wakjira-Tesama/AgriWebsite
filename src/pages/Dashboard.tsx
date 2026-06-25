@@ -167,4 +167,9 @@ export default function Dashboard() {
   const addAnn = useMutation({
     mutationFn: async (ann: any) => {
       const { error } = await supabase.from('announcements').insert(ann);
-      if (error) throw error;
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['announcements'] });
+      setNewAnn({ title: '', body: '', type: 'info' });
+    }
