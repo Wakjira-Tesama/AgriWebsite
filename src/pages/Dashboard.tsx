@@ -187,4 +187,9 @@ export default function Dashboard() {
   const filteredManagers = useMemo(() => {
     return mockRegionalManagers.filter(m => {
       const matchesSearch = m.name.toLowerCase().includes(searchQuery.toLowerCase()) || m.region.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesRegion = regionFilter === 'All' || m.region === regionFilter;
+      const matchesRegion = regionFilter === 'All' || m.region === regionFilter;
+      return matchesSearch && matchesRegion;
+    });
+  }, [searchQuery, regionFilter]);
+
+  const filteredBuyers = useMemo(() => {
