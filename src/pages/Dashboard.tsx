@@ -132,4 +132,9 @@ export default function Dashboard() {
       const { data, error } = await supabase.from('market_prices').select('*').order('created_at', { ascending: false });
       if (error) throw error;
       return data;
-    }
+    }
+  });
+
+  const { data: announcements, isLoading: loadingAnns } = useQuery({
+    queryKey: ['announcements'],
+    queryFn: async () => {
