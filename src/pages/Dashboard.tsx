@@ -172,4 +172,9 @@ export default function Dashboard() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['announcements'] });
       setNewAnn({ title: '', body: '', type: 'info' });
-    }
+    }
+  });
+
+  const deleteAnn = useMutation({
+    mutationFn: async (id: string) => {
+      const { error } = await supabase.from('announcements').delete().eq('id', id);
