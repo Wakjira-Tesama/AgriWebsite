@@ -117,4 +117,9 @@ export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [regionFilter, setRegionFilter] = useState('All');
-  const [buyerTypeFilter, setBuyerTypeFilter] = useState('All');
+  const [buyerTypeFilter, setBuyerTypeFilter] = useState('All');
+  const [showAddManagerModal, setShowAddManagerModal] = useState(false);
+
+  // Market Prices State
+  const [newPrice, setNewPrice] = useState({ crop: '', market: '', price: '', unit: '100kg', trend: 'stable' });
+  // Announcements State
