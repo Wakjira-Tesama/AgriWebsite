@@ -327,4 +327,9 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Bottom Row */}
+      {/* Bottom Row */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Regional Performance */}
+        <div className="bg-card rounded-2xl border border-border p-6">
+          <div className="flex justify-between items-center mb-5">
+            <h3 className="text-lg font-bold font-display">Regional Performance</h3>
