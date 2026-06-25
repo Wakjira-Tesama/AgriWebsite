@@ -127,4 +127,9 @@ export default function Dashboard() {
 
   // ─── SUPABASE QUERIES ───
   const { data: prices, isLoading: loadingPrices } = useQuery({
-    queryKey: ['market_prices'],
+    queryKey: ['market_prices'],
+    queryFn: async () => {
+      const { data, error } = await supabase.from('market_prices').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
+      return data;
+    }
