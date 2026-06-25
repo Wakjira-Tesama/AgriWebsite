@@ -242,4 +242,9 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* Stats Row */}
+      {/* Stats Row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+        {[
+          { label: 'Active Regions', value: `${activeRegions}/${mockRegionalManagers.length}`, icon: Shield, change: '2 pending approval', color: 'from-emerald-500 to-green-600' },
+          { label: 'Platform Revenue', value: '9.2M ETB', icon: DollarSign, change: '+41.5% this quarter', color: 'from-amber-500 to-orange-500' },
+          { label: 'Total Buyers', value: `${mockBuyers.length}`, icon: ShoppingBag, change: `${mockBuyers.filter(b => b.status === 'verified').length} verified`, color: 'from-blue-500 to-indigo-600' },
