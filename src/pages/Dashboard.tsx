@@ -152,4 +152,9 @@ export default function Dashboard() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['market_prices'] });
-      setNewPrice({ crop: '', market: '', price: '', unit: '100kg', trend: 'stable' });
+      setNewPrice({ crop: '', market: '', price: '', unit: '100kg', trend: 'stable' });
+    }
+  });
+
+  const deletePrice = useMutation({
+    mutationFn: async (id: string) => {
