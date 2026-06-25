@@ -317,4 +317,9 @@ export default function Dashboard() {
           </div>
           <div className="grid grid-cols-2 gap-2 mt-2">
             {marketShareData.map((c, i) => (
-              <div key={i} className="flex items-center gap-2 text-sm">
+              <div key={i} className="flex items-center gap-2 text-sm">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: PIE_COLORS[i] }} />
+                <span className="text-muted-foreground">{c.name}</span>
+                <span className="font-bold ml-auto">{c.value}%</span>
+              </div>
+            ))}
