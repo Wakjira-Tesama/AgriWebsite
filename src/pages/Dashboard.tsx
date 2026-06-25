@@ -192,4 +192,9 @@ export default function Dashboard() {
     });
   }, [searchQuery, regionFilter]);
 
-  const filteredBuyers = useMemo(() => {
+  const filteredBuyers = useMemo(() => {
+    return mockBuyers.filter(b => {
+      const matchesSearch = b.name.toLowerCase().includes(searchQuery.toLowerCase()) || b.location.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesType = buyerTypeFilter === 'All' || b.type === buyerTypeFilter;
+      return matchesSearch && matchesType;
+    });
