@@ -227,4 +227,9 @@ export default function Dashboard() {
 
   // ════════════════════════════════════════════
   // OVERVIEW TAB
-  // ════════════════════════════════════════════
+  // ════════════════════════════════════════════
+  const renderOverview = () => (
+    <div className="space-y-6">
+      {/* Pending alerts */}
+      {mockRegionalManagers.some(m => m.status === 'pending') && (
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-center gap-4">
