@@ -337,4 +337,9 @@ export default function Dashboard() {
           </div>
           <div className="space-y-3">
             {mockRegionalManagers.filter(m => m.status === 'active').slice(0, 5).map(m => (
-              <div key={m.id} className="flex items-center gap-4 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
+              <div key={m.id} className="flex items-center gap-4 p-3.5 rounded-xl bg-muted/40 hover:bg-muted/70 transition-colors">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-sm shrink-0">{m.avatar}</div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-sm text-foreground truncate">{m.region}</p>
+                  <p className="text-xs text-muted-foreground">{m.farmers.toLocaleString()} farmers • {m.experts} experts</p>
+                </div>
