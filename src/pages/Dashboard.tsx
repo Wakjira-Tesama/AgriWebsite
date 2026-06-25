@@ -102,4 +102,9 @@ const statusColors: Record<string, { text: string; bg: string }> = {
   verified: { text: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200' },
   suspended: { text: 'text-red-700', bg: 'bg-red-50 border-red-200' },
   pending: { text: 'text-amber-700', bg: 'bg-amber-50 border-amber-200' },
-};
+};
+
+const buyerTypeColors: Record<string, { text: string; bg: string }> = {
+  wholesale: { text: 'text-blue-700', bg: 'bg-blue-50' },
+  exporter: { text: 'text-purple-700', bg: 'bg-purple-50' },
+  processor: { text: 'text-teal-700', bg: 'bg-teal-50' },
