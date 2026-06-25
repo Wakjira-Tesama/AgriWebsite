@@ -347,4 +347,9 @@ export default function Dashboard() {
                   <p className={`font-bold text-sm ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</p>
                   <p className="text-xs text-muted-foreground">score</p>
                 </div>
-              </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Revenue by Region */}
