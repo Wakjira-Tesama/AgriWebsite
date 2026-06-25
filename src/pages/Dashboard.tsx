@@ -107,4 +107,9 @@ const statusColors: Record<string, { text: string; bg: string }> = {
 const buyerTypeColors: Record<string, { text: string; bg: string }> = {
   wholesale: { text: 'text-blue-700', bg: 'bg-blue-50' },
   exporter: { text: 'text-purple-700', bg: 'bg-purple-50' },
-  processor: { text: 'text-teal-700', bg: 'bg-teal-50' },
+  processor: { text: 'text-teal-700', bg: 'bg-teal-50' },
+  retailer: { text: 'text-amber-700', bg: 'bg-amber-50' },
+};
+
+export default function Dashboard() {
+  const queryClient = useQueryClient();
