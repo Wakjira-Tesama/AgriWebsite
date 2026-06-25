@@ -197,4 +197,9 @@ export default function Dashboard() {
       const matchesSearch = b.name.toLowerCase().includes(searchQuery.toLowerCase()) || b.location.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesType = buyerTypeFilter === 'All' || b.type === buyerTypeFilter;
       return matchesSearch && matchesType;
-    });
+    });
+  }, [searchQuery, buyerTypeFilter]);
+
+  const totalFarmers = mockRegionalManagers.reduce((sum, m) => sum + m.farmers, 0);
+  const totalExperts = mockRegionalManagers.reduce((sum, m) => sum + m.experts, 0);
+  const activeRegions = mockRegionalManagers.filter(m => m.status === 'active').length;
