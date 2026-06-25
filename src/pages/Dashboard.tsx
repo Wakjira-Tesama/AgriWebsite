@@ -322,4 +322,9 @@ export default function Dashboard() {
                 <span className="text-muted-foreground">{c.name}</span>
                 <span className="font-bold ml-auto">{c.value}%</span>
               </div>
-            ))}
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Row */}
