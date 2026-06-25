@@ -232,4 +232,9 @@ export default function Dashboard() {
     <div className="space-y-6">
       {/* Pending alerts */}
       {mockRegionalManagers.some(m => m.status === 'pending') && (
-        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-center gap-4">
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-center gap-4">
+          <div className="p-3 bg-amber-100 rounded-xl text-amber-600"><AlertTriangle size={22} /></div>
+          <div className="flex-1">
+            <p className="font-bold text-amber-800">{mockRegionalManagers.filter(m => m.status === 'pending').length} Regional Manager Applications Pending</p>
+            <p className="text-sm text-amber-600">New regions requesting activation. Review and approve.</p>
+          </div>
