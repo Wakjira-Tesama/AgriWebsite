@@ -237,4 +237,9 @@ export default function Dashboard() {
           <div className="flex-1">
             <p className="font-bold text-amber-800">{mockRegionalManagers.filter(m => m.status === 'pending').length} Regional Manager Applications Pending</p>
             <p className="text-sm text-amber-600">New regions requesting activation. Review and approve.</p>
-          </div>
+          </div>
+          <button onClick={() => setActiveTab('regions')} className="px-4 py-2 bg-amber-600 text-white font-bold rounded-xl hover:bg-amber-700 transition-colors text-sm">Review</button>
+        </div>
+      )}
+
+      {/* Stats Row */}
