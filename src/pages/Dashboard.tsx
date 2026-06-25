@@ -112,4 +112,9 @@ const buyerTypeColors: Record<string, { text: string; bg: string }> = {
 };
 
 export default function Dashboard() {
-  const queryClient = useQueryClient();
+  const queryClient = useQueryClient();
+  const [activeTab, setActiveTab] = useState<Tab>('overview');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [regionFilter, setRegionFilter] = useState('All');
+  const [buyerTypeFilter, setBuyerTypeFilter] = useState('All');
