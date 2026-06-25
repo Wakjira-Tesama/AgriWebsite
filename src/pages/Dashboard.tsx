@@ -157,4 +157,9 @@ export default function Dashboard() {
   });
 
   const deletePrice = useMutation({
-    mutationFn: async (id: string) => {
+    mutationFn: async (id: string) => {
+      const { error } = await supabase.from('market_prices').delete().eq('id', id);
+      if (error) throw error;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['market_prices'] })
+  });
