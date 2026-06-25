@@ -182,4 +182,9 @@ export default function Dashboard() {
     },
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['announcements'] })
   });
-
+
+  // ─── FILTERS ───
+  const filteredManagers = useMemo(() => {
+    return mockRegionalManagers.filter(m => {
+      const matchesSearch = m.name.toLowerCase().includes(searchQuery.toLowerCase()) || m.region.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesRegion = regionFilter === 'All' || m.region === regionFilter;
