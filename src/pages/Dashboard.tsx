@@ -97,4 +97,9 @@ const mockBuyers: Buyer[] = [
   { id: 'B008', name: 'Capital Supermarkets', type: 'retailer', location: 'Addis Ababa', status: 'verified', totalOrders: 38, totalSpent: '3.1M', phone: '+251988888888', email: 'capital@super.et', joinedDate: '2025-04-14', avatar: 'CS' },
 ];
 
-const statusColors: Record<string, { text: string; bg: string }> = {
+const statusColors: Record<string, { text: string; bg: string }> = {
+  active: { text: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200' },
+  verified: { text: 'text-emerald-700', bg: 'bg-emerald-50 border-emerald-200' },
+  suspended: { text: 'text-red-700', bg: 'bg-red-50 border-red-200' },
+  pending: { text: 'text-amber-700', bg: 'bg-amber-50 border-amber-200' },
+};
