@@ -537,4 +537,9 @@ export default function Dashboard() {
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
-              <tr className="bg-muted/70 border-b border-border">
+              <tr className="bg-muted/70 border-b border-border">
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Company</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Type</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Location</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Orders</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Total Spent</th>
