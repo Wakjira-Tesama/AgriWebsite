@@ -542,4 +542,9 @@ export default function Dashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Type</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Location</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Orders</th>
-                <th className="p-4 font-semibold text-muted-foreground text-sm">Total Spent</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Total Spent</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Status</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Joined</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm text-right">Actions</th>
+              </tr>
+            </thead>
