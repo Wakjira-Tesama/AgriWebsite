@@ -427,4 +427,9 @@ export default function Dashboard() {
                   <div>
                     <h3 className="font-bold text-foreground text-lg">{m.name}</h3>
                     <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-sm text-muted-foreground flex items-center gap-1"><MapPin size={13} /> {m.region}</span>
+                      <span className="text-sm text-muted-foreground flex items-center gap-1"><MapPin size={13} /> {m.region}</span>
+                      <span className="text-sm text-muted-foreground flex items-center gap-1"><Globe size={13} /> {m.language}</span>
+                    </div>
+                  </div>
+                </div>
+                <span className={`text-xs font-bold px-3 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>
