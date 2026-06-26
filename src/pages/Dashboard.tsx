@@ -557,4 +557,9 @@ export default function Dashboard() {
                     <td className="p-4">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-xl bg-accent/10 text-accent flex items-center justify-center font-bold text-sm shrink-0">{b.avatar}</div>
-                        <div>
+                        <div>
+                          <p className="font-semibold text-foreground">{b.name}</p>
+                          <p className="text-xs text-muted-foreground">{b.email}</p>
+                        </div>
+                      </div>
+                    </td>
