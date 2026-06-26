@@ -627,4 +627,9 @@ export default function Dashboard() {
           </button>
         </div>
       </div>
-
+
+      {/* Prices Table */}
+      <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
