@@ -437,4 +437,9 @@ export default function Dashboard() {
                 </span>
               </div>
 
-              {/* Stats */}
+              {/* Stats */}
+              {m.status !== 'pending' && (
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  <div className="bg-muted/50 rounded-xl p-3 text-center">
+                    <p className="text-lg font-bold text-primary">{m.farmers.toLocaleString()}</p>
+                    <p className="text-xs text-muted-foreground font-medium">Farmers</p>
