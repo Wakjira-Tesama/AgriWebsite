@@ -392,4 +392,9 @@ export default function Dashboard() {
             <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
           </div>
         </div>
-        <button onClick={() => setShowAddManagerModal(true)} className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+        <button onClick={() => setShowAddManagerModal(true)} className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+          <UserPlus size={18} /> Add Regional Manager
+        </button>
+      </div>
+
+      {/* Summary Row */}
