@@ -562,4 +562,9 @@ export default function Dashboard() {
                           <p className="text-xs text-muted-foreground">{b.email}</p>
                         </div>
                       </div>
-                    </td>
+                    </td>
+                    <td className="p-4">
+                      <span className={`text-xs font-bold px-2.5 py-1 rounded-full capitalize ${tc.bg} ${tc.text}`}>{b.type}</span>
+                    </td>
+                    <td className="p-4 text-sm text-muted-foreground font-medium">{b.location}</td>
+                    <td className="p-4 font-bold text-foreground">{b.totalOrders}</td>
