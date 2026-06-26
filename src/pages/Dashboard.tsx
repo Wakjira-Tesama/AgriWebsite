@@ -582,4 +582,9 @@ export default function Dashboard() {
                         ) : (
                           <button className="px-3 py-1.5 border border-red-200 text-red-600 text-xs font-bold rounded-lg hover:bg-red-50">Suspend</button>
                         )}
-                        <button className="p-1.5 rounded-lg border border-border hover:bg-muted"><Edit3 size={14} className="text-muted-foreground" /></button>
+                        <button className="p-1.5 rounded-lg border border-border hover:bg-muted"><Edit3 size={14} className="text-muted-foreground" /></button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
