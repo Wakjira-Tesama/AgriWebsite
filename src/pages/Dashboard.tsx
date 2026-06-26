@@ -497,4 +497,9 @@ export default function Dashboard() {
 
   // ════════════════════════════════════════════
   // BUYERS & TRADERS TAB
-  // ════════════════════════════════════════════
+  // ════════════════════════════════════════════
+  const renderBuyers = () => (
+    <div className="space-y-6">
+      {/* Toolbar */}
+      <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+        <div className="flex gap-3 flex-wrap flex-1 w-full md:w-auto">
