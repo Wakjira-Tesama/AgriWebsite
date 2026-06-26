@@ -547,4 +547,9 @@ export default function Dashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Joined</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm text-right">Actions</th>
               </tr>
-            </thead>
+            </thead>
+            <tbody className="divide-y divide-border">
+              {filteredBuyers.map(b => {
+                const tc = buyerTypeColors[b.type];
+                const sc = statusColors[b.status];
+                return (
