@@ -552,4 +552,9 @@ export default function Dashboard() {
               {filteredBuyers.map(b => {
                 const tc = buyerTypeColors[b.type];
                 const sc = statusColors[b.status];
-                return (
+                return (
+                  <tr key={b.id} className="hover:bg-muted/40 transition-colors">
+                    <td className="p-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl bg-accent/10 text-accent flex items-center justify-center font-bold text-sm shrink-0">{b.avatar}</div>
+                        <div>
