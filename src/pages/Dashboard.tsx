@@ -432,4 +432,9 @@ export default function Dashboard() {
                     </div>
                   </div>
                 </div>
-                <span className={`text-xs font-bold px-3 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>
+                <span className={`text-xs font-bold px-3 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>
+                  {m.status}
+                </span>
+              </div>
+
+              {/* Stats */}
