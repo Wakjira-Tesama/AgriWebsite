@@ -452,4 +452,9 @@ export default function Dashboard() {
                     <p className={`text-lg font-bold ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</p>
                     <p className="text-xs text-muted-foreground font-medium">Performance</p>
                   </div>
-                </div>
+                </div>
+              )}
+
+              <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                <Mail size={14} /> {m.email}
+              </div>
