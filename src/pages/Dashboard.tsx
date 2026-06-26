@@ -397,4 +397,9 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* Summary Row */}
+      {/* Summary Row */}
+      <div className="grid grid-cols-3 gap-4">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
+          <p className="text-2xl font-bold text-emerald-700">{mockRegionalManagers.filter(m => m.status === 'active').length}</p>
+          <p className="text-sm text-emerald-600 font-medium">Active</p>
+        </div>
