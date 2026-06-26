@@ -462,4 +462,9 @@ export default function Dashboard() {
               {/* Actions */}
               <div className="flex gap-2 pt-4 border-t border-border/60">
                 {m.status === 'pending' ? (
-                  <>
+                  <>
+                    <button className="flex-1 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all text-sm flex items-center justify-center gap-1.5">
+                      <CheckCircle size={16} /> Approve
+                    </button>
+                    <button className="py-2.5 px-4 border border-red-200 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-all text-sm">
+                      Reject
