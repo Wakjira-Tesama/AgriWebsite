@@ -637,4 +637,9 @@ export default function Dashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Crop</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Market</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Price (ETB)</th>
-                <th className="p-4 font-semibold text-muted-foreground text-sm">Trend</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Trend</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Last Updated</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm w-20">Actions</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
