@@ -367,4 +367,9 @@ export default function Dashboard() {
               </BarChart>
             </ResponsiveContainer>
           </div>
-        </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // ════════════════════════════════════════════
