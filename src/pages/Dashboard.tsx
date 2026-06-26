@@ -532,4 +532,9 @@ export default function Dashboard() {
         ))}
       </div>
 
-      {/* Buyers Table */}
+      {/* Buyers Table */}
+      <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-muted/70 border-b border-border">
