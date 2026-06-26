@@ -422,4 +422,9 @@ export default function Dashboard() {
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1B5E20] to-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    {m.avatar}
+                    {m.avatar}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground text-lg">{m.name}</h3>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-sm text-muted-foreground flex items-center gap-1"><MapPin size={13} /> {m.region}</span>
