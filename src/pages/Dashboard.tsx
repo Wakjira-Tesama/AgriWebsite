@@ -447,4 +447,9 @@ export default function Dashboard() {
                   <div className="bg-muted/50 rounded-xl p-3 text-center">
                     <p className="text-lg font-bold text-accent">{m.experts}</p>
                     <p className="text-xs text-muted-foreground font-medium">Experts</p>
-                  </div>
+                  </div>
+                  <div className="bg-muted/50 rounded-xl p-3 text-center">
+                    <p className={`text-lg font-bold ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</p>
+                    <p className="text-xs text-muted-foreground font-medium">Performance</p>
+                  </div>
+                </div>
