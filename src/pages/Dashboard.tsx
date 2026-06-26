@@ -467,4 +467,9 @@ export default function Dashboard() {
                       <CheckCircle size={16} /> Approve
                     </button>
                     <button className="py-2.5 px-4 border border-red-200 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-all text-sm">
-                      Reject
+                      Reject
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button className="flex-1 py-2.5 border border-border font-bold rounded-xl hover:bg-muted transition-all text-sm flex items-center justify-center gap-1.5">
