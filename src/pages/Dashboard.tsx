@@ -522,4 +522,9 @@ export default function Dashboard() {
 
       {/* Type summary pills */}
       <div className="flex gap-2 flex-wrap">
-        {['All', 'wholesale', 'exporter', 'processor', 'retailer'].map(t => (
+        {['All', 'wholesale', 'exporter', 'processor', 'retailer'].map(t => (
+          <button key={t} onClick={() => setBuyerTypeFilter(t)}
+            className={`px-4 py-2 rounded-full text-sm font-semibold capitalize transition-all ${
+              buyerTypeFilter === t ? 'bg-primary text-white shadow-md' : 'bg-card border border-border text-muted-foreground hover:bg-muted'
+            }`}>
+            {t === 'All' ? `All (${mockBuyers.length})` : `${t} (${mockBuyers.filter(b => b.type === t).length})`}
