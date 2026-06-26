@@ -602,4 +602,9 @@ export default function Dashboard() {
     <div className="space-y-6">
       {/* Info Banner */}
       <div className="bg-gradient-to-r from-primary/10 via-secondary/5 to-accent/10 rounded-2xl border border-primary/20 p-5 flex items-center gap-4">
-        <div className="p-3 bg-primary/20 rounded-xl text-primary"><DollarSign size={22} /></div>
+        <div className="p-3 bg-primary/20 rounded-xl text-primary"><DollarSign size={22} /></div>
+        <div>
+          <h3 className="font-bold font-display">Market Price Control Center</h3>
+          <p className="text-sm text-muted-foreground">Prices you set here are visible to all farmers, buyers, and regional managers across the platform.</p>
+        </div>
+      </div>
