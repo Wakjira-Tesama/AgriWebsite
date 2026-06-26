@@ -572,4 +572,9 @@ export default function Dashboard() {
                     <td className="p-4">
                       <span className={`text-xs font-bold px-2.5 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>{b.status}</span>
                     </td>
-                    <td className="p-4 text-sm text-muted-foreground">{format(new Date(b.joinedDate), 'MMM d, yyyy')}</td>
+                    <td className="p-4 text-sm text-muted-foreground">{format(new Date(b.joinedDate), 'MMM d, yyyy')}</td>
+                    <td className="p-4 text-right">
+                      <div className="flex items-center gap-1.5 justify-end">
+                        {b.status === 'pending' ? (
+                          <button className="px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Verify</button>
+                        ) : b.status === 'suspended' ? (
