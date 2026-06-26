@@ -412,4 +412,9 @@ export default function Dashboard() {
           <p className="text-sm text-red-600 font-medium">Suspended</p>
         </div>
       </div>
-
+
+      {/* Manager Cards */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {filteredManagers.map(m => {
+          const sc = statusColors[m.status];
+          return (
