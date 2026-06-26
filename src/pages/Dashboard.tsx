@@ -622,4 +622,9 @@ export default function Dashboard() {
             <option value="stable">➡️ Stable</option>
           </select>
           <button onClick={() => addPrice.mutate(newPrice)} disabled={!newPrice.crop || !newPrice.market || !newPrice.price || addPrice.isPending}
-            className="bg-primary text-white rounded-xl flex items-center justify-center gap-2 hover:bg-primary/90 disabled:opacity-50 font-bold transition-all shadow-md shadow-primary/20">
+            className="bg-primary text-white rounded-xl flex items-center justify-center gap-2 hover:bg-primary/90 disabled:opacity-50 font-bold transition-all shadow-md shadow-primary/20">
+            <Plus size={18} /> Publish
+          </button>
+        </div>
+      </div>
+
