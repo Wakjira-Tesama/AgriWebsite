@@ -567,4 +567,9 @@ export default function Dashboard() {
                       <span className={`text-xs font-bold px-2.5 py-1 rounded-full capitalize ${tc.bg} ${tc.text}`}>{b.type}</span>
                     </td>
                     <td className="p-4 text-sm text-muted-foreground font-medium">{b.location}</td>
-                    <td className="p-4 font-bold text-foreground">{b.totalOrders}</td>
+                    <td className="p-4 font-bold text-foreground">{b.totalOrders}</td>
+                    <td className="p-4 font-bold text-primary">{b.totalSpent} ETB</td>
+                    <td className="p-4">
+                      <span className={`text-xs font-bold px-2.5 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>{b.status}</span>
+                    </td>
+                    <td className="p-4 text-sm text-muted-foreground">{format(new Date(b.joinedDate), 'MMM d, yyyy')}</td>
