@@ -457,4 +457,9 @@ export default function Dashboard() {
 
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <Mail size={14} /> {m.email}
-              </div>
+              </div>
+
+              {/* Actions */}
+              <div className="flex gap-2 pt-4 border-t border-border/60">
+                {m.status === 'pending' ? (
+                  <>
