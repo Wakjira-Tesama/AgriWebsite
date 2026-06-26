@@ -417,4 +417,9 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {filteredManagers.map(m => {
           const sc = statusColors[m.status];
-          return (
+          return (
+            <div key={m.id} className="bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1B5E20] to-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                    {m.avatar}
