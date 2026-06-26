@@ -407,4 +407,9 @@ export default function Dashboard() {
           <p className="text-2xl font-bold text-amber-700">{mockRegionalManagers.filter(m => m.status === 'pending').length}</p>
           <p className="text-sm text-amber-600 font-medium">Pending</p>
         </div>
-        <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+          <p className="text-2xl font-bold text-red-700">{mockRegionalManagers.filter(m => m.status === 'suspended').length}</p>
+          <p className="text-sm text-red-600 font-medium">Suspended</p>
+        </div>
+      </div>
+
