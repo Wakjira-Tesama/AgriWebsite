@@ -617,4 +617,9 @@ export default function Dashboard() {
           <input placeholder="Market (e.g. Addis)" className="px-4 py-2.5 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={newPrice.market} onChange={e => setNewPrice({ ...newPrice, market: e.target.value })} />
           <input placeholder="Price (ETB)" type="number" className="px-4 py-2.5 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={newPrice.price} onChange={e => setNewPrice({ ...newPrice, price: e.target.value })} />
           <select className="px-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" value={newPrice.trend} onChange={e => setNewPrice({ ...newPrice, trend: e.target.value })}>
-            <option value="up">📈 Going Up</option>
+            <option value="up">📈 Going Up</option>
+            <option value="down">📉 Going Down</option>
+            <option value="stable">➡️ Stable</option>
+          </select>
+          <button onClick={() => addPrice.mutate(newPrice)} disabled={!newPrice.crop || !newPrice.market || !newPrice.price || addPrice.isPending}
+            className="bg-primary text-white rounded-xl flex items-center justify-center gap-2 hover:bg-primary/90 disabled:opacity-50 font-bold transition-all shadow-md shadow-primary/20">
