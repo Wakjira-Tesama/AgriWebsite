@@ -507,4 +507,9 @@ export default function Dashboard() {
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
             <input type="text" placeholder="Search buyers, traders..." className="w-full pl-10 pr-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
           </div>
-          <div className="relative">
+          <div className="relative">
+            <select className="pl-3 pr-8 py-2.5 border border-border rounded-xl outline-none appearance-none font-medium cursor-pointer" value={buyerTypeFilter} onChange={e => setBuyerTypeFilter(e.target.value)}>
+              <option value="All">All Types</option>
+              <option value="wholesale">Wholesale</option>
+              <option value="exporter">Exporter</option>
+              <option value="processor">Processor</option>
