@@ -607,4 +607,9 @@ export default function Dashboard() {
           <h3 className="font-bold font-display">Market Price Control Center</h3>
           <p className="text-sm text-muted-foreground">Prices you set here are visible to all farmers, buyers, and regional managers across the platform.</p>
         </div>
-      </div>
+      </div>
+
+      {/* Add New Price */}
+      <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+        <h2 className="text-lg font-bold font-display mb-4">Set New Market Price</h2>
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
