@@ -612,4 +612,9 @@ export default function Dashboard() {
       {/* Add New Price */}
       <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
         <h2 className="text-lg font-bold font-display mb-4">Set New Market Price</h2>
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+          <input placeholder="Crop (e.g. Teff)" className="px-4 py-2.5 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none md:col-span-2 transition-all" value={newPrice.crop} onChange={e => setNewPrice({ ...newPrice, crop: e.target.value })} />
+          <input placeholder="Market (e.g. Addis)" className="px-4 py-2.5 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={newPrice.market} onChange={e => setNewPrice({ ...newPrice, market: e.target.value })} />
+          <input placeholder="Price (ETB)" type="number" className="px-4 py-2.5 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={newPrice.price} onChange={e => setNewPrice({ ...newPrice, price: e.target.value })} />
+          <select className="px-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" value={newPrice.trend} onChange={e => setNewPrice({ ...newPrice, trend: e.target.value })}>
+            <option value="up">📈 Going Up</option>
