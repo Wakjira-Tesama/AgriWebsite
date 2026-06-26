@@ -372,4 +372,9 @@ export default function Dashboard() {
     </div>
   );
 
-  // ════════════════════════════════════════════
+  // ════════════════════════════════════════════
+  // REGIONAL MANAGERS TAB
+  // ════════════════════════════════════════════
+  const renderRegions = () => (
+    <div className="space-y-6">
+      {/* Toolbar */}
