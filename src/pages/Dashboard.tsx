@@ -512,4 +512,9 @@ export default function Dashboard() {
               <option value="All">All Types</option>
               <option value="wholesale">Wholesale</option>
               <option value="exporter">Exporter</option>
-              <option value="processor">Processor</option>
+              <option value="processor">Processor</option>
+              <option value="retailer">Retailer</option>
+            </select>
+            <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+          </div>
+        </div>
