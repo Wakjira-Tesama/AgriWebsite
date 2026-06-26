@@ -487,4 +487,9 @@ export default function Dashboard() {
                     <button className="py-2.5 px-3 border border-border rounded-xl hover:bg-muted transition-all"><Edit3 size={16} className="text-muted-foreground" /></button>
                   </>
                 )}
-              </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
