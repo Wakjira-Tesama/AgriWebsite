@@ -477,4 +477,9 @@ export default function Dashboard() {
                     </button>
                     {m.status === 'active' ? (
                       <button className="py-2.5 px-4 border border-red-200 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-all text-sm flex items-center gap-1.5">
-                        <Lock size={14} /> Suspend
+                        <Lock size={14} /> Suspend
+                      </button>
+                    ) : (
+                      <button className="py-2.5 px-4 bg-emerald-500 text-white font-bold rounded-xl hover:bg-emerald-600 transition-all text-sm flex items-center gap-1.5">
+                        <CheckCircle size={14} /> Activate
+                      </button>
