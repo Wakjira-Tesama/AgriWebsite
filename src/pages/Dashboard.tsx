@@ -482,4 +482,9 @@ export default function Dashboard() {
                     ) : (
                       <button className="py-2.5 px-4 bg-emerald-500 text-white font-bold rounded-xl hover:bg-emerald-600 transition-all text-sm flex items-center gap-1.5">
                         <CheckCircle size={14} /> Activate
-                      </button>
+                      </button>
+                    )}
+                    <button className="py-2.5 px-3 border border-border rounded-xl hover:bg-muted transition-all"><Edit3 size={16} className="text-muted-foreground" /></button>
+                  </>
+                )}
+              </div>
