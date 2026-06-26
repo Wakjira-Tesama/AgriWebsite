@@ -387,4 +387,9 @@ export default function Dashboard() {
           <div className="relative">
             <select className="pl-3 pr-8 py-2.5 border border-border rounded-xl outline-none appearance-none font-medium cursor-pointer" value={regionFilter} onChange={e => setRegionFilter(e.target.value)}>
               <option value="All">All Regions</option>
-              {[...new Set(mockRegionalManagers.map(m => m.region))].map(r => <option key={r} value={r}>{r}</option>)}
+              {[...new Set(mockRegionalManagers.map(m => m.region))].map(r => <option key={r} value={r}>{r}</option>)}
+            </select>
+            <ChevronDown size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
+          </div>
+        </div>
+        <button onClick={() => setShowAddManagerModal(true)} className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
