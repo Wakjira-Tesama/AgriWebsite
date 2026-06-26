@@ -597,4 +597,9 @@ export default function Dashboard() {
 
   // ════════════════════════════════════════════
   // MARKET PRICES TAB (CRUD)
-  // ════════════════════════════════════════════
+  // ════════════════════════════════════════════
+  const renderPrices = () => (
+    <div className="space-y-6">
+      {/* Info Banner */}
+      <div className="bg-gradient-to-r from-primary/10 via-secondary/5 to-accent/10 rounded-2xl border border-primary/20 p-5 flex items-center gap-4">
+        <div className="p-3 bg-primary/20 rounded-xl text-primary"><DollarSign size={22} /></div>
