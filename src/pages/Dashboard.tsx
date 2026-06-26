@@ -577,4 +577,9 @@ export default function Dashboard() {
                       <div className="flex items-center gap-1.5 justify-end">
                         {b.status === 'pending' ? (
                           <button className="px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg hover:bg-primary/90">Verify</button>
-                        ) : b.status === 'suspended' ? (
+                        ) : b.status === 'suspended' ? (
+                          <button className="px-3 py-1.5 bg-emerald-500 text-white text-xs font-bold rounded-lg hover:bg-emerald-600">Activate</button>
+                        ) : (
+                          <button className="px-3 py-1.5 border border-red-200 text-red-600 text-xs font-bold rounded-lg hover:bg-red-50">Suspend</button>
+                        )}
+                        <button className="p-1.5 rounded-lg border border-border hover:bg-muted"><Edit3 size={14} className="text-muted-foreground" /></button>
