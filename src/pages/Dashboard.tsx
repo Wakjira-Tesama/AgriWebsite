@@ -847,4 +847,9 @@ export default function Dashboard() {
               <Bar dataKey="revenue" fill="#2E7D32" radius={[6, 6, 0, 0]} barSize={36} name="Revenue (K ETB)" />
               <Bar dataKey="transactions" fill="#F4A000" radius={[6, 6, 0, 0]} barSize={36} name="Transactions" />
             </BarChart>
-          </ResponsiveContainer>
+          </ResponsiveContainer>
+        </div>
+      </div>
+    </div>
+  );
+
