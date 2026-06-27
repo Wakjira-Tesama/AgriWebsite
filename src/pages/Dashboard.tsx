@@ -792,4 +792,9 @@ export default function Dashboard() {
       <div className="bg-card rounded-2xl border border-border p-6">
         <h3 className="text-lg font-bold font-display mb-6">Regional Breakdown</h3>
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-muted/70 border-b border-border">
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Region</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Manager</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Language</th>
