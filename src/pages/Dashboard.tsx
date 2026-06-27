@@ -777,4 +777,9 @@ export default function Dashboard() {
           { label: 'API Requests', value: '2.4M', icon: Zap, desc: 'This month', color: 'from-amber-500 to-orange-500' },
         ].map((stat, i) => (
           <div key={i} className="relative overflow-hidden bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
-            <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${stat.color} opacity-[0.08] rounded-bl-[60px] group-hover:opacity-[0.15] transition-opacity`} />
+            <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${stat.color} opacity-[0.08] rounded-bl-[60px] group-hover:opacity-[0.15] transition-opacity`} />
+            <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${stat.color} text-white mb-4 shadow-lg`}>
+              <stat.icon size={22} />
+            </div>
+            <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
+            <h3 className="text-2xl font-display font-bold text-foreground mt-1">{stat.value}</h3>
