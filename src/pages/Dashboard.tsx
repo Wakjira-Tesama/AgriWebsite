@@ -917,4 +917,9 @@ export default function Dashboard() {
               <p className="font-bold text-foreground">{item.value}</p>
               <p className="text-xs text-muted-foreground">{item.label}</p>
             </div>
-          ))}
+          ))}
+        </div>
+      </div>
+
+      {/* Danger Zone */}
+      <div className="bg-card rounded-2xl border border-red-200 p-6">
