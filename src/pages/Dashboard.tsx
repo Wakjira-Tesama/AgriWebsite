@@ -692,4 +692,9 @@ export default function Dashboard() {
   // ════════════════════════════════════════════
   // ANNOUNCEMENTS TAB (CRUD)
   // ════════════════════════════════════════════
-  const renderAnnouncements = () => (
+  const renderAnnouncements = () => (
+    <div className="space-y-6">
+      <div className="bg-gradient-to-r from-accent/10 via-amber-50 to-orange-50 rounded-2xl border border-accent/20 p-5 flex items-center gap-4">
+        <div className="p-3 bg-accent/20 rounded-xl text-accent"><Megaphone size={22} /></div>
+        <div>
+          <h3 className="font-bold font-display">Platform Broadcast Center</h3>
