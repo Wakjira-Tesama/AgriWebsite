@@ -772,4 +772,9 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
         {[
           { label: 'Total Farmers', value: totalFarmers.toLocaleString(), icon: Users, desc: `Across ${activeRegions} regions`, color: 'from-emerald-500 to-green-600' },
-          { label: 'Total Experts', value: totalExperts.toString(), icon: UserCheck, desc: 'All specialties', color: 'from-blue-500 to-indigo-600' },
+          { label: 'Total Experts', value: totalExperts.toString(), icon: UserCheck, desc: 'All specialties', color: 'from-blue-500 to-indigo-600' },
+          { label: 'Uptime', value: '99.9%', icon: Server, desc: 'Last 30 days', color: 'from-purple-500 to-violet-600' },
+          { label: 'API Requests', value: '2.4M', icon: Zap, desc: 'This month', color: 'from-amber-500 to-orange-500' },
+        ].map((stat, i) => (
+          <div key={i} className="relative overflow-hidden bg-card rounded-2xl border border-border p-6 hover:shadow-lg transition-all duration-300 group">
+            <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${stat.color} opacity-[0.08] rounded-bl-[60px] group-hover:opacity-[0.15] transition-opacity`} />
