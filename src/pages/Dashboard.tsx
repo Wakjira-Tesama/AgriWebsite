@@ -727,4 +727,9 @@ export default function Dashboard() {
         {loadingAnns ? (
           <div className="flex flex-col items-center gap-3 py-12">
             <div className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin" />
-            <p className="text-muted-foreground font-medium">Loading announcements...</p>
+            <p className="text-muted-foreground font-medium">Loading announcements...</p>
+          </div>
+        ) : announcements && announcements.length > 0 ? announcements.map((a: any) => (
+          <div key={a.id} className="bg-card p-6 rounded-2xl shadow-sm border border-border flex gap-5 transition-all hover:shadow-md">
+            <div className={`p-4 rounded-2xl h-fit shrink-0 ${
+              a.type === 'weather' ? 'bg-blue-50 text-blue-600' :
