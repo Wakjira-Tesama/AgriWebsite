@@ -652,4 +652,9 @@ export default function Dashboard() {
                 </td></tr>
               ) : prices && prices.length > 0 ? prices.map((p: any) => (
                 <tr key={p.id} className="hover:bg-muted/40 transition-colors">
-                  <td className="p-4 font-bold text-foreground">{p.crop}</td>
+                  <td className="p-4 font-bold text-foreground">{p.crop}</td>
+                  <td className="p-4 text-muted-foreground font-medium">{p.market}</td>
+                  <td className="p-4">
+                    <span className="font-display font-bold text-primary text-lg">{p.price}</span>
+                    <span className="text-sm text-muted-foreground ml-1">/ {p.unit}</span>
+                  </td>
