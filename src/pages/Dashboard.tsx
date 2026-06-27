@@ -657,4 +657,9 @@ export default function Dashboard() {
                   <td className="p-4">
                     <span className="font-display font-bold text-primary text-lg">{p.price}</span>
                     <span className="text-sm text-muted-foreground ml-1">/ {p.unit}</span>
-                  </td>
+                  </td>
+                  <td className="p-4">
+                    <span className={`inline-flex items-center gap-1.5 text-sm font-bold px-3 py-1 rounded-full ${
+                      p.trend === 'up' ? 'bg-red-50 text-red-600' :
+                      p.trend === 'down' ? 'bg-emerald-50 text-emerald-600' :
+                      'bg-slate-100 text-slate-600'
