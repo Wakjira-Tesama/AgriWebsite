@@ -782,4 +782,9 @@ export default function Dashboard() {
               <stat.icon size={22} />
             </div>
             <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
-            <h3 className="text-2xl font-display font-bold text-foreground mt-1">{stat.value}</h3>
+            <h3 className="text-2xl font-display font-bold text-foreground mt-1">{stat.value}</h3>
+            <p className="text-xs text-muted-foreground mt-2">{stat.desc}</p>
+          </div>
+        ))}
+      </div>
+
