@@ -767,4 +767,9 @@ export default function Dashboard() {
   // PLATFORM STATS TAB
   // ════════════════════════════════════════════
   const renderPlatform = () => (
-    <div className="space-y-6">
+    <div className="space-y-6">
+      {/* System Health */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+        {[
+          { label: 'Total Farmers', value: totalFarmers.toLocaleString(), icon: Users, desc: `Across ${activeRegions} regions`, color: 'from-emerald-500 to-green-600' },
+          { label: 'Total Experts', value: totalExperts.toString(), icon: UserCheck, desc: 'All specialties', color: 'from-blue-500 to-indigo-600' },
