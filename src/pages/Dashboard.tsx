@@ -642,4 +642,9 @@ export default function Dashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm w-20">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-border">
+            <tbody className="divide-y divide-border">
+              {loadingPrices ? (
+                <tr><td colSpan={6} className="p-12 text-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin" />
+                    <p className="text-muted-foreground font-medium">Loading prices...</p>
