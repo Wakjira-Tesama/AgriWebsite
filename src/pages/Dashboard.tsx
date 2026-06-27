@@ -862,4 +862,9 @@ export default function Dashboard() {
       <div className="bg-card rounded-2xl border border-border p-6">
         <h3 className="text-lg font-bold font-display mb-5 flex items-center gap-2"><Settings size={20} className="text-primary" /> Platform Configuration</h3>
         <div className="space-y-5">
-          {[
+          {[
+            { label: 'Platform Name', value: 'AgriBridge', type: 'text' },
+            { label: 'Support Email', value: 'support@agribridge.gov.et', type: 'email' },
+            { label: 'Default Language', value: 'Amharic', type: 'select' },
+            { label: 'Transaction Commission (%)', value: '2.5', type: 'number' },
+            { label: 'Max Order Quantity (Tonnes)', value: '100', type: 'number' },
