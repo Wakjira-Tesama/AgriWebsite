@@ -717,4 +717,9 @@ export default function Dashboard() {
             <button onClick={() => addAnn.mutate(newAnn)} disabled={!newAnn.title || !newAnn.body || addAnn.isPending}
               className="bg-primary text-white rounded-xl flex items-center gap-2 hover:bg-primary/90 px-8 py-3 disabled:opacity-50 font-bold transition-all ml-auto shadow-md shadow-primary/20">
               <Megaphone size={20} /> Broadcast to Platform
-            </button>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* List */}
