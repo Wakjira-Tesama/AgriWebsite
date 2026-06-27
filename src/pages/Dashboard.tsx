@@ -817,4 +817,9 @@ export default function Dashboard() {
                     <td className="p-4">
                       {m.performance > 0 ? (
                         <div className="flex items-center gap-2">
-                          <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden max-w-[80px]">
+                          <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden max-w-[80px]">
+                            <div className={`h-full rounded-full ${m.performance >= 90 ? 'bg-emerald-500' : m.performance >= 80 ? 'bg-amber-500' : 'bg-red-500'}`} style={{ width: `${m.performance}%` }} />
+                          </div>
+                          <span className={`text-sm font-bold ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</span>
+                        </div>
+                      ) : <span className="text-xs text-muted-foreground">N/A</span>}
