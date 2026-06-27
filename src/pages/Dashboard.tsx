@@ -712,4 +712,9 @@ export default function Dashboard() {
             <select className="px-4 py-3 border border-border rounded-xl outline-none transition-all font-medium" value={newAnn.type} onChange={e => setNewAnn({ ...newAnn, type: e.target.value })}>
               <option value="info">ℹ️ General Info</option>
               <option value="weather">🌧 Weather Alert</option>
-              <option value="alert">⚠️ Urgent Alert</option>
+              <option value="alert">⚠️ Urgent Alert</option>
+            </select>
+            <button onClick={() => addAnn.mutate(newAnn)} disabled={!newAnn.title || !newAnn.body || addAnn.isPending}
+              className="bg-primary text-white rounded-xl flex items-center gap-2 hover:bg-primary/90 px-8 py-3 disabled:opacity-50 font-bold transition-all ml-auto shadow-md shadow-primary/20">
+              <Megaphone size={20} /> Broadcast to Platform
+            </button>
