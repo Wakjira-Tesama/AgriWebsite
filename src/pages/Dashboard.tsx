@@ -852,4 +852,9 @@ export default function Dashboard() {
       </div>
     </div>
   );
-
+
+  // ════════════════════════════════════════════
+  // SYSTEM SETTINGS TAB
+  // ════════════════════════════════════════════
+  const renderSettings = () => (
+    <div className="max-w-3xl space-y-6">
