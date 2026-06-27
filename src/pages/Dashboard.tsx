@@ -757,4 +757,9 @@ export default function Dashboard() {
             <span className="text-5xl mb-4 block">📢</span>
             <h3 className="text-xl font-bold">No announcements yet</h3>
             <p className="text-muted-foreground mt-2">Compose your first broadcast above</p>
-          </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
