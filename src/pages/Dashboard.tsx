@@ -907,4 +907,9 @@ export default function Dashboard() {
       <div className="bg-card rounded-2xl border border-border p-6">
         <h3 className="text-lg font-bold font-display mb-5 flex items-center gap-2"><Database size={20} className="text-primary" /> Database & System</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {[
+          {[
+            { label: 'Database Size', value: '2.4 GB', icon: Database },
+            { label: 'Total Records', value: '1.2M', icon: Layers },
+            { label: 'Backup Status', value: 'Auto (Daily)', icon: Server },
+          ].map((item, i) => (
+            <div key={i} className="bg-muted/40 rounded-xl p-4 text-center">
