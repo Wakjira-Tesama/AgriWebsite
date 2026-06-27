@@ -872,4 +872,9 @@ export default function Dashboard() {
             <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
               <label className="text-sm font-semibold text-foreground w-56 shrink-0">{field.label}</label>
               <input type={field.type} defaultValue={field.value} className="flex-1 px-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" />
-            </div>
+            </div>
+          ))}
+        </div>
+        <button className="mt-6 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 flex items-center gap-2">
+          <CheckCircle size={18} /> Save Configuration
+        </button>
