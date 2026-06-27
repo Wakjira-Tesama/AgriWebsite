@@ -682,4 +682,9 @@ export default function Dashboard() {
                   <p className="text-sm text-muted-foreground mt-1">Add your first market price above</p>
                 </td></tr>
               )}
-            </tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
