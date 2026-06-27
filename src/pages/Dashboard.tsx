@@ -892,4 +892,9 @@ export default function Dashboard() {
           ].map((toggle, i) => (
             <div key={i} className="flex items-center justify-between p-4 rounded-xl bg-muted/40">
               <div>
-                <p className="font-semibold text-foreground text-sm">{toggle.label}</p>
+                <p className="font-semibold text-foreground text-sm">{toggle.label}</p>
+                <p className="text-xs text-muted-foreground mt-0.5">{toggle.desc}</p>
+              </div>
+              <div className={`w-12 h-6 rounded-full cursor-pointer transition-colors ${toggle.enabled ? 'bg-primary' : 'bg-border'}`}>
+                <div className={`w-5 h-5 bg-white rounded-full shadow-sm transform transition-transform mt-0.5 ${toggle.enabled ? 'translate-x-6.5 ml-[26px]' : 'ml-0.5'}`} />
+              </div>
