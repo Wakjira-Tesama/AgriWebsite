@@ -667,4 +667,9 @@ export default function Dashboard() {
                       {p.trend === 'up' ? <TrendingUp size={15} /> : p.trend === 'down' ? <TrendingDown size={15} /> : <Minus size={15} />}
                       {p.trend === 'up' ? 'Rising' : p.trend === 'down' ? 'Falling' : 'Stable'}
                     </span>
-                  </td>
+                  </td>
+                  <td className="p-4 text-sm text-muted-foreground">{format(new Date(p.updated_at), 'MMM d, yyyy • h:mm a')}</td>
+                  <td className="p-4">
+                    <button onClick={() => deletePrice.mutate(p.id)} className="text-destructive hover:text-destructive/80 p-2 rounded-xl hover:bg-destructive/10 transition-colors">
+                      <Trash2 size={18} />
+                    </button>
