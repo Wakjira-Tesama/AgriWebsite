@@ -672,4 +672,9 @@ export default function Dashboard() {
                   <td className="p-4">
                     <button onClick={() => deletePrice.mutate(p.id)} className="text-destructive hover:text-destructive/80 p-2 rounded-xl hover:bg-destructive/10 transition-colors">
                       <Trash2 size={18} />
-                    </button>
+                    </button>
+                  </td>
+                </tr>
+              )) : (
+                <tr><td colSpan={6} className="p-12 text-center">
+                  <span className="text-4xl mb-3 block">💰</span>
