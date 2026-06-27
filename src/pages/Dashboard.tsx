@@ -732,4 +732,9 @@ export default function Dashboard() {
         ) : announcements && announcements.length > 0 ? announcements.map((a: any) => (
           <div key={a.id} className="bg-card p-6 rounded-2xl shadow-sm border border-border flex gap-5 transition-all hover:shadow-md">
             <div className={`p-4 rounded-2xl h-fit shrink-0 ${
-              a.type === 'weather' ? 'bg-blue-50 text-blue-600' :
+              a.type === 'weather' ? 'bg-blue-50 text-blue-600' :
+              a.type === 'alert' ? 'bg-red-50 text-red-600' :
+              'bg-primary/10 text-primary'
+            }`}><Bell size={24} /></div>
+            <div className="flex-1">
+              <div className="flex items-center gap-3 mb-1 flex-wrap">
