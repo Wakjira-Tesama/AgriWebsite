@@ -867,4 +867,9 @@ export default function Dashboard() {
             { label: 'Support Email', value: 'support@agribridge.gov.et', type: 'email' },
             { label: 'Default Language', value: 'Amharic', type: 'select' },
             { label: 'Transaction Commission (%)', value: '2.5', type: 'number' },
-            { label: 'Max Order Quantity (Tonnes)', value: '100', type: 'number' },
+            { label: 'Max Order Quantity (Tonnes)', value: '100', type: 'number' },
+          ].map((field, i) => (
+            <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <label className="text-sm font-semibold text-foreground w-56 shrink-0">{field.label}</label>
+              <input type={field.type} defaultValue={field.value} className="flex-1 px-4 py-2.5 border border-border rounded-xl focus:border-primary outline-none transition-all" />
+            </div>
