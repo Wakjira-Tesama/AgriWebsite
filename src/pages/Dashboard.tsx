@@ -747,4 +747,9 @@ export default function Dashboard() {
               </div>
               <h3 className="font-bold font-display text-xl text-foreground mt-2">{a.title}</h3>
               <p className="text-foreground/80 mt-2 leading-relaxed">{a.body}</p>
-            </div>
+            </div>
+            <button onClick={() => deleteAnn.mutate(a.id)} className="text-destructive hover:text-destructive/80 p-3 h-fit rounded-xl hover:bg-destructive/10 transition-colors shrink-0">
+              <Trash2 size={20} />
+            </button>
+          </div>
+        )) : (
