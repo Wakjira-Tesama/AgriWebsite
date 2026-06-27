@@ -702,4 +702,9 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Compose */}
+      {/* Compose */}
+      <div className="bg-card p-6 rounded-2xl shadow-sm border border-border">
+        <h2 className="text-lg font-bold font-display mb-4">Compose Announcement</h2>
+        <div className="space-y-4">
+          <input placeholder="Title (e.g. Heavy Rain Expected)" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-lg font-medium" value={newAnn.title} onChange={e => setNewAnn({ ...newAnn, title: e.target.value })} />
+          <textarea placeholder="Write the full announcement description..." className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none min-h-[120px] transition-all resize-none" value={newAnn.body} onChange={e => setNewAnn({ ...newAnn, body: e.target.value })} />
