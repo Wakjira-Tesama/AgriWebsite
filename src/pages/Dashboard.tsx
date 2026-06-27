@@ -802,4 +802,9 @@ export default function Dashboard() {
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Experts</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Performance</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Status</th>
-              </tr>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              {mockRegionalManagers.map(m => {
+                const sc = statusColors[m.status];
+                return (
