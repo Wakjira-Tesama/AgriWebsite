@@ -647,4 +647,9 @@ export default function Dashboard() {
                 <tr><td colSpan={6} className="p-12 text-center">
                   <div className="flex flex-col items-center gap-3">
                     <div className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin" />
-                    <p className="text-muted-foreground font-medium">Loading prices...</p>
+                    <p className="text-muted-foreground font-medium">Loading prices...</p>
+                  </div>
+                </td></tr>
+              ) : prices && prices.length > 0 ? prices.map((p: any) => (
+                <tr key={p.id} className="hover:bg-muted/40 transition-colors">
+                  <td className="p-4 font-bold text-foreground">{p.crop}</td>
