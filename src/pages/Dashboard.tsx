@@ -842,4 +842,9 @@ export default function Dashboard() {
             <BarChart data={revenueByRegionData}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
               <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
-              <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+              <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+              <RechartsTooltip contentStyle={{ borderRadius: '12px', border: '1px solid #e2e8f0' }} />
+              <Bar dataKey="revenue" fill="#2E7D32" radius={[6, 6, 0, 0]} barSize={36} name="Revenue (K ETB)" />
+              <Bar dataKey="transactions" fill="#F4A000" radius={[6, 6, 0, 0]} barSize={36} name="Transactions" />
+            </BarChart>
+          </ResponsiveContainer>
