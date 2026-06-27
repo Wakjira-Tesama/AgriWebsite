@@ -822,4 +822,9 @@ export default function Dashboard() {
                           </div>
                           <span className={`text-sm font-bold ${m.performance >= 90 ? 'text-emerald-600' : m.performance >= 80 ? 'text-amber-600' : 'text-red-600'}`}>{m.performance}%</span>
                         </div>
-                      ) : <span className="text-xs text-muted-foreground">N/A</span>}
+                      ) : <span className="text-xs text-muted-foreground">N/A</span>}
+                    </td>
+                    <td className="p-4"><span className={`text-xs font-bold px-2.5 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>{m.status}</span></td>
+                  </tr>
+                );
+              })}
