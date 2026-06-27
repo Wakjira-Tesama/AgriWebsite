@@ -837,4 +837,9 @@ export default function Dashboard() {
       <div className="bg-card rounded-2xl border border-border p-6">
         <h3 className="text-lg font-bold font-display mb-1">Revenue by Region</h3>
         <p className="text-sm text-muted-foreground mb-6">Thousands ETB comparison</p>
-        <div className="h-[300px]">
+        <div className="h-[300px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={revenueByRegionData}>
+              <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
+              <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
+              <YAxis axisLine={false} tickLine={false} tick={{ fill: '#64748b', fontSize: 13 }} />
