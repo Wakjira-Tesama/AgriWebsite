@@ -832,4 +832,9 @@ export default function Dashboard() {
           </table>
         </div>
       </div>
-
+
+      {/* Revenue chart */}
+      <div className="bg-card rounded-2xl border border-border p-6">
+        <h3 className="text-lg font-bold font-display mb-1">Revenue by Region</h3>
+        <p className="text-sm text-muted-foreground mb-6">Thousands ETB comparison</p>
+        <div className="h-[300px]">
