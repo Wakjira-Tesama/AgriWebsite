@@ -737,4 +737,9 @@ export default function Dashboard() {
               'bg-primary/10 text-primary'
             }`}><Bell size={24} /></div>
             <div className="flex-1">
-              <div className="flex items-center gap-3 mb-1 flex-wrap">
+              <div className="flex items-center gap-3 mb-1 flex-wrap">
+                <span className={`text-xs font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider ${
+                  a.type === 'weather' ? 'bg-blue-100 text-blue-700' :
+                  a.type === 'alert' ? 'bg-red-100 text-red-700' :
+                  'bg-primary/10 text-primary'
+                }`}>{a.type === 'weather' ? '🌧 Weather' : a.type === 'alert' ? '⚠ Alert' : 'ℹ Info'}</span>
