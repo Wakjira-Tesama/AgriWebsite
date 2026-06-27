@@ -877,4 +877,9 @@ export default function Dashboard() {
         </div>
         <button className="mt-6 px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 flex items-center gap-2">
           <CheckCircle size={18} /> Save Configuration
-        </button>
+        </button>
+      </div>
+
+      {/* Security */}
+      <div className="bg-card rounded-2xl border border-border p-6">
+        <h3 className="text-lg font-bold font-display mb-5 flex items-center gap-2"><Lock size={20} className="text-primary" /> Security & Access</h3>
