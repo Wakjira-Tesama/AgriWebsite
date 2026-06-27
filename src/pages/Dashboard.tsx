@@ -897,4 +897,9 @@ export default function Dashboard() {
               </div>
               <div className={`w-12 h-6 rounded-full cursor-pointer transition-colors ${toggle.enabled ? 'bg-primary' : 'bg-border'}`}>
                 <div className={`w-5 h-5 bg-white rounded-full shadow-sm transform transition-transform mt-0.5 ${toggle.enabled ? 'translate-x-6.5 ml-[26px]' : 'ml-0.5'}`} />
-              </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
