@@ -827,4 +827,9 @@ export default function Dashboard() {
                     <td className="p-4"><span className={`text-xs font-bold px-2.5 py-1 rounded-full border capitalize ${sc.bg} ${sc.text}`}>{m.status}</span></td>
                   </tr>
                 );
-              })}
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
