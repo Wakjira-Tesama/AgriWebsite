@@ -912,4 +912,9 @@ export default function Dashboard() {
             { label: 'Total Records', value: '1.2M', icon: Layers },
             { label: 'Backup Status', value: 'Auto (Daily)', icon: Server },
           ].map((item, i) => (
-            <div key={i} className="bg-muted/40 rounded-xl p-4 text-center">
+            <div key={i} className="bg-muted/40 rounded-xl p-4 text-center">
+              <item.icon size={22} className="text-primary mx-auto mb-2" />
+              <p className="font-bold text-foreground">{item.value}</p>
+              <p className="text-xs text-muted-foreground">{item.label}</p>
+            </div>
+          ))}
