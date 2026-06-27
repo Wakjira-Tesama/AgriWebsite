@@ -787,4 +787,9 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
-
+
+      {/* Regional breakdown table */}
+      <div className="bg-card rounded-2xl border border-border p-6">
+        <h3 className="text-lg font-bold font-display mb-6">Regional Breakdown</h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
