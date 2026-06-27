@@ -807,4 +807,9 @@ export default function Dashboard() {
             <tbody className="divide-y divide-border">
               {mockRegionalManagers.map(m => {
                 const sc = statusColors[m.status];
-                return (
+                return (
+                  <tr key={m.id} className="hover:bg-muted/40 transition-colors">
+                    <td className="p-4 font-bold text-foreground">{m.region}</td>
+                    <td className="p-4 text-sm text-foreground">{m.name}</td>
+                    <td className="p-4"><span className="text-xs font-medium bg-accent/10 text-accent px-2 py-1 rounded-full">{m.language}</span></td>
+                    <td className="p-4 font-bold text-foreground">{m.farmers.toLocaleString()}</td>
