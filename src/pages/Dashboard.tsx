@@ -882,4 +882,9 @@ export default function Dashboard() {
 
       {/* Security */}
       <div className="bg-card rounded-2xl border border-border p-6">
-        <h3 className="text-lg font-bold font-display mb-5 flex items-center gap-2"><Lock size={20} className="text-primary" /> Security & Access</h3>
+        <h3 className="text-lg font-bold font-display mb-5 flex items-center gap-2"><Lock size={20} className="text-primary" /> Security & Access</h3>
+        <div className="space-y-4">
+          {[
+            { label: 'Two-Factor Authentication', desc: 'Require 2FA for all admin accounts', enabled: true },
+            { label: 'IP Whitelist', desc: 'Restrict admin access to specific IPs', enabled: false },
+            { label: 'Audit Logging', desc: 'Log all admin actions for compliance', enabled: true },
