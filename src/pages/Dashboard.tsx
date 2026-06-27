@@ -687,4 +687,9 @@ export default function Dashboard() {
         </div>
       </div>
     </div>
-  );
+  );
+
+  // ════════════════════════════════════════════
+  // ANNOUNCEMENTS TAB (CRUD)
+  // ════════════════════════════════════════════
+  const renderAnnouncements = () => (
