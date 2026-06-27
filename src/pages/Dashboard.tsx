@@ -762,4 +762,9 @@ export default function Dashboard() {
       </div>
     </div>
   );
-
+
+  // ════════════════════════════════════════════
+  // PLATFORM STATS TAB
+  // ════════════════════════════════════════════
+  const renderPlatform = () => (
+    <div className="space-y-6">
