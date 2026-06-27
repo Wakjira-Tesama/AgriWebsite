@@ -677,4 +677,9 @@ export default function Dashboard() {
                 </tr>
               )) : (
                 <tr><td colSpan={6} className="p-12 text-center">
-                  <span className="text-4xl mb-3 block">💰</span>
+                  <span className="text-4xl mb-3 block">💰</span>
+                  <p className="font-bold text-foreground">No prices set yet</p>
+                  <p className="text-sm text-muted-foreground mt-1">Add your first market price above</p>
+                </td></tr>
+              )}
+            </tbody>
