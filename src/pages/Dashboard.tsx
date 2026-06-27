@@ -887,4 +887,9 @@ export default function Dashboard() {
           {[
             { label: 'Two-Factor Authentication', desc: 'Require 2FA for all admin accounts', enabled: true },
             { label: 'IP Whitelist', desc: 'Restrict admin access to specific IPs', enabled: false },
-            { label: 'Audit Logging', desc: 'Log all admin actions for compliance', enabled: true },
+            { label: 'Audit Logging', desc: 'Log all admin actions for compliance', enabled: true },
+            { label: 'Auto-Suspend Inactive Buyers', desc: 'Suspend buyers after 90 days of inactivity', enabled: false },
+          ].map((toggle, i) => (
+            <div key={i} className="flex items-center justify-between p-4 rounded-xl bg-muted/40">
+              <div>
+                <p className="font-semibold text-foreground text-sm">{toggle.label}</p>
