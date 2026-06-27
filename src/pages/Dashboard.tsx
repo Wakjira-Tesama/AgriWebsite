@@ -797,4 +797,9 @@ export default function Dashboard() {
               <tr className="bg-muted/70 border-b border-border">
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Region</th>
                 <th className="p-4 font-semibold text-muted-foreground text-sm">Manager</th>
-                <th className="p-4 font-semibold text-muted-foreground text-sm">Language</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Language</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Farmers</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Experts</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Performance</th>
+                <th className="p-4 font-semibold text-muted-foreground text-sm">Status</th>
+              </tr>
