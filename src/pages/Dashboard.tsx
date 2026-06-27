@@ -662,4 +662,9 @@ export default function Dashboard() {
                     <span className={`inline-flex items-center gap-1.5 text-sm font-bold px-3 py-1 rounded-full ${
                       p.trend === 'up' ? 'bg-red-50 text-red-600' :
                       p.trend === 'down' ? 'bg-emerald-50 text-emerald-600' :
-                      'bg-slate-100 text-slate-600'
+                      'bg-slate-100 text-slate-600'
+                    }`}>
+                      {p.trend === 'up' ? <TrendingUp size={15} /> : p.trend === 'down' ? <TrendingDown size={15} /> : <Minus size={15} />}
+                      {p.trend === 'up' ? 'Rising' : p.trend === 'down' ? 'Falling' : 'Stable'}
+                    </span>
+                  </td>
