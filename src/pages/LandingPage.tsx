@@ -22,4 +22,9 @@ export default function LandingPage() {
       navigate('/regional-login');
     } else {
       alert("Portal not found. Try: 'admin', 'buyer', 'expert', or 'regional'.");
-    }
+    }
+  };
+
+  const portals = [
+    {
+      title: 'Wholesale Buyers',
