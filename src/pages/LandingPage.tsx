@@ -82,4 +82,9 @@ export default function LandingPage() {
           <button onClick={() => navigate('/expert-login')} className="font-semibold text-muted-foreground hover:text-primary transition-colors">Expert Portal</button>
           <button onClick={() => navigate('/regional-login')} className="font-semibold text-muted-foreground hover:text-primary transition-colors">Regional Manager</button>
           <button onClick={() => navigate('/admin-login')} className="px-4 py-2 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all text-sm">Admin Login</button>
-        </div>
+        </div>
+        {/* Mobile menu */}
+        <button onClick={() => navigate('/login')} className="md:hidden font-bold text-sm text-primary">Login</button>
+      </nav>
+
+      {/* ── Hero ── */}
