@@ -987,4 +987,9 @@ export default function Dashboard() {
           {navItems.slice(4).map(item => (
             <button key={item.id} onClick={() => { setActiveTab(item.id); setSidebarOpen(false); setSearchQuery(''); }}
               className={`w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-medium transition-all duration-200 text-sm ${
-                activeTab === item.id ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                activeTab === item.id ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+              }`}>
+              <item.icon size={19} />
+              <span className="flex-1 text-left">{item.label}</span>
+            </button>
+          ))}
