@@ -12,7 +12,7 @@ export default function Login() {
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) navigate('/');
+      if (session) navigate('/admin');
     });
   }, [navigate]);
 
@@ -40,7 +40,7 @@ export default function Login() {
           throw new Error('Access denied. Admin role required.');
         }
         
-        navigate('/');
+        navigate('/admin');
       }
     } catch (err: any) {
       setError(err.message || 'Failed to login');
@@ -100,6 +100,9 @@ export default function Login() {
           </button>
         </form>
       </div>
+      <p className="text-center text-sm text-slate-500 mt-4">
+        <button onClick={() => navigate('/')} className="font-semibold text-green-600 hover:underline">← Back to Home</button>
+      </p>
     </div>
   );
 }
