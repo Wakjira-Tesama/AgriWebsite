@@ -42,4 +42,9 @@ export default function LandingPage() {
       path: '/expert-login',
       badge: 'Advisory',
     },
-    {
+    {
+      title: 'Regional Managers',
+      desc: 'Manage farmers, experts, and regional agriculture programs across Ethiopian regions.',
+      icon: Shield,
+      color: 'bg-blue-100 text-blue-600',
+      path: '/regional-login',
