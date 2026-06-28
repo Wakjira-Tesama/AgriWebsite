@@ -1037,4 +1037,9 @@ export default function Dashboard() {
 
         <div className="p-6 lg:p-8">
           {activeTab === 'overview' && renderOverview()}
-          {activeTab === 'regions' && renderRegions()}
+          {activeTab === 'regions' && renderRegions()}
+          {activeTab === 'buyers' && renderBuyers()}
+          {activeTab === 'prices' && renderPrices()}
+          {activeTab === 'announcements' && renderAnnouncements()}
+          {activeTab === 'platform' && renderPlatform()}
+          {activeTab === 'settings' && renderSettings()}
