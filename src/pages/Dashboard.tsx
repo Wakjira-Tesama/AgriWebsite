@@ -1002,4 +1002,9 @@ export default function Dashboard() {
           </button>
         </div>
       </aside>
-
+
+      {/* MAIN */}
+      <main className="flex-1 min-w-0 overflow-y-auto max-h-screen">
+        <header className="sticky top-0 z-30 bg-background/80 backdrop-blur-xl border-b border-border/60 px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
