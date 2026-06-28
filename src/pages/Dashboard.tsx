@@ -1047,4 +1047,9 @@ export default function Dashboard() {
       </main>
 
       {/* ═══ ADD REGIONAL MANAGER MODAL ═══ */}
-      {showAddManagerModal && (
+      {showAddManagerModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" onClick={() => setShowAddManagerModal(false)}>
+          <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="p-6 border-b border-border flex items-center justify-between">
+              <div>
+                <h3 className="text-xl font-display font-bold">Add Regional Manager</h3>
