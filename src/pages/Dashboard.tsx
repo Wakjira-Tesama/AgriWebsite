@@ -967,4 +967,9 @@ export default function Dashboard() {
               <h2 className="font-display font-bold text-foreground leading-tight">AgriBridge</h2>
               <p className="text-xs text-muted-foreground font-medium flex items-center gap-1"><Crown size={11} /> Super Admin</p>
             </div>
-          </div>
+          </div>
+        </div>
+
+        <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
+          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider px-3 mb-2 mt-1">Management</p>
+          {navItems.slice(0, 4).map(item => (
