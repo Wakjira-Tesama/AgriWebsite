@@ -52,4 +52,9 @@ export default function LandingPage() {
     },
     {
       title: 'Farmers App',
-      desc: 'Download our mobile app to manage your farm, check weather, and sell produce.',
+      desc: 'Download our mobile app to manage your farm, check weather, and sell produce.',
+      icon: Tractor,
+      color: 'bg-primary/10 text-primary',
+      path: null,
+      badge: 'Mobile App',
+    },
