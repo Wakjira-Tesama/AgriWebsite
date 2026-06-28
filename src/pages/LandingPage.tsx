@@ -72,4 +72,9 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col font-sans">
       {/* ── Navbar ── */}
-      <nav className="flex justify-between items-center px-6 lg:px-12 py-4 bg-card border-b border-border sticky top-0 z-20 shadow-sm">
+      <nav className="flex justify-between items-center px-6 lg:px-12 py-4 bg-card border-b border-border sticky top-0 z-20 shadow-sm">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">AB</div>
+          <span className="font-display font-bold text-2xl text-foreground">AgriBridge</span>
+        </div>
+        <div className="hidden md:flex items-center gap-6">
