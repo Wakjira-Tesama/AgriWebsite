@@ -952,4 +952,9 @@ export default function Dashboard() {
       {sidebarOpen && <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />}
 
       {/* SIDEBAR */}
-      <aside className={`
+      <aside className={`
+        fixed lg:sticky top-0 left-0 z-50 lg:z-auto
+        w-72 lg:w-[280px] bg-card border-r border-border shrink-0 flex flex-col h-screen
+        transform transition-transform duration-300 ease-out
+        ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      `}>
