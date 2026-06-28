@@ -36,7 +36,7 @@ export default function EmployersPage() {
           {roles.map((role) => (
             <button 
               key={role.name}
-              onClick={() => window.location.href = 'http://localhost:5174'}
+              onClick={() => navigate(`/expert-login?role=${encodeURIComponent(role.name)}`)}
               className="bg-card p-6 rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all text-left group"
             >
               <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">

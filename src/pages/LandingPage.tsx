@@ -11,11 +11,11 @@ export default function LandingPage() {
     const query = searchQuery.toLowerCase().trim();
     
     if (query === 'admin') {
-      navigate('/admin');
+      navigate('/admin-login');
     } else if (query === 'employers' || query === 'employer' || query === 'expert') {
       navigate('/employers');
     } else if (query === 'buyer' || query === 'buyers') {
-      window.location.href = 'http://localhost:5175';
+      navigate('/login');
     } else {
       alert("Portal not found. Try searching for 'admin', 'employers', or 'buyer'.");
     }
@@ -31,7 +31,7 @@ export default function LandingPage() {
         </div>
         <div className="flex items-center gap-6">
           <button 
-            onClick={() => window.location.href = 'http://localhost:5175'} 
+            onClick={() => navigate('/login')} 
             className="font-bold text-foreground hover:text-primary transition-colors"
           >
             Buyer Portal
@@ -88,7 +88,7 @@ export default function LandingPage() {
       {/* Feature Cards */}
       <section className="bg-card py-20 px-6 lg:px-12 border-t border-border">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-8 rounded-3xl bg-background border border-border hover:shadow-lg transition-all text-center group cursor-pointer" onClick={() => window.location.href = 'http://localhost:5175'}>
+          <div className="p-8 rounded-3xl bg-background border border-border hover:shadow-lg transition-all text-center group cursor-pointer" onClick={() => navigate('/login')}>
             <div className="w-16 h-16 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Store size={32} />
             </div>
