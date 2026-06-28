@@ -77,4 +77,9 @@ export default function LandingPage() {
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">AB</div>
           <span className="font-display font-bold text-2xl text-foreground">AgriBridge</span>
         </div>
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6">
+          <button onClick={() => navigate('/login')} className="font-semibold text-muted-foreground hover:text-primary transition-colors">Buyer Portal</button>
+          <button onClick={() => navigate('/expert-login')} className="font-semibold text-muted-foreground hover:text-primary transition-colors">Expert Portal</button>
+          <button onClick={() => navigate('/regional-login')} className="font-semibold text-muted-foreground hover:text-primary transition-colors">Regional Manager</button>
+          <button onClick={() => navigate('/admin-login')} className="px-4 py-2 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all text-sm">Admin Login</button>
+        </div>
