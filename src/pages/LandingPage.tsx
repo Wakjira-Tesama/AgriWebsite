@@ -7,4 +7,9 @@ import {
 
 export default function LandingPage() {
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
+  const navigate = useNavigate();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const query = searchQuery.toLowerCase().trim();
+    if (query === 'admin') {
