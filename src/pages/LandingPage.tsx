@@ -62,4 +62,9 @@ export default function LandingPage() {
 
   const regions = [
     { name: 'Oromia', lang: 'Afaan Oromoo', flag: '🟢', farmers: '1.2M' },
-    { name: 'Amhara', lang: 'Amharic', flag: '🔵', farmers: '980K' },
+    { name: 'Amhara', lang: 'Amharic', flag: '🔵', farmers: '980K' },
+    { name: 'SNNPR', lang: 'Multiple', flag: '🟡', farmers: '760K' },
+    { name: 'Tigray', lang: 'Tigrinya', flag: '🔴', farmers: '420K' },
+    { name: 'Sidama', lang: 'Sidaamu Afoo', flag: '🟠', farmers: '310K' },
+    { name: 'Somali', lang: 'Somali', flag: '🔵', farmers: '250K' },
+  ];
