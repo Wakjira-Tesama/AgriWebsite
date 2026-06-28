@@ -1072,4 +1072,9 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Primary Language</label>
-                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all">
+                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all">
+                    <option>Select Language...</option>
+                    {['Afaan Oromoo', 'Amharic', 'Tigrinya', 'Somali', 'Sidaamu Afoo', 'Afaraf', 'Wolaytta', 'Hadiyya', 'Gurage'].map(l => <option key={l}>{l}</option>)}
+                  </select>
+                </div>
+              </div>
