@@ -1022,4 +1022,9 @@ export default function Dashboard() {
                 <Bell size={18} />
                 {announcements && announcements.length > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-[10px] font-bold rounded-full flex items-center justify-center">{announcements.length}</span>
-                )}
+                )}
+              </button>
+              <div className="hidden sm:flex items-center gap-3 pl-3 border-l border-border">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white flex items-center justify-center font-bold text-sm"><Crown size={16} /></div>
+                <div className="text-sm">
+                  <p className="font-bold text-foreground leading-tight">System Admin</p>
