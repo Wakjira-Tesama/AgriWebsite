@@ -1042,4 +1042,9 @@ export default function Dashboard() {
           {activeTab === 'prices' && renderPrices()}
           {activeTab === 'announcements' && renderAnnouncements()}
           {activeTab === 'platform' && renderPlatform()}
-          {activeTab === 'settings' && renderSettings()}
+          {activeTab === 'settings' && renderSettings()}
+        </div>
+      </main>
+
+      {/* ═══ ADD REGIONAL MANAGER MODAL ═══ */}
+      {showAddManagerModal && (
