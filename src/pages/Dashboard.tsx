@@ -1062,4 +1062,9 @@ export default function Dashboard() {
                 <label className="block text-sm font-semibold text-foreground mb-1.5">Full Name</label>
                 <input type="text" placeholder="Manager full name" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Region</label>
+                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all">
+                    <option>Select Region...</option>
+                    {['Oromia', 'Amhara', 'SNNPR', 'Tigray', 'Sidama', 'Somali', 'Afar', 'Benishangul-Gumuz', 'Gambela', 'Harari', 'Addis Ababa', 'Dire Dawa'].map(r => <option key={r}>{r}</option>)}
