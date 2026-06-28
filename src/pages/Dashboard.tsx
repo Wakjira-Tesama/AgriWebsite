@@ -957,4 +957,9 @@ export default function Dashboard() {
         w-72 lg:w-[280px] bg-card border-r border-border shrink-0 flex flex-col h-screen
         transform transition-transform duration-300 ease-out
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-      `}>
+      `}>
+        <div className="p-5 border-b border-border">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center text-white shadow-lg">
+              <Crown size={24} />
+            </div>
