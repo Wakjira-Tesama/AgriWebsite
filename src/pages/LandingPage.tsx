@@ -12,4 +12,9 @@ export default function LandingPage() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     const query = searchQuery.toLowerCase().trim();
-    if (query === 'admin') {
+    if (query === 'admin') {
+      navigate('/admin-login');
+    } else if (query === 'employers' || query === 'employer' || query === 'expert') {
+      navigate('/expert-login');
+    } else if (query === 'buyer' || query === 'buyers') {
+      navigate('/login');
