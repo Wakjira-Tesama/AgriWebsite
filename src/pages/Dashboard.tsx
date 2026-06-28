@@ -947,4 +947,9 @@ export default function Dashboard() {
   // ═══════════════════════════════════════════════
   // MAIN LAYOUT
   // ═══════════════════════════════════════════════
-  return (
+  return (
+    <div className="min-h-screen bg-background flex">
+      {sidebarOpen && <div className="fixed inset-0 bg-black/40 z-40 lg:hidden" onClick={() => setSidebarOpen(false)} />}
+
+      {/* SIDEBAR */}
+      <aside className={`
