@@ -1032,4 +1032,9 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-          </div>
+          </div>
+        </header>
+
+        <div className="p-6 lg:p-8">
+          {activeTab === 'overview' && renderOverview()}
+          {activeTab === 'regions' && renderRegions()}
