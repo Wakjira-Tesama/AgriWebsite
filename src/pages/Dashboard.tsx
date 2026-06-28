@@ -1067,4 +1067,9 @@ export default function Dashboard() {
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Region</label>
                   <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all">
                     <option>Select Region...</option>
-                    {['Oromia', 'Amhara', 'SNNPR', 'Tigray', 'Sidama', 'Somali', 'Afar', 'Benishangul-Gumuz', 'Gambela', 'Harari', 'Addis Ababa', 'Dire Dawa'].map(r => <option key={r}>{r}</option>)}
+                    {['Oromia', 'Amhara', 'SNNPR', 'Tigray', 'Sidama', 'Somali', 'Afar', 'Benishangul-Gumuz', 'Gambela', 'Harari', 'Addis Ababa', 'Dire Dawa'].map(r => <option key={r}>{r}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Primary Language</label>
+                  <select className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all">
