@@ -1077,4 +1077,9 @@ export default function Dashboard() {
                     {['Afaan Oromoo', 'Amharic', 'Tigrinya', 'Somali', 'Sidaamu Afoo', 'Afaraf', 'Wolaytta', 'Hadiyya', 'Gurage'].map(l => <option key={l}>{l}</option>)}
                   </select>
                 </div>
-              </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Email</label>
+                  <input type="email" placeholder="manager@agribridge.gov.et" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" />
+                </div>
