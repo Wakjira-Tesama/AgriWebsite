@@ -962,4 +962,9 @@ export default function Dashboard() {
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center text-white shadow-lg">
               <Crown size={24} />
-            </div>
+            </div>
+            <div>
+              <h2 className="font-display font-bold text-foreground leading-tight">AgriBridge</h2>
+              <p className="text-xs text-muted-foreground font-medium flex items-center gap-1"><Crown size={11} /> Super Admin</p>
+            </div>
+          </div>
