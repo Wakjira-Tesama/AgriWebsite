@@ -1017,4 +1017,9 @@ export default function Dashboard() {
             <div className="flex items-center gap-3">
               <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-100 to-amber-50 text-amber-800 rounded-full text-xs font-bold border border-amber-200">
                 <Crown size={14} /> Super Admin
-              </div>
+              </div>
+              <button className="relative w-10 h-10 rounded-xl bg-card border border-border flex items-center justify-center hover:bg-muted transition-colors">
+                <Bell size={18} />
+                {announcements && announcements.length > 0 && (
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-accent text-white text-[10px] font-bold rounded-full flex items-center justify-center">{announcements.length}</span>
+                )}
