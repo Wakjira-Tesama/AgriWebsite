@@ -57,4 +57,9 @@ export default function LandingPage() {
       color: 'bg-primary/10 text-primary',
       path: null,
       badge: 'Mobile App',
-    },
+    },
+  ];
+
+  const regions = [
+    { name: 'Oromia', lang: 'Afaan Oromoo', flag: '🟢', farmers: '1.2M' },
+    { name: 'Amhara', lang: 'Amharic', flag: '🔵', farmers: '980K' },
