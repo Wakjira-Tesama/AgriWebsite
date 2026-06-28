@@ -32,4 +32,9 @@ export default function LandingPage() {
       icon: Store,
       color: 'bg-accent/10 text-accent',
       path: '/login',
-      badge: 'Open Market',
+      badge: 'Open Market',
+    },
+    {
+      title: 'Agricultural Experts',
+      desc: 'Join as an extension worker or crop specialist to answer farmer inquiries in your language.',
+      icon: Users,
