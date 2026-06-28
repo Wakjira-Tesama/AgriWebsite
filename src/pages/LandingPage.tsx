@@ -17,4 +17,9 @@ export default function LandingPage() {
     } else if (query === 'employers' || query === 'employer' || query === 'expert') {
       navigate('/expert-login');
     } else if (query === 'buyer' || query === 'buyers') {
-      navigate('/login');
+      navigate('/login');
+    } else if (query === 'regional' || query === 'manager' || query === 'region') {
+      navigate('/regional-login');
+    } else {
+      alert("Portal not found. Try: 'admin', 'buyer', 'expert', or 'regional'.");
+    }
