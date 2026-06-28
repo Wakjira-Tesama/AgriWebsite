@@ -1082,4 +1082,9 @@ export default function Dashboard() {
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Email</label>
                   <input type="email" placeholder="manager@agribridge.gov.et" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" />
-                </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-foreground mb-1.5">Phone</label>
+                  <input type="tel" placeholder="+251 9XX XXX XXX" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" />
+                </div>
+              </div>
