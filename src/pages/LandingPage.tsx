@@ -27,4 +27,9 @@ export default function LandingPage() {
 
   const portals = [
     {
-      title: 'Wholesale Buyers',
+      title: 'Wholesale Buyers',
+      desc: 'Access the marketplace to buy crops directly from verified smallholder farmers across Ethiopia.',
+      icon: Store,
+      color: 'bg-accent/10 text-accent',
+      path: '/login',
+      badge: 'Open Market',
