@@ -67,4 +67,9 @@ export default function LandingPage() {
     { name: 'Tigray', lang: 'Tigrinya', flag: '🔴', farmers: '420K' },
     { name: 'Sidama', lang: 'Sidaamu Afoo', flag: '🟠', farmers: '310K' },
     { name: 'Somali', lang: 'Somali', flag: '🔵', farmers: '250K' },
-  ];
+  ];
+
+  return (
+    <div className="min-h-screen bg-background flex flex-col font-sans">
+      {/* ── Navbar ── */}
+      <nav className="flex justify-between items-center px-6 lg:px-12 py-4 bg-card border-b border-border sticky top-0 z-20 shadow-sm">
