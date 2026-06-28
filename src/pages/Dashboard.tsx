@@ -932,4 +932,9 @@ export default function Dashboard() {
             </div>
             <button className="px-4 py-2 border border-red-300 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors text-sm">Reset</button>
           </div>
-          <div className="flex items-center justify-between p-4 rounded-xl border border-red-100 bg-red-50/50">
+          <div className="flex items-center justify-between p-4 rounded-xl border border-red-100 bg-red-50/50">
+            <div>
+              <p className="font-semibold text-foreground text-sm">Clear All Announcements</p>
+              <p className="text-xs text-muted-foreground">Remove all broadcast messages</p>
+            </div>
+            <button className="px-4 py-2 border border-red-300 text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors text-sm">Clear</button>
