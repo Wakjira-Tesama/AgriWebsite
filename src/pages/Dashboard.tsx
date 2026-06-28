@@ -1087,4 +1087,9 @@ export default function Dashboard() {
                   <label className="block text-sm font-semibold text-foreground mb-1.5">Phone</label>
                   <input type="tel" placeholder="+251 9XX XXX XXX" className="w-full px-4 py-3 border border-border rounded-xl focus:border-primary outline-none transition-all" />
                 </div>
-              </div>
+              </div>
+            </div>
+            <div className="p-6 border-t border-border flex gap-3 justify-end">
+              <button onClick={() => setShowAddManagerModal(false)} className="px-6 py-3 border border-border rounded-xl font-bold hover:bg-muted transition-colors">Cancel</button>
+              <button onClick={() => setShowAddManagerModal(false)} className="px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 flex items-center gap-2">
+                <UserPlus size={18} /> Add Manager
