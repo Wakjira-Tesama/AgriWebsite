@@ -992,4 +992,9 @@ export default function Dashboard() {
               <item.icon size={19} />
               <span className="flex-1 text-left">{item.label}</span>
             </button>
-          ))}
+          ))}
+        </nav>
+
+        <div className="p-3 border-t border-border">
+          <button onClick={() => { supabase.auth.signOut().then(() => window.location.href = '/admin-login'); }}
+            className="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-medium text-destructive hover:bg-destructive/10 transition-colors text-sm">
