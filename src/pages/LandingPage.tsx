@@ -37,4 +37,9 @@ export default function LandingPage() {
     {
       title: 'Agricultural Experts',
       desc: 'Join as an extension worker or crop specialist to answer farmer inquiries in your language.',
-      icon: Users,
+      icon: Users,
+      color: 'bg-secondary/10 text-secondary',
+      path: '/expert-login',
+      badge: 'Advisory',
+    },
+    {
