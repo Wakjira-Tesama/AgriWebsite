@@ -5,6 +5,8 @@ import { LayoutDashboard, LogOut } from 'lucide-react';
 // Pages
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
+import LandingPage from './pages/LandingPage';
+import EmployersPage from './pages/EmployersPage';
 import ProtectedRoute from './components/ProtectedRoute';
 
 const queryClient = new QueryClient();
@@ -14,8 +16,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/employers" element={<EmployersPage />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
+          <Route path="/admin" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
             <Route index element={<Dashboard />} />
           </Route>
         </Routes>
