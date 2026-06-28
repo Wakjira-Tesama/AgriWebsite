@@ -1027,4 +1027,9 @@ export default function Dashboard() {
               <div className="hidden sm:flex items-center gap-3 pl-3 border-l border-border">
                 <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white flex items-center justify-center font-bold text-sm"><Crown size={16} /></div>
                 <div className="text-sm">
-                  <p className="font-bold text-foreground leading-tight">System Admin</p>
+                  <p className="font-bold text-foreground leading-tight">System Admin</p>
+                  <p className="text-muted-foreground text-xs">admin@agribridge.gov.et</p>
+                </div>
+              </div>
+            </div>
+          </div>
