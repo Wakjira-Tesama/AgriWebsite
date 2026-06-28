@@ -1052,4 +1052,9 @@ export default function Dashboard() {
           <div className="bg-card rounded-3xl shadow-2xl w-full max-w-lg border border-border overflow-hidden" onClick={e => e.stopPropagation()}>
             <div className="p-6 border-b border-border flex items-center justify-between">
               <div>
-                <h3 className="text-xl font-display font-bold">Add Regional Manager</h3>
+                <h3 className="text-xl font-display font-bold">Add Regional Manager</h3>
+                <p className="text-sm text-muted-foreground">Register a new regional agriculture manager</p>
+              </div>
+              <button onClick={() => setShowAddManagerModal(false)} className="p-2 rounded-full hover:bg-muted"><X size={20} /></button>
+            </div>
+            <div className="p-6 space-y-4 max-h-[60vh] overflow-y-auto">
