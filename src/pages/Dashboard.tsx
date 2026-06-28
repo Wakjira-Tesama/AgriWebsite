@@ -922,4 +922,9 @@ export default function Dashboard() {
       </div>
 
       {/* Danger Zone */}
-      <div className="bg-card rounded-2xl border border-red-200 p-6">
+      <div className="bg-card rounded-2xl border border-red-200 p-6">
+        <h3 className="text-lg font-bold font-display mb-4 flex items-center gap-2 text-red-600"><AlertTriangle size={20} /> Danger Zone</h3>
+        <div className="space-y-3">
+          <div className="flex items-center justify-between p-4 rounded-xl border border-red-100 bg-red-50/50">
+            <div>
+              <p className="font-semibold text-foreground text-sm">Reset Market Prices</p>
