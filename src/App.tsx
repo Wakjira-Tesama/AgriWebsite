@@ -33,4 +33,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/employers" element={<EmployersPage />} />
 
-          {/* Buyer Portal */}
+          {/* Buyer Portal */}
+          <Route path="/login" element={<BuyerLogin />} />
+          <Route path="/buyer" element={<BuyerDashboard />} />
+
