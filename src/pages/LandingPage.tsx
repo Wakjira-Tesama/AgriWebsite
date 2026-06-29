@@ -122,4 +122,9 @@ export default function LandingPage() {
 
         {/* Quick access badges */}
         <div className="flex gap-3 mt-8 flex-wrap justify-center animate-in fade-in duration-700 delay-700">
-          <button onClick={() => navigate('/login')} className="flex items-center gap-2 px-4 py-2 bg-accent/10 text-accent font-bold rounded-full text-sm hover:bg-accent/20 transition-colors">
+          <button onClick={() => navigate('/login')} className="flex items-center gap-2 px-4 py-2 bg-accent/10 text-accent font-bold rounded-full text-sm hover:bg-accent/20 transition-colors">
+            <Store size={15} /> Buyer Portal
+          </button>
+          <button onClick={() => navigate('/expert-login')} className="flex items-center gap-2 px-4 py-2 bg-secondary/10 text-secondary font-bold rounded-full text-sm hover:bg-secondary/20 transition-colors">
+            <Users size={15} /> Expert Portal
+          </button>
