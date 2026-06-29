@@ -9,4 +9,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 // Buyer Pages
 import BuyerLogin from './pages/buyer/BuyerLogin';
 import BuyerDashboard from './pages/buyer/BuyerDashboard';
-
+
+// Expert Pages
+import ExpertLogin from './pages/expert/ExpertLogin';
+import ExpertDashboard from './pages/expert/ExpertDashboard';
