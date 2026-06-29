@@ -142,4 +142,9 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-3">Choose Your Portal</h2>
-            <p className="text-muted-foreground text-lg">Select the portal that matches your role in the agricultural ecosystem</p>
+            <p className="text-muted-foreground text-lg">Select the portal that matches your role in the agricultural ecosystem</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            {portals.map((portal, i) => (
+              <div
+                key={i}
