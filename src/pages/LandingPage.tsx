@@ -177,4 +177,9 @@ export default function LandingPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
             {regions.map((r, i) => (
-              <div
+              <div
+                key={i}
+                onClick={() => navigate(`/regional?region=${r.name.toLowerCase().replace(/[^a-z]/g, '')}`)}
+                className="bg-card rounded-2xl border border-border p-5 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 cursor-pointer group"
+              >
+                <span className="text-3xl mb-3 block">{r.flag}</span>
