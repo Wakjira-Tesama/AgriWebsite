@@ -24,4 +24,7 @@ import EmployersPage from './pages/EmployersPage';
 
 const queryClient = new QueryClient();
 
-function App() {
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
