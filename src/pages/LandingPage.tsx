@@ -157,4 +157,9 @@ export default function LandingPage() {
                 <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2.5 py-1 rounded-full mb-3">{portal.badge}</span>
                 <h3 className="text-xl font-display font-bold mb-3">{portal.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{portal.desc}</p>
-                {portal.path && (
+                {portal.path && (
+                  <div className="mt-5 flex items-center justify-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">
+                    Access Portal <ChevronRight size={16} />
+                  </div>
+                )}
+              </div>
