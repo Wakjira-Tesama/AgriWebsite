@@ -197,4 +197,9 @@ export default function LandingPage() {
 
       {/* ── Stats ── */}
       <section className="bg-primary py-16 px-6 lg:px-12">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { value: '12+', label: 'Regions Covered' },
+            { value: '80+', label: 'Languages' },
+            { value: '3.5M+', label: 'Registered Farmers' },
+            { value: '95%', label: 'Satisfaction Rate' },
