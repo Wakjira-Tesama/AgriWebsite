@@ -227,4 +227,9 @@ export default function LandingPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                onClick={() => navigate('/login')}
+                onClick={() => navigate('/login')}
+                className="flex items-center gap-4 p-5 rounded-2xl bg-background border border-border hover:shadow-lg hover:border-primary/30 transition-all cursor-pointer group"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform shrink-0">
+                  {item.emoji}
+                </div>
