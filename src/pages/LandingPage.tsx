@@ -247,4 +247,9 @@ export default function LandingPage() {
           <div className="text-center mt-6">
             <button onClick={() => navigate('/login')} className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
               <Wheat size={20} /> Browse Full Marketplace <ArrowRight size={18} />
-            </button>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Footer ── */}
