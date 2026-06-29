@@ -117,4 +117,9 @@ export default function LandingPage() {
         </form>
 
         <p className="text-sm text-muted-foreground mt-4 animate-in fade-in duration-700 delay-500">
-          Try: <strong className="text-foreground">"buyer"</strong>, <strong className="text-foreground">"expert"</strong>, <strong className="text-foreground">"regional"</strong>, or <strong className="text-foreground">"admin"</strong>
+          Try: <strong className="text-foreground">"buyer"</strong>, <strong className="text-foreground">"expert"</strong>, <strong className="text-foreground">"regional"</strong>, or <strong className="text-foreground">"admin"</strong>
+        </p>
+
+        {/* Quick access badges */}
+        <div className="flex gap-3 mt-8 flex-wrap justify-center animate-in fade-in duration-700 delay-700">
+          <button onClick={() => navigate('/login')} className="flex items-center gap-2 px-4 py-2 bg-accent/10 text-accent font-bold rounded-full text-sm hover:bg-accent/20 transition-colors">
