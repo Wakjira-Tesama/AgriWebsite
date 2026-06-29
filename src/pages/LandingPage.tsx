@@ -97,4 +97,9 @@ export default function LandingPage() {
           The Smart Agriculture Ecosystem for <span className="text-primary">Everyone.</span>
         </h1>
 
-        <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mb-10 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+        <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mb-10 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+          Connect directly with verified farmers, access expert advisory in your language, and monitor the agricultural market in real-time — across all Ethiopian regions.
+        </p>
+
+        {/* Search Bar */}
+        <form onSubmit={handleSearch} className="w-full max-w-lg relative animate-in fade-in slide-in-from-bottom-10 duration-700 delay-300 shadow-xl rounded-2xl">
