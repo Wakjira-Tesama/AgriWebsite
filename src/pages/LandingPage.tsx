@@ -262,4 +262,9 @@ export default function LandingPage() {
                 <p className="font-display font-bold text-xl">AgriBridge</p>
                 <p className="text-white/50 text-xs">Ethiopian Agriculture Platform</p>
               </div>
-            </div>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-white/60">
+              <button onClick={() => navigate('/login')} className="hover:text-white transition-colors">Buyer</button>
+              <button onClick={() => navigate('/expert-login')} className="hover:text-white transition-colors">Expert</button>
+              <button onClick={() => navigate('/regional-login')} className="hover:text-white transition-colors">Regional</button>
+              <button onClick={() => navigate('/admin-login')} className="hover:text-white transition-colors">Admin</button>
