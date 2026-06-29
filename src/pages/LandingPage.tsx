@@ -192,4 +192,9 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div>
+      </section>
+
+      {/* ── Stats ── */}
+      <section className="bg-primary py-16 px-6 lg:px-12">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
