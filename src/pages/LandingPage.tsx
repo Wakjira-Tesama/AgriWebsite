@@ -202,4 +202,9 @@ export default function LandingPage() {
             { value: '12+', label: 'Regions Covered' },
             { value: '80+', label: 'Languages' },
             { value: '3.5M+', label: 'Registered Farmers' },
-            { value: '95%', label: 'Satisfaction Rate' },
+            { value: '95%', label: 'Satisfaction Rate' },
+          ].map((stat, i) => (
+            <div key={i}>
+              <p className="text-4xl font-display font-extrabold text-white">{stat.value}</p>
+              <p className="text-white/70 mt-1 font-medium">{stat.label}</p>
+            </div>
