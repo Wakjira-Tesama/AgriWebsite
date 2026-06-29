@@ -127,4 +127,9 @@ export default function LandingPage() {
           </button>
           <button onClick={() => navigate('/expert-login')} className="flex items-center gap-2 px-4 py-2 bg-secondary/10 text-secondary font-bold rounded-full text-sm hover:bg-secondary/20 transition-colors">
             <Users size={15} /> Expert Portal
-          </button>
+          </button>
+          <button onClick={() => navigate('/regional-login')} className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 font-bold rounded-full text-sm hover:bg-blue-200 transition-colors">
+            <Shield size={15} /> Regional Manager
+          </button>
+          <button onClick={() => navigate('/admin-login')} className="flex items-center gap-2 px-4 py-2 bg-muted text-muted-foreground font-bold rounded-full text-sm hover:bg-muted/80 transition-colors">
+            <MapPin size={15} /> Admin
