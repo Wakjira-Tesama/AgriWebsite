@@ -147,4 +147,9 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {portals.map((portal, i) => (
               <div
-                key={i}
+                key={i}
+                onClick={() => portal.path && navigate(portal.path)}
+                className={`p-8 rounded-3xl bg-background border border-border hover:shadow-xl transition-all duration-300 text-center group ${portal.path ? 'cursor-pointer hover:-translate-y-1' : 'opacity-75'}`}
+              >
+                <div className={`w-16 h-16 rounded-2xl ${portal.color} flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <portal.icon size={30} />
