@@ -87,4 +87,9 @@ export default function LandingPage() {
         <button onClick={() => navigate('/login')} className="md:hidden font-bold text-sm text-primary">Login</button>
       </nav>
 
-      {/* ── Hero ── */}
+      {/* ── Hero ── */}
+      <main className="flex-1 flex flex-col items-center justify-center text-center px-6 pt-20 pb-16">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-primary font-bold text-sm mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <Leaf size={16} /> Empowering Ethiopian Agriculture • ኢትዮጵያ ግብርና
+        </div>
+
