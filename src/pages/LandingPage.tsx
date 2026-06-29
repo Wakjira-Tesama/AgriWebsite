@@ -187,4 +187,9 @@ export default function LandingPage() {
                 <p className="text-xs text-muted-foreground mt-1">{r.lang}</p>
                 <div className="mt-3 pt-3 border-t border-border/60">
                   <p className="text-xs font-bold text-primary">{r.farmers}</p>
-                  <p className="text-xs text-muted-foreground">Farmers</p>
+                  <p className="text-xs text-muted-foreground">Farmers</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
