@@ -92,4 +92,9 @@ export default function LandingPage() {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-primary font-bold text-sm mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <Leaf size={16} /> Empowering Ethiopian Agriculture • ኢትዮጵያ ግብርና
         </div>
-
+
+        <h1 className="text-5xl lg:text-7xl font-display font-extrabold text-foreground max-w-4xl leading-tight tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+          The Smart Agriculture Ecosystem for <span className="text-primary">Everyone.</span>
+        </h1>
+
+        <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mb-10 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
