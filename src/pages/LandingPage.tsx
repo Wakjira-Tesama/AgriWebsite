@@ -152,4 +152,9 @@ export default function LandingPage() {
                 className={`p-8 rounded-3xl bg-background border border-border hover:shadow-xl transition-all duration-300 text-center group ${portal.path ? 'cursor-pointer hover:-translate-y-1' : 'opacity-75'}`}
               >
                 <div className={`w-16 h-16 rounded-2xl ${portal.color} flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                  <portal.icon size={30} />
+                  <portal.icon size={30} />
+                </div>
+                <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2.5 py-1 rounded-full mb-3">{portal.badge}</span>
+                <h3 className="text-xl font-display font-bold mb-3">{portal.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{portal.desc}</p>
+                {portal.path && (
