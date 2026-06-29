@@ -36,4 +36,7 @@ function App() {
           {/* Buyer Portal */}
           <Route path="/login" element={<BuyerLogin />} />
           <Route path="/buyer" element={<BuyerDashboard />} />
-
+
+          {/* Expert Portal */}
+          <Route path="/expert-login" element={<ExpertLogin />} />
+          <Route path="/expert" element={<ExpertDashboard />} />
