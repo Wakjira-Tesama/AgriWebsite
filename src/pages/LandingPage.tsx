@@ -222,4 +222,9 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               { crop: 'White Teff (Export)', price: '6,200', region: 'SNNPR', seller: 'Hawassa Co-op', emoji: '🌾', rating: 4.8 },
-              { crop: 'Arabica Coffee (Washed)', price: '18,500', region: 'Oromia', seller: 'Jimma Co-op', emoji: '☕', rating: 4.9 },
+              { crop: 'Arabica Coffee (Washed)', price: '18,500', region: 'Oromia', seller: 'Jimma Co-op', emoji: '☕', rating: 4.9 },
+              { crop: 'Black Cumin', price: '22,000', region: 'Oromia', seller: 'Bale Spice Union', emoji: '🫙', rating: 4.9 },
+            ].map((item, i) => (
+              <div
+                key={i}
+                onClick={() => navigate('/login')}
