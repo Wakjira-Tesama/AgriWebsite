@@ -6,4 +6,7 @@ import AdminDashboard from './pages/Dashboard';
 import AdminLogin from './pages/Login';
 import ProtectedRoute from './components/ProtectedRoute';
 
-// Buyer Pages
+// Buyer Pages
+import BuyerLogin from './pages/buyer/BuyerLogin';
+import BuyerDashboard from './pages/buyer/BuyerDashboard';
+
