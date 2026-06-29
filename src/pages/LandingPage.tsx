@@ -232,4 +232,9 @@ export default function LandingPage() {
               >
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform shrink-0">
                   {item.emoji}
-                </div>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-foreground truncate">{item.crop}</h3>
+                  <p className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5"><MapPin size={11} /> {item.seller} • {item.region}</p>
+                  <div className="flex items-center justify-between mt-2">
+                    <p className="font-display font-bold text-primary">{item.price} ETB <span className="text-xs text-muted-foreground font-normal">/100kg</span></p>
