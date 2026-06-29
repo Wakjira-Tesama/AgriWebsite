@@ -18,4 +18,7 @@ import ExpertDashboard from './pages/expert/ExpertDashboard';
 import RegionalLogin from './pages/regional/RegionalLogin';
 import RegionalDashboard from './pages/regional/RegionalDashboard';
 
-// Public Pages
+// Public Pages
+import LandingPage from './pages/LandingPage';
+import EmployersPage from './pages/EmployersPage';
+
