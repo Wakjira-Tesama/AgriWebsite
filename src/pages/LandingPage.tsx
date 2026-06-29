@@ -132,4 +132,9 @@ export default function LandingPage() {
             <Shield size={15} /> Regional Manager
           </button>
           <button onClick={() => navigate('/admin-login')} className="flex items-center gap-2 px-4 py-2 bg-muted text-muted-foreground font-bold rounded-full text-sm hover:bg-muted/80 transition-colors">
-            <MapPin size={15} /> Admin
+            <MapPin size={15} /> Admin
+          </button>
+        </div>
+      </main>
+
+      {/* ── Portal Cards ── */}
