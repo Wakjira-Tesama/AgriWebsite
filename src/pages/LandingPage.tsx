@@ -212,4 +212,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── Featured Crops ── */}
+      {/* ── Featured Crops ── */}
+      <section className="bg-card py-16 px-6 lg:px-12 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-display font-bold mb-3">Live Marketplace Preview</h2>
+            <p className="text-muted-foreground">Real-time commodity prices from verified cooperatives</p>
