@@ -172,4 +172,9 @@ export default function LandingPage() {
       <section className="py-20 px-6 lg:px-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-t border-border">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-3">Regional Coverage</h2>
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-3">Regional Coverage</h2>
+            <p className="text-muted-foreground text-lg">Multi-language support across all Ethiopian regions and languages</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
+            {regions.map((r, i) => (
+              <div
