@@ -217,4 +217,9 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-display font-bold mb-3">Live Marketplace Preview</h2>
-            <p className="text-muted-foreground">Real-time commodity prices from verified cooperatives</p>
+            <p className="text-muted-foreground">Real-time commodity prices from verified cooperatives</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              { crop: 'White Teff (Export)', price: '6,200', region: 'SNNPR', seller: 'Hawassa Co-op', emoji: '🌾', rating: 4.8 },
+              { crop: 'Arabica Coffee (Washed)', price: '18,500', region: 'Oromia', seller: 'Jimma Co-op', emoji: '☕', rating: 4.9 },
