@@ -167,4 +167,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
+
+      {/* ── Regional Coverage ── */}
+      <section className="py-20 px-6 lg:px-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-3">Regional Coverage</h2>
