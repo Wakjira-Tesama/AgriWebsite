@@ -15,4 +15,7 @@ import ExpertLogin from './pages/expert/ExpertLogin';
 import ExpertDashboard from './pages/expert/ExpertDashboard';
 
 // Regional Manager Pages
-import RegionalLogin from './pages/regional/RegionalLogin';
+import RegionalLogin from './pages/regional/RegionalLogin';
+import RegionalDashboard from './pages/regional/RegionalDashboard';
+
+// Public Pages
