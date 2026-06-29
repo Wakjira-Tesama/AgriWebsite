@@ -27,4 +27,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          {/* Public */}
+          <Route path="/" element={<LandingPage />} />
