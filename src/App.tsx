@@ -30,4 +30,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Public */}
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/employers" element={<EmployersPage />} />
+
+          {/* Buyer Portal */}
