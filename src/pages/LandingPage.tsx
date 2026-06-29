@@ -272,4 +272,7 @@ export default function LandingPage() {
             <p className="text-white/40 text-sm">© 2026 AgriBridge. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer>
+    </div>
+  );
+}
