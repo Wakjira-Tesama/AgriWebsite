@@ -112,4 +112,9 @@ export default function LandingPage() {
             className="w-full pl-12 pr-28 py-5 text-base border-2 border-border rounded-2xl focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all bg-card font-medium"
           />
           <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-primary-foreground font-bold px-5 py-3 rounded-xl hover:bg-primary/90 transition-all flex items-center gap-2 text-sm">
-            Go <ArrowRight size={16} />
+            Go <ArrowRight size={16} />
+          </button>
+        </form>
+
+        <p className="text-sm text-muted-foreground mt-4 animate-in fade-in duration-700 delay-500">
+          Try: <strong className="text-foreground">"buyer"</strong>, <strong className="text-foreground">"expert"</strong>, <strong className="text-foreground">"regional"</strong>, or <strong className="text-foreground">"admin"</strong>
