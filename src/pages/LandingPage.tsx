@@ -182,4 +182,9 @@ export default function LandingPage() {
                 onClick={() => navigate(`/regional?region=${r.name.toLowerCase().replace(/[^a-z]/g, '')}`)}
                 className="bg-card rounded-2xl border border-border p-5 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 cursor-pointer group"
               >
-                <span className="text-3xl mb-3 block">{r.flag}</span>
+                <span className="text-3xl mb-3 block">{r.flag}</span>
+                <h3 className="font-bold text-foreground text-sm">{r.name}</h3>
+                <p className="text-xs text-muted-foreground mt-1">{r.lang}</p>
+                <div className="mt-3 pt-3 border-t border-border/60">
+                  <p className="text-xs font-bold text-primary">{r.farmers}</p>
+                  <p className="text-xs text-muted-foreground">Farmers</p>
