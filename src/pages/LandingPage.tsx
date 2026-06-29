@@ -267,4 +267,9 @@ export default function LandingPage() {
               <button onClick={() => navigate('/login')} className="hover:text-white transition-colors">Buyer</button>
               <button onClick={() => navigate('/expert-login')} className="hover:text-white transition-colors">Expert</button>
               <button onClick={() => navigate('/regional-login')} className="hover:text-white transition-colors">Regional</button>
-              <button onClick={() => navigate('/admin-login')} className="hover:text-white transition-colors">Admin</button>
+              <button onClick={() => navigate('/admin-login')} className="hover:text-white transition-colors">Admin</button>
+            </div>
+            <p className="text-white/40 text-sm">© 2026 AgriBridge. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
