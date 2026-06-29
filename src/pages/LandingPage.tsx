@@ -207,4 +207,9 @@ export default function LandingPage() {
             <div key={i}>
               <p className="text-4xl font-display font-extrabold text-white">{stat.value}</p>
               <p className="text-white/70 mt-1 font-medium">{stat.label}</p>
-            </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Featured Crops ── */}
