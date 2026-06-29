@@ -21,4 +21,7 @@ import RegionalDashboard from './pages/regional/RegionalDashboard';
 // Public Pages
 import LandingPage from './pages/LandingPage';
 import EmployersPage from './pages/EmployersPage';
-
+
+const queryClient = new QueryClient();
+
+function App() {
