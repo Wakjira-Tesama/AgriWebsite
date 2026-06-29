@@ -237,4 +237,9 @@ export default function LandingPage() {
                   <h3 className="font-bold text-foreground truncate">{item.crop}</h3>
                   <p className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5"><MapPin size={11} /> {item.seller} • {item.region}</p>
                   <div className="flex items-center justify-between mt-2">
-                    <p className="font-display font-bold text-primary">{item.price} ETB <span className="text-xs text-muted-foreground font-normal">/100kg</span></p>
+                    <p className="font-display font-bold text-primary">{item.price} ETB <span className="text-xs text-muted-foreground font-normal">/100kg</span></p>
+                    <span className="flex items-center gap-1 text-xs text-amber-600 font-bold"><Star size={11} className="fill-amber-500 text-amber-500" /> {item.rating}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
