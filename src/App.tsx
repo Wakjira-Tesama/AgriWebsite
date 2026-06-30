@@ -48,4 +48,7 @@ function App() {
           {/* Admin Portal */}
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/admin" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
-            <Route index element={<AdminDashboard />} />
+            <Route index element={<AdminDashboard />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
