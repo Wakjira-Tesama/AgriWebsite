@@ -57,4 +57,7 @@ function App() {
 }
 
 function Layout() {
-  return (
+  return (
+    <div className="min-h-screen bg-background">
+      <Outlet />
+    </div>
