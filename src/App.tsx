@@ -42,4 +42,7 @@ function App() {
           <Route path="/expert" element={<ExpertDashboard />} />
 
           {/* Regional Manager Portal */}
-          <Route path="/regional-login" element={<RegionalLogin />} />
+          <Route path="/regional-login" element={<RegionalLogin />} />
+          <Route path="/regional" element={<RegionalDashboard />} />
+
+          {/* Admin Portal */}
