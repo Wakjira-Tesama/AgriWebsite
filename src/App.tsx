@@ -63,4 +63,5 @@ function Layout() {
     </div>
   );
 }
-
+
+export default App;
