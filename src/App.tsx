@@ -39,4 +39,7 @@ function App() {
 
           {/* Expert Portal */}
           <Route path="/expert-login" element={<ExpertLogin />} />
-          <Route path="/expert" element={<ExpertDashboard />} />
+          <Route path="/expert" element={<ExpertDashboard />} />
+
+          {/* Regional Manager Portal */}
+          <Route path="/regional-login" element={<RegionalLogin />} />
