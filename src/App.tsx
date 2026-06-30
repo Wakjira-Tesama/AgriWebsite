@@ -45,4 +45,7 @@ function App() {
           <Route path="/regional-login" element={<RegionalLogin />} />
           <Route path="/regional" element={<RegionalDashboard />} />
 
-          {/* Admin Portal */}
+          {/* Admin Portal */}
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/admin" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
+            <Route index element={<AdminDashboard />} />
