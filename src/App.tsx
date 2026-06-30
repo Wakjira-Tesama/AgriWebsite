@@ -60,4 +60,7 @@ function Layout() {
   return (
     <div className="min-h-screen bg-background">
       <Outlet />
-    </div>
+    </div>
+  );
+}
+
