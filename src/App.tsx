@@ -51,4 +51,7 @@ function App() {
             <Route index element={<AdminDashboard />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>
+    </QueryClientProvider>
+  );
+}
